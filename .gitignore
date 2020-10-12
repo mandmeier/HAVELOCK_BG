@@ -5,3 +5,5 @@
 .DS_Store
 largedata/
 LOG/
+slurm-script/
+slurm-log/
