@@ -7,3 +7,4 @@ largedata/
 LOG/
 slurm-script/
 slurm-log/
+temp/

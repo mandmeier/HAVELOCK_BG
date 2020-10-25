@@ -19,6 +19,15 @@ rm(derepRs_3)
 
 dadaRs <- dada(derepRs, err=errR, pool = FALSE, multithread=TRUE)
 
+
+sv <- dadaRs[1:1200]
+save(sv, file = "largedata/dadaRs_1.rda")
+sv <- dadaRs[1201:2400]
+save(sv, file = "largedata/dadaRs_2.rda")
+sv <- dadaRs[2401:3313]
+save(sv, file = "largedata/dadaRs_3.rda")
+
+
 save(dadaRs, file = "largedata/dadaRs.rda")
 
 print("LOG ==> saved dada R")

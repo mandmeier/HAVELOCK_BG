@@ -19,6 +19,14 @@ rm(derepFs_3)
 
 dadaFs <- dada(derepFs, err=errF, pool = FALSE, multithread=TRUE)
 
+
+sv <- dadaFs[1:1200]
+save(sv, file = "largedata/dadaFs_1.rda")
+sv <- dadaFs[1201:2400]
+save(sv, file = "largedata/dadaFs_2.rda")
+sv <- dadaFs[2401:3313]
+save(sv, file = "largedata/dadaFs_3.rda")
+
 save(dadaFs, file = "largedata/dadaFs.rda")
 
 print("LOG ==> saved dada F")
