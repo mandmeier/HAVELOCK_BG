@@ -112,78 +112,83 @@ asvs_to_keep <- rownames(asvs_to_keep)
 
 ps_core5 <- prune_taxa(asvs_to_keep, ps_core)
 
-save(ps_core5, file = "cache/ps_core5.rda")
-sum(otu_table(ps_core5))
+#save(ps_core5, file = "cache/ps_core5.rda")
+#sum(otu_table(ps_core5))
+
+
+#load("cache/ps_core5.rda")
 
 
 ## get taxa counts
 
 
-### 7) remove taxa that contribute less than 1% of total observations
+#### Construct phylogenetic tree from 3626 taxa ####
 
 
-obs <- colSums(otu_table(ps_core))
-total_obs <- data_frame("ASV" = names(obs), "counts" = obs)
+library("seqinr")
+library("ape")
 
-taxtab$ASV <- rownames(taxtab)
+## get sequences from original table
+#load("cache/seqtabNoC20.rda")
+seq <- colnames(seqtabNoC20)
 
-obs_table <- left_join(taxtab, total_obs) %>%
-  select(ASV, taxa, counts) %>%
-  group_by(taxa) %>%
-  summarize(total_obs = sum(counts))
+### make padded numbers for asvs and rename asvs (numbers instead of sequences)
+asvs <- paste0("asv_", formatC(c(1:ncol(otu_table(ps))), width = 6, format = "d", flag = "0"))
 
+### save ASVs ids and sequences for later
+names(asvs) <- seq
 
+#sequences <- asvs
+#save(sequences, file = "cache/sequences.rda")
 
-burk <- obs_table %>%
-  filter(Family == "Burkholderiaceae")
+#find sequences of filtered ps object (the ones to keep)
+headers <- asvs[asvs %in% taxa_names(ps_core5)]
+seqs <- names(headers)
 
-
-
-unique(obs_table$Family)
-
-unique(obs_table$Genus)
-
-unique(obs_table$taxa)
-
-
-
-## get taxa frequency table
-
-sort(unique(tax_table(ps_common)[,"taxa"]))
+### write sequences to make tree from to fasta file:
+write.fasta(as.list(seqs), headers, "cache/unaligned_ps_core5.fasta" , open = "w", nbchar = 60, as.string = FALSE)
 
 
+### noe copy fasta file to HCC to run mafft, fasttree
+
+" Shell script
+
+#!/bin/sh
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=8
+#SBATCH --time=12:00:00
+#SBATCH --mem=16gb
+#SBATCH --job-name=mafttree
+#SBATCH --error=./LOG/mafttree_%J.err
+#SBATCH --output=./LOG/mafttree_%J.out
+
+module load mafft/7.407
+mafft cache/unaligned_ps_core5.fasta > cache/aligned_ps_core5.fasta
+
+module load fasttree/2.1
+FastTree -gtr -nt cache/aligned_ps_core5.fasta > cache/ps_core5.tre
+
+"
 
 
-
-
-as.data
-
-
-length(taxa_names(ps_common))
-
-
-length(unique(tax_table(ps_common)[,"Genus"]))
-
-table(unique(tax_table(ps_common)[,"Genus"]))
-
-
-
-
-#combine data 
-for(psobj in c(ps_noMC, ps_common)){
-  print(length(taxa_names(psobj)))
-  print(sum(otu_table(psobj)))
-}
-  
+# combine ps object with newly generated tree
 
 
 
+# attach new tree file to ps object
+tre <- read.tree("cache/ps_core5.tre")
+ps_core5t <- merge_phyloseq(ps_core5, tre)
+
+
+# fix N treatment data
+
+sample_data(ps_core5t)[, 'nitrogen'] <- c(ifelse(sample_data(ps_core5t)[, 'row'] > 2000 & sample_data(ps_core5t)[, 'row'] < 3999, "-N", "+N"))
+
+save(ps_core5t, file = "cache/ps_core5t.rda")
 
 
 
 
-
-#### find samples with low ASV counts ####
 
 
 
