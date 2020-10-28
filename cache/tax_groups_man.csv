@@ -1,4 +1,4 @@
-ASV,stdN,lowN,total_counts,ratioN,Kingdom,Phylum,Class,Order,Family,Genus,Species,taxa,man_taxa
+ASV,stdN,lowN,total_counts,ratioN,Kingdom,Phylum,Class,Order,Family,Genus,Species,taxa,tax_group
 asv_007130,1399,3273,4672,0.427436603,Bacteria,Bacteroidota,Bacteroidia,Chitinophagales,Chitinophagaceae,Chitinophaga,sancti,Chitinophaga,Chitinophaga sancti
 asv_005888,1378,4415,5793,0.31211778,Bacteria,Bacteroidota,Bacteroidia,Chitinophagales,Chitinophagaceae,Chitinophaga,sancti,Chitinophaga,Chitinophaga sancti
 asv_003822,2406,6711,9117,0.358515869,Bacteria,Bacteroidota,Bacteroidia,Chitinophagales,Chitinophagaceae,Chitinophaga,sancti,Chitinophaga,Chitinophaga sancti

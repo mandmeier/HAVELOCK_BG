@@ -7,10 +7,6 @@ library("ggstance")
 load("cache/ps_core5t.rda")
 
 
-
-
-
-
 stdN <- subset_samples(ps_core5t, nitrogen == "+N")
 lowN <- subset_samples(ps_core5t, nitrogen == "-N")
 
@@ -98,6 +94,58 @@ tax_groups_man <- read_csv("cache/tax_groups_man.csv")
 unique(tax_groups_man$man_taxa)
 
 
+### add manual taxonomic groups to ps object
+
+tax_groups <- select(tax_groups_man, ASV, tax_group)
+
+taxtab <- as.data.frame(tax_table(ps_core5t))
+
+taxtab <- taxtab %>%
+  left_join(tax_groups) %>%
+  select(-taxa) ## remove taxa column, no longer needed
+rownames(taxtab) <- taxtab$ASV
+
+tax_table(ps_core5t) <- as.matrix(taxtab)
+
+save(ps_core5t, file = "cache/ps_core5t.rda")
+
+
+
+library("phyloseq")
+library("tidyverse")
+
+load("cache/ps_core5t.rda")
+
+tax_table(ps_core5t)
+
+
+### agglomerate ASV counts for each taxonomic group
+
+ps_glom <- tax_glom(ps_core5t, taxrank="tax_group")
+
+save(ps_glom, file = "cache/ps_glom.rda")
+
+
+
 #### draw phylogenetic tree ####
+
+
+
+
+
+
+### agglomerate taxa at subgroup level
+
+
+
+
+
+ps_glom <- tax_glom(ps_final_S, taxrank=rank_names(ps_final_S)[7])
+
+
+
+
+
+
 
 
