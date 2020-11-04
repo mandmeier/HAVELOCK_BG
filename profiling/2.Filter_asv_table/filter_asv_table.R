@@ -13,26 +13,23 @@ load("cache/ps.rda")
 
 ps
 
-#### 2) Kingdom bacteria or archaea ####
+#### 3) Kingdom bacteria or archaea, remove Chloroplasts, remove Mitochondria####
 # sort(unique(as.character(tax_table(ps)[, 1]))) ### Kingdom
 ps_ab <- subset_taxa(ps, Kingdom %in% c("Bacteria", "Archaea"))
 #save(ps_ab, file = "cache/ps_ab.rda")
 #sum(otu_table(ps_ab))
 
-
-#### 3) remove Chloroplasts ####
 # sort(unique(as.character(tax_table(ps)[, 4]))) ### Order "Chloroplast"
 ps_noC <- subset_taxa(ps_ab, Order!="Chloroplast")
 #save(ps_noC, file = "cache/ps_noC.rda")
 #sum(otu_table(ps_noC))
 
-#### 4) remove Mitochondria ####
 # sort(unique(as.character(tax_table(ps)[, 5]))) ### family "Mitochondria"
 ps_noMC <- subset_taxa(ps_noC, Family!="Mitochondria")
 #save(ps_noMC, file = "cache/ps_noMC.rda")
 #sum(otu_table(ps_noMC))
 
-#### 5) retain taxa that are found in both years ####
+#### 4) retain taxa that are found in both years ####
 
 # find common ASVs
 y2018_asvs <- colSums(otu_table(subset_samples(ps_noMC, year == "Y2018")))
@@ -54,7 +51,7 @@ ps_common
 
 load("cache/ps_common.rda")
 
-#### 7) remove 7 samples with < 100 unique ASVs ####
+#### 5) remove 7 samples with < 100 unique ASVs ####
 
 ## presence absence table
 pa <- otu_table(ps_common)
@@ -73,7 +70,7 @@ save(ps_short, file = "cache/ps_short.rda")
 
 
 
-#### 8) remove ASVs observed in less than 166 samples (5%, 3306*0.05) ####
+#### 6) remove ASVs observed in less than 166 samples (5%, 3306*0.05) ####
 
 pa <- otu_table(ps_short)
 pa[pa > 0] <- 1
@@ -92,7 +89,7 @@ save(ps_core, file = "cache/ps_core.rda")
 
 
 
-#### 9) remove taxa (genus or family) with less than 5 observed ASVs ####
+#### ) remove taxa (genus or family) with less than 5 observed ASVs ####
 
 # fill in family where genus unknown
 taxtab <- as.data.frame(tax_table(ps_core))
