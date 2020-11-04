@@ -176,6 +176,10 @@ plot_data <- data.frame(tax_table(ps_grp)) %>%
 plot_data$unique_ASVs <- unique_asvs$unique_ASVs
 
 
+### save data for later in group data summary
+group_data <- plot_data
+save(group_data, file = "data/group_data.rda")
+
 
 mycols <- c('#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075')
 
