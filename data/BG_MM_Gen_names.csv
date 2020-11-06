@@ -50,10 +50,10 @@ Iowa,B84,B84,B84,B84
 Iowa,B97,B97,B97,B97
 Connecticut,C103,C103,C103,C103
 Connecticut,C123,C123,C123,C123
-Minnesota,C49,C49,CH9,C49
+Minnesota,C49,C49,,C49
 Minnesota,C49A,C49A,C49A,C49A
 Canada - Harrow,CH701-30,CH701-30,CH701-30,CH701-30
-Canada - Harrow,CH9,CH9,,CH9
+Canada - Harrow,CH9,CH9,CH9,CH9
 USDA,CI7,CI7,Ci7Goodman-Buckler,CI7Goodman-Buckler
 USDA,CI187-2,CI187-2,CI187-2,CI187-2
 USDA,CI21E,,CI21E,
@@ -221,7 +221,7 @@ North Carolina,NC322,,,
 North Carolina,NC324,NC324,NC324,NC324
 North Carolina,NC326,NC326,NC326,NC326
 North Carolina,NC328,NC328,NC328,NC328
-North Carolina,NC33,,,
+North Carolina,NC33,,NC33,
 North Carolina,NC330,NC330,,NC330
 North Carolina,NC332,NC332,,NC332
 North Carolina,NC334,NC334,,NC334
