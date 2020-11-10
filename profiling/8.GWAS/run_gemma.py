@@ -30,7 +30,7 @@ outdir_path = os.path.join(root_dir,f'largedata/GWAS/out_{traits}_{date_time}')
 def write_slurm(num):
     slurm_file = open("gemma.slurm", "w")
     slurm_file.write(
-        f'#!/bin/sh\n#SBATCH --nodes=1\n#SBATCH --ntasks-per-node=8\n#SBATCH --time=12:00:00\n#SBATCH --mem=16gb\n#SBATCH --job-name=T{num}\n#SBATCH --error={log_path}/T{num}_%J.err\n#SBATCH --output={log_path}/T{num}_%J.out\n\nmodule load python/3.8\n\ngemma-0.98 -bfile {snp_path} -k {kinship_path} -c {pca_path} -p {traits_path} -lmm 1 -n {num} -outdir {outdir_path} -o T{num} -miss 0.9 -r2 1 -hwe 0 -maf 0.01')
+        f'#!/bin/sh\n#SBATCH --nodes=1\n#SBATCH --ntasks-per-node=8\n#SBATCH --time=24:00:00\n#SBATCH --mem=16gb\n#SBATCH --job-name=T{num}\n#SBATCH --error={log_path}/T{num}_%J.err\n#SBATCH --output={log_path}/T{num}_%J.out\n\nmodule load python/3.8\n\ngemma-0.98 -bfile {snp_path} -k {kinship_path} -c {pca_path} -p {traits_path} -lmm 1 -n {num} -outdir {outdir_path} -o T{num} -miss 0.9 -r2 1 -hwe 0 -maf 0.01')
     slurm_file.close()
 
 
