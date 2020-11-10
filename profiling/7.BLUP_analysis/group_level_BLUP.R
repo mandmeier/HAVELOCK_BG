@@ -87,6 +87,13 @@ for (asvid in colnames(asvtab)){
 
 
 
+### use T1-T150 for colnames (to avoid confusing tax groups with ASVs)
+rep_asvs <- data.frame("ASV" = colnames(blup_stdN)[-1])
+traits <- left_join(rep_asvs, select(group_data, ASV, trait))
+newnames <- c("genotype", traits$trait)
+colnames(blup_stdN) <- newnames
+colnames(blup_lowN) <- newnames
+
 ### save data
 
 write_csv(blup_stdN, file="data/blup_stdN_150_tax_groups.csv")
@@ -94,5 +101,29 @@ write_csv(blup_lowN, file="data/blup_lowN_150_tax_groups.csv")
 
 
 
+
+### calculae mean BLUP
+
+mean_blup_stdN <- blup_stdN %>%
+ select(-1) %>%
+  colMeans(na.rm = TRUE)
+mean_blup_stdN <- data.frame("ASV" = names(mean_blup_stdN), "mean_blup_stdN" = mean_blup_stdN)
+
+mean_blup_lowN <- blup_lowN %>%
+  select(-1) %>%
+  colMeans(na.rm = TRUE)
+mean_blup_lowN <- data.frame("ASV" = names(mean_blup_lowN), "mean_blup_lowN" = mean_blup_lowN)
+
+
+mean_blup <- left_join(mean_blup_stdN, mean_blup_lowN)
+
+
+
+
+
+### add mean blup to group data
+load("data/group_data.rda")
+group_data <- left_join(group_data, mean_blup)
+save(group_data, file = "data/group_data.rda")
 
 
