@@ -6,8 +6,6 @@ load("data/group_data.rda")
 #### plot H2 vs. BLUP abundance ####
 
 
-colors37 = c("#466791","#60bf37","#953ada","#4fbe6c","#ce49d3","#a7b43d","#5a51dc","#d49f36","#552095","#507f2d","#db37aa","#84b67c","#a06fda","#df462a","#5b83db","#c76c2d","#4f49a3","#82702d","#dd6bbb","#334c22","#d83979","#55baad","#dc4555","#62aad3","#8c3025","#417d61","#862977","#bba672","#403367","#da8a6d","#a79cd4","#71482c","#c689d0","#6b2940","#d593a7","#895c8b","#bd5975")
-
 
 colors <- c("Burkholderia" = "#0000bd",
   "Sphingobium" = "#f20019", "Ralstonia" = "#70fe00",
@@ -22,84 +20,64 @@ colors <- c("Burkholderia" = "#0000bd",
 
 ### h2 vs BLUP
 
+## mark anything in 90% quantile for H2 or BLUP
 
-## mark anything in 75% quantile for H2 and BLUP
-
-### median H2
-q75_H2_stdN <- quantile(group_data$H2_stdN[group_data$H2_stdN!=min(group_data$H2_stdN)], 0.75)
-### median blup
-q75_blup_stdN <- quantile(group_data$mean_blup_stdN[group_data$mean_blup_stdN!=min(group_data$mean_blup_stdN)], 0.75)
-
-
-q75_stdN <- group_data %>%
-  filter(H2_stdN >= q75_H2_stdN | mean_blup_stdN >= q75_blup_stdN)
- 
-
-unique(q75_stdN$tax_group)
-
-
-## mark anything in 75% quantile for H2 or BLUP
-
-### median H2
+### stdN
 q90_H2_stdN <- quantile(group_data$H2_stdN[group_data$H2_stdN!=min(group_data$H2_stdN)], 0.90)
-### median blup
 q90_blup_stdN <- quantile(group_data$mean_blup_stdN[group_data$mean_blup_stdN!=min(group_data$mean_blup_stdN)], 0.90)
-
 q90_stdN <- group_data %>%
   filter(H2_stdN >= q90_H2_stdN | mean_blup_stdN >= q90_blup_stdN)
+top_stdN <- sort(unique(q90_stdN$tax_group))
+
+### lowN
+q90_H2_lowN <- quantile(group_data$H2_lowN[group_data$H2_lowN!=min(group_data$H2_lowN)], 0.90)
+q90_blup_lowN <- quantile(group_data$mean_blup_lowN[group_data$mean_blup_lowN!=min(group_data$mean_blup_lowN)], 0.90)
+q90_lowN <- group_data %>%
+  filter(H2_lowN >= q90_H2_lowN | mean_blup_lowN >= q90_blup_lowN)
+top_lowN <- sort(unique(q90_lowN$tax_group))
+
+top_taxa <- unique(c(top_stdN, top_lowN))
 
 
-unique(q90_stdN$tax_group)
+### add label if in top_taxa
+
+stdN <- group_data %>%
+  select(tax_group, H2_stdN, mean_blup_stdN) %>%
+  mutate(nitrogen = "+N") %>%
+  rename(H2 = H2_stdN, mean_blup = mean_blup_stdN)
+
+lowN <- group_data %>%
+  select(tax_group, H2_lowN, mean_blup_lowN) %>%
+  mutate(nitrogen = "-N") %>%
+  rename(H2 = H2_lowN, mean_blup = mean_blup_lowN)
 
 
+combined <- rbind(stdN,lowN)
+
+po <- combined %>%
+  filter(H2 > 0)
 
 
-
-min(group_data$mean_blup_stdN)
-
-
-median_H2_lowN <- median(group_data$H2_lowN[group_data$H2_lowN>0])
-
-
-
-
-po <- group_data %>%
-  filter(H2_stdN > 0)
-
-h2_vs_blup_stdN <- ggplot(po, aes(x = mean_blup_stdN, y = H2_stdN)) +
-  geom_point() #+
-#scale_color_manual(values = colors) +
-theme_bw()#+
-h2_vs_blup_stdN
-
-
-
-po <- group_data %>%
-  filter(H2_lowN > 0)
-
-h2_vs_blup_lowN <- ggplot(po, aes(x = mean_blup_lowN, y = H2_lowN)) +
-  geom_point() #+
-#scale_color_manual(values = colors) +
-theme_bw()#+
-h2_vs_blup_lowN
-
-
-
-
+## assign colors ## currently colors don't work together with ggrepel...
+po$tax_group_other <- ifelse(po$tax_group %in% top_taxa, po$tax_group, "other")
+colors37 = c("#466791","#60bf37","#953ada","#4fbe6c","#ce49d3","#a7b43d","#5a51dc","#d49f36","#552095","#507f2d","#db37aa","#84b67c","#a06fda","#df462a","#5b83db","#c76c2d","#4f49a3","#82702d","#dd6bbb","#334c22","#d83979","#55baad","#dc4555","#62aad3","#8c3025","#417d61","#862977","#bba672","#403367","#da8a6d","#a79cd4","#71482c","#c689d0","#6b2940","#d593a7","#895c8b","#bd5975")
+top_taxa_other <- c(top_taxa, "other")
+testcolors <- names(top_taxa_other) <- colors37[1:length(top_taxa_other)]
 
 
 
-po <- group_data %>%
-  filter(H2_lowN > 0 & H2_stdN > 0)
+library("ggrepel")
+
+h2_vs_blup <- ggplot(po, aes(x = mean_blup, y = H2, label=tax_group_other)) +
+  geom_point() +
+  geom_label_repel(aes(label=ifelse(tax_group_other %in% top_taxa, tax_group_other, '')), size=2.5, min.segment.length=0.1) +
+  scale_color_manual(values = testcolors) +
+  facet_wrap(~nitrogen, ncol = 2) +
+  theme_bw()
+  
+h2_vs_blup
 
 
-h2_vs_h2 <- ggplot(po, aes(x = H2_stdN, y = H2_lowN)) +
-  geom_point() #+
-#scale_color_manual(values = colors) +
-theme_bw()#+
-#facet_wrap(~genus2, nrow = 3)
-
-h2_vs_h2
 
 
 
