@@ -36,7 +36,7 @@ load("data/ps_asv.rda")
 #print("saving mean_counts_logrel")
 #save(mean_counts_logrel, file = "cache/mean_counts_logrel_asv.rda")
 
-load("cache/mean_counts_logrel_asv.rda")
+#load("cache/mean_counts_logrel_asv.rda")
 
 
 
@@ -62,7 +62,7 @@ load("cache/mean_counts_logrel_asv.rda")
 #  dplyr::select(-count)
 # 19 genotypes
 
-save(asv_h2dat_lowN, file="cache/asv_h2dat_lowN.rda")
+#save(asv_h2dat_lowN, file="cache/asv_h2dat_lowN.rda")
 
 
 
