@@ -42,20 +42,36 @@ load("cache/mean_counts_logrel_asv.rda")
 
 ### split stdN, lowN samples, retain only genotypes with complete set of 4 reps
 
-h2dat_stdN <- mean_counts_logrel %>%
-  filter(nitrogen == "+N") %>%
-  group_by(genotype) %>%
-  dplyr::add_tally(name="count") %>%
-  filter(count == 4) %>%
-  dplyr::select(-count)
+#asv_h2dat_stdN <- mean_counts_logrel %>%
+#  filter(nitrogen == "+N") %>%
+#  group_by(genotype) %>%
+#  dplyr::add_tally(name="count") %>%
+#  filter(count == 4) %>%
+#  dplyr::select(-count)
 # 20 genotypes
+
+
+#save(asv_h2dat_stdN, file="cache/asv_h2dat_stdN.rda")
+
+
+#asv_h2dat_lowN <- mean_counts_logrel %>%
+#  filter(nitrogen == "-N") %>%
+#  group_by(genotype) %>%
+#  dplyr::add_tally(name="count") %>%
+#  filter(count == 4) %>%
+#  dplyr::select(-count)
+# 19 genotypes
+
+save(asv_h2dat_lowN, file="cache/asv_h2dat_lowN.rda")
+
 
 
 #### calculate H2 ####
 
+load("cache/asv_h2dat_stdN.rda")
 
 ## calculate H2 +N
-df <- h2dat_stdN
+df <- asv_h2dat_stdN
 traits <- colnames(df)[8:ncol(df)]
 
 H2_stdN <- data.frame()
@@ -77,18 +93,13 @@ print("saving H2_stdN")
 save(H2_stdN, file = "cache/asv_H2_stdN.rda")
 
 
-h2dat_lowN <- mean_counts_logrel %>%
-  filter(nitrogen == "-N") %>%
-  group_by(genotype) %>%
-  dplyr::add_tally(name="count") %>%
-  filter(count == 4) %>%
-  dplyr::select(-count)
-# 19 genotypes
-
 
 
 ## calculate H2 -N
-df <- h2dat_lowN
+
+load("cache/asv_h2dat_lowN.rda")
+
+df <- asv_h2dat_lowN
 traits <- colnames(df)[8:ncol(df)]
 
 H2_lowN <- data.frame()
