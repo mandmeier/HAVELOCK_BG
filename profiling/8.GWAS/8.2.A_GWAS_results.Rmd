@@ -15,6 +15,58 @@ knitr::opts_knit$set(root.dir=normalizePath('../../'))
 /work/jyanglab/mmeier/HAVELOCK_BG/largedata/GWAS/out_traits_150_lowN_201109-100251
 /work/jyanglab/mmeier/HAVELOCK_BG/largedata/GWAS/out_traits_150_stdN_201109-103909
 
+
+### Collect the results
+
+Low N GWAS results:
+```{r}
+files <- list.files(path="/work/jyanglab/mmeier/HAVELOCK_BG/largedata/GWAS/out_traits_150_lowN_201109-100251", pattern="assoc.txt", full.names = TRUE)
+
+library("data.table")
+
+out <- data.frame()
+for(i in 1:length(files)){
+  df <- fread(files[i], data.table=FALSE)
+  df <- subset(df, p_wald < 0.00001)
+  
+  if(nrow(df) >0){
+    df$log10 <- -log10(df$p_wald)
+    tid <- gsub(".*\\/|.assoc.txt", "", files[i])
+    df$trait <- tid
+    message(sprintf("### working on trait: [ %s ]", tid))
+  }
+  out <- rbind(out, df)
+}
+```
+
+High N GWAS results:
+
+```{r}
+files <- list.files(path="/work/jyanglab/mmeier/HAVELOCK_BG/largedata/GWAS/out_traits_150_stdN_201109-103909", pattern="assoc.txt", full.names = TRUE)
+
+library("data.table")
+
+out <- data.frame()
+for(i in 1:length(files)){
+  df <- fread(files[i], data.table=FALSE)
+  df <- subset(df, p_wald < 0.00001)
+  
+  if(nrow(df) >0){
+    df$log10 <- -log10(df$p_wald)
+    tid <- gsub(".*\\/|.assoc.txt", "", files[i])
+    df$trait <- tid
+    message(sprintf("### working on trait: [ %s ]", tid))
+  }
+  out <- rbind(out, df)
+}
+fwrite(out, "largedata/high_N_gwas.csv", sep=",", row.names=FALSE, quote=FALSE)
+#
+```
+
+
+
+
+
 ```{bash}
 cp /work/jyanglab/mmeier/HAV_19/largedata/GEMMA/sign_snps_annotated_stdN.csv largedata/gwas/
 ```

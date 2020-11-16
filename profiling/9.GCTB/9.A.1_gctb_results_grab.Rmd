@@ -14,8 +14,7 @@ knitr::opts_knit$set(root.dir=normalizePath('../../'))
 
 ### format phenotype for GCTB
 
-/common/jyanglab/gxu6/project/07_282panel_GCTB/Results
-
+/common/jyanglab/gxu6/project/2-Coopration/Mike_micro/GCTB_micro
 
 ```{r, eval=FALSE}
 get_gctb_parres <- function(path="largedata/bayesS"){
@@ -37,17 +36,14 @@ get_gctb_parres <- function(path="largedata/bayesS"){
   return(res)
 }
 
-### 
-out <- get_gctb_parres(path="/common/jyanglab/gxu6/project/07_282panel_GCTB/Results")
-s <- subset(out, par == "S")
+### HN
+out1 <- get_gctb_parres(path="/common/jyanglab/gxu6/project/2-Coopration/Mike_micro/GCTB_micro/HN/Results_HN")
+write.table(out1[, -4], "cache/gtcb_HN_n150.csv", sep=",", row.names=FALSE, quote=FALSE)
 
-pi <- subset(out, par == "Pi")
+### LN
+out2 <- get_gctb_parres(path="/common/jyanglab/gxu6/project/2-Coopration/Mike_micro/GCTB_micro/LN/Results_LN")
+write.table(out2[, -4], "cache/gtcb_LN_n150.csv", sep=",", row.names=FALSE, quote=FALSE)
 
-hsq <- subset(out, par == "hsq")
-
-write.table(s, "cache/s_t37.csv", sep=",", row.names=FALSE, quote=FALSE)
-write.table(pi, "cache/pi_t37.csv", sep=",", row.names=FALSE, quote=FALSE)
-write.table(hsq, "cache/hsq_t37.csv", sep=",", row.names=FALSE, quote=FALSE)
 ```
 
 
@@ -55,13 +51,15 @@ write.table(hsq, "cache/hsq_t37.csv", sep=",", row.names=FALSE, quote=FALSE)
 
 ```{r}
 library(ggplot2)
-s <- read.csv("cache/s_t37.csv")
+df <- read.csv("cache/gtcb_HN_n150.csv")
+
+s <- subset(df, par %in% "S")
 s <- s[order(s$Mean, decreasing=FALSE),]
 
 s$trait <- factor(s$trait, levels = s$trait)
+s1 <- s
 
-
-p <- ggplot(s, aes(x=Mean, y=trait)) +
+p <- ggplot(s1, aes(x=Mean, y=trait)) +
     geom_point() +
     xlab("S") +
     ylab("") +
@@ -83,57 +81,49 @@ p + geom_vline(xintercept = 0)
 
 ```
 
+```{r}
+library(ggplot2)
+df <- read.csv("cache/gtcb_LN_n150.csv")
 
+s <- subset(df, par %in% "S")
+s <- s[order(s$Mean, decreasing=FALSE),]
+
+s$trait <- factor(s$trait, levels = s$trait)
+
+s2 <- s
+p <- ggplot(s2, aes(x=Mean, y=trait)) +
+    geom_point() +
+    xlab("S") +
+    ylab("") +
+    ggtitle("") +
+    theme_classic() +
+    labs(color = "") +
+    #scale_y_continuous(limits = c(-1, 3)) +
+    #geom_vline(xintercept=0, linetype="dashed", color = "red") +
+    theme(plot.title = element_text(size=20, face = "bold"), 
+          axis.text=element_text(size=16, face="bold"),
+          strip.text.x = element_text(size = 16, face = "bold"),
+          axis.title=element_text(size=18, face="bold"),
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.position = c(0.8, 0.95), 
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.title = element_text(size=18, face="bold"),
+          legend.text = element_text(size=18))
+p + geom_vline(xintercept = 0)
+
+```
 
 ## MCMC tracing plot
 
+/work/jyanglab/mmeier/HAVELOCK_BG/data/group_data.rda
+
 ```{r}
 
-library(cowplot)
-library(ggplot2)
-library("tidyr")
-cbPalette=c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
-  
+ob <- load("data/group_data.rda")
 
-files <- list.files(path="largedata/bayesS/", pattern = "Par", full.names = TRUE)
-i=55
-
-i=36
-files[i]
+subset(group_data, ASV %in% "asv_002138")
 
 
-
-df <- read.table(files[i], header=T)
-df$mcmc <- 1:nrow(df)
-df2 <- gather(df, parm, value, c("Pi", "NNZsnp", "S", "hsq"))
-#df3 <- subset(df3, trait %in% c("Fe57", "Zn66", "Cu65", "Cd111"))
-#df3$type <- "Micronutrient Traits"
-
-#library(dplyr) 
-fsize=16 
-p1 <- ggplot(data=df2, aes(x=mcmc, y=value, color=parm))+
-        #geom_line(color=cbPalette[4])+
-        geom_line()+
-        
-        facet_wrap( ~ factor(parm, levels=c("Pi", "NNZsnp", "S", "hsq"),
-                         labels=c("Pi (Porportion of non-zero effect SNPs)", "Number of non-zero effect SNPs", "S (selection coefficient)", "SNP-based Heritability")), 
-                          ncol=1, scales = 'free_y') +
-        scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9", "#009E73")) +
-        theme_bw() +
-  guides(color=FALSE) +
-        theme(#axis.text.x=element_blank(), axis.ticks.x=element_blank(),
-          axis.text=element_text(size=12),
-          axis.title=element_text(size=fsize, face="bold"),
-          legend.title = element_text(size=fsize, face="bold"),
-          legend.text = element_text(size=fsize),
-          strip.text = element_text(size = fsize, face = "bold")) +
-      xlab("Iteraction (Markov Chain Monte Carlo)") +
-      ylab("")
-p1
-### output
-pdf("graphs/trace_plot_numberoftilleringplants.pdf", width=8, height=12)
-p1
-dev.off()
 
 
 ```
