@@ -1,0 +1,205 @@
+---
+title: "Interpret GWAS results"
+author: "Jinliang Yang"
+date: "11-16-2020"
+output: NULL
+---
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE) 
+knitr::opts_knit$set(root.dir=normalizePath('../../')) 
+#library(tidyverse)
+```
+
+# GWAS results from Mike:
+/work/jyanglab/mmeier/HAVELOCK_BG/largedata/GWAS/out_traits_150_lowN_201109-100251
+/work/jyanglab/mmeier/HAVELOCK_BG/largedata/GWAS/out_traits_150_stdN_201109-103909
+
+```{bash}
+cp /work/jyanglab/mmeier/HAV_19/largedata/GEMMA/sign_snps_annotated_stdN.csv largedata/gwas/
+```
+
+
+### In the table:
+  - p = -log10(p_wald)
+  - h2 = heritability score under stdN
+  - asv_count = total ASV count in all stdN samples
+  - genus = like "Genus" column but Family name is inserted where Genus is unknown
+
+
+--------------------------------
+# Basic STAT
+
+```{r, eval=FALSE}
+library("data.table")
+
+gwas <- fread("largedata/gwas/sign_snps_annotated_stdN.csv")
+gwas$snpid <- paste(gwas$chr, gwas$ps, sep="_")
+names(gwas)[4] <- "pos"
+
+g10 <- subset(gwas, p > 10)
+```
+
+### Quick Manhattan plot
+
+```{r}
+library("huskeR")
+
+png("graphs/Manhatton_g10_stdN.png", width=11, height=4.25, units="in", res=300)
+plot_mht(inputdf=g10, col2plot="p", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", 
+         ylab="-log10(p-value)",  cex = 0.6)
+dev.off()
+```
+
+
+
+
+
+### At Plant genomics level
+
+How many SNPs hit multiple ASVs?
+1. 2.6 million SNP with at least one hit
+2. frq > 1: 875503
+
+```{r}
+snp <- table(gwas$snpid)
+snp <- data.frame(snp)
+snp <- snp[order(snp$Freq, decreasing = TRUE),]
+
+write.table(snp, "cache/snp_hit_frq_stdN.csv", sep=",", row.names=FALSE, quote=FALSE)
+nrow(subset(snp, Freq > 1))
+nrow(subset(snp, Freq == 20))
+```
+
+### Use a window approach
+
+```{r}
+gwas$pos <- as.numeric(as.character(gwas$pos))
+
+
+winsize = 1000
+
+gwas$winid <- paste(gwas$chr, round(gwas$pos/winsize,0), sep="_")
+  
+win <- data.frame(table(gwas$winid))
+win <- win[order(win$Freq, decreasing = TRUE),]
+
+```
+
+```{r}
+library("huskeR")
+
+win$chr <- gsub("_.*", "", win$Var1)
+win$pos <- gsub(".*_", "", win$Var1)
+win$pos <- as.numeric(win$pos)*winsize
+
+png("graphs/Manhatton_win1k_stdN.png", width=11, height=4.25, units="in", res=300)
+plot_mht(inputdf=win, col2plot="Freq", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", pl=TRUE,
+         ylab="Window Frequency",  cex = 0.6)
+dev.off()
+```
+
+
+
+### At Microbiome level
+
+```{r}
+m <- data.frame(table(gwas$ASV))
+m <- m[order(m$Freq, decreasing = TRUE),]
+
+subm <- subset(gwas, winid %in% "6_141845")
+
+length(unique(subm$ASV))
+length(unique(subm$Family))
+length(unique(subm$Phylum))
+
+tb <- data.frame(table(subm$ASV))
+tb <- tb[order(tb$Freq, decreasing=TRUE), ]
+```
+
+Plot GWAS signal for asv_000464
+
+```{r}
+png("graphs/Manhatton_asv_asv_000228_stdN.png", width=11, height=4.25, units="in", res=300)
+plot_mht(inputdf=subset(gwas, ASV %in% "asv_000464"), col2plot="p", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", pl=FALSE,
+         ylab="-log10(p-value)",  cex = 0.2)
+dev.off()
+```
+
+Plot GWAS signal for asv_004687
+```{r}
+png("graphs/Manhatton_asv_004687_stdN.png", width=11, height=4.25, units="in", res=300)
+plot_mht(inputdf=subset(gwas, ASV %in% "asv_004687"), col2plot="p", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", pl=FALSE,
+         ylab="-log10(p-value)",  cex = 0.2, hdf = data.frame(chr=2, pos=238142057))
+dev.off()
+
+png("graphs/Manhatton_asv_000323_stdN.png", width=11, height=4.25, units="in", res=300)
+plot_mht(inputdf=subset(gwas, ASV %in% "asv_000323"), col2plot="p", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", pl=FALSE,
+         ylab="-log10(p-value)",  cex = 0.2, hdf = data.frame(chr=2, pos=238142057))
+dev.off()
+
+out <- subset(gwas, chr == 2 & pos > (238142057 - 1000000) & pos < (238146688 + 1000000))
+# associated with 692 unique ASV
+length(unique(out$ASV))
+out1 <- subset(out, ASV %in% c("asv_000302", "asv_000323"))
+```
+-------------------
+
+# 1000 Manhatton Plots
+
+```{r}
+asvs <- unique(gwas$ASV)
+for(i in 1:1000){
+  
+  outid <- paste0("largedata/mht_stdN/", asvs[i], ".png")
+  png(outid, width=11, height=4.25, units="in", res=300)
+  plot_mht(inputdf=subset(gwas, ASV %in% asvs[i]), col2plot="p", 
+           jmph=FALSE, cl_file="data/chr_length_B73v4.csv", pl=FALSE,
+           main=asvs[i], ylab="-log10(p-value)",  cex = 0.2)
+  dev.off()
+}
+
+```
+
+
+
+# Burkholderia_ Manhatton Plots
+
+
+```{r}
+png("graphs/Manhatton_asv_asv_000228_stdN.png", width=11, height=4.25, units="in", res=300)
+plot_mht(inputdf=subset(gwas, ASV %in% "asv_000464"), col2plot="p", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", pl=FALSE,
+         ylab="-log10(p-value)",  cex = 0.2)
+dev.off()
+```
+
+
+```{r}
+#library("tidyverse")
+
+genera <- sort(unique(gwas$genus))
+
+
+for(gn in genera){
+  asvs <- unique(filter(gwas, genus == gn)$ASV)
+  for(i in 1:length(asvs)){
+    outid <- paste0("largedata/gwas/mht_stdN/", gn, "_", asvs[i], ".png")
+    png(outid, width=11, height=4.25, units="in", res=300)
+    plot_mht(inputdf=subset(gwas, ASV %in% asvs[i]), col2plot="p", 
+             jmph=FALSE, cl_file="data/chr_length_B73v4.csv", pl=FALSE,
+             main=paste(gn, asvs[i]), ylab="-log10(p-value)",  cex = 0.2)
+    dev.off()
+  }
+  
+}
+
+
+
+
+```
+
+
+
+
+
+
