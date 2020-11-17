@@ -65,31 +65,17 @@ fwrite(out, "largedata/high_N_gwas.csv", sep=",", row.names=FALSE, quote=FALSE)
 
 
 
-
-
-```{bash}
-cp /work/jyanglab/mmeier/HAV_19/largedata/GEMMA/sign_snps_annotated_stdN.csv largedata/gwas/
-```
-
-
-### In the table:
-  - p = -log10(p_wald)
-  - h2 = heritability score under stdN
-  - asv_count = total ASV count in all stdN samples
-  - genus = like "Genus" column but Family name is inserted where Genus is unknown
-
-
 --------------------------------
 # Basic STAT
 
 ```{r, eval=FALSE}
 library("data.table")
 
-gwas <- fread("largedata/gwas/sign_snps_annotated_stdN.csv")
+gwas <- fread("largedata/high_N_gwas.csv")
 gwas$snpid <- paste(gwas$chr, gwas$ps, sep="_")
 names(gwas)[4] <- "pos"
 
-g10 <- subset(gwas, p > 10)
+g10 <- subset(gwas, log10 > 10)
 ```
 
 ### Quick Manhattan plot
@@ -97,7 +83,7 @@ g10 <- subset(gwas, p > 10)
 ```{r}
 library("huskeR")
 
-png("graphs/Manhatton_g10_stdN.png", width=11, height=4.25, units="in", res=300)
+png("figures/Manhatton_g10_stdN.png", width=11, height=4.25, units="in", res=300)
 plot_mht(inputdf=g10, col2plot="p", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", 
          ylab="-log10(p-value)",  cex = 0.6)
 dev.off()
