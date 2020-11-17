@@ -73,7 +73,7 @@ library("data.table")
 
 gwas <- fread("largedata/high_N_gwas.csv")
 gwas$snpid <- paste(gwas$chr, gwas$ps, sep="_")
-names(gwas)[4] <- "pos"
+names(gwas)[3] <- "pos"
 
 g10 <- subset(gwas, log10 > 10)
 ```
@@ -84,7 +84,7 @@ g10 <- subset(gwas, log10 > 10)
 library("huskeR")
 
 png("figures/Manhatton_g10_stdN.png", width=11, height=4.25, units="in", res=300)
-plot_mht(inputdf=g10, col2plot="p", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", 
+plot_mht(inputdf=g10, col2plot="log10", jmph=FALSE, cl_file="data/chr_length_B73v4.csv", 
          ylab="-log10(p-value)",  cex = 0.6)
 dev.off()
 ```
