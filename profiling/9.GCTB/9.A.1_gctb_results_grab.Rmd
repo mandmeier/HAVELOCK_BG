@@ -130,5 +130,8 @@ s2 <- s2[order(s2$Mean),]
 
 s2$sval <- s2$Mean+s2$SD
 out2 <- subset(s2, sval < 0)
+
+write.table(s1, "cache/microbe_HN.csv", sep=",", row.names=FALSE, quote=FALSE)
+write.table(s2, "cache/microbe_LN.csv", sep=",", row.names=FALSE, quote=FALSE)
 ```
 
