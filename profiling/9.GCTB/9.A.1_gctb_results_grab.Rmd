@@ -119,12 +119,16 @@ p + geom_vline(xintercept = 0)
 
 ```{r}
 
-ob <- load("data/group_data.rda")
+ob <- read.csv("data/microbe_references.csv", header=T)
 
-subset(group_data, ASV %in% "asv_002138")
+s1 <- merge(s1, ob, by.x="trait",  by.y="ASV")
+s1 <- s1[order(s1$Mean),]
 
 
+s2 <- merge(s2, ob, by.x="trait",  by.y="ASV")
+s2 <- s2[order(s2$Mean),]
 
-
+s2$sval <- s2$Mean+s2$SD
+out2 <- subset(s2, sval < 0)
 ```
 
