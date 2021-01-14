@@ -1,4 +1,4 @@
-ÔªøASV,tax_group,ability,ref
+ASV,tax_group,ability,ref
 asv_000487,Achromobacter insolitus,,
 asv_002205,Acidibacter,,
 asv_001011,Acidothermus,,
@@ -11,7 +11,7 @@ asv_001749,Arenimonas,,
 asv_001312,Aridibacter,,
 asv_003343,Arthrobacter ramosus,,
 asv_001948,Bacillus anthracis,,
-asv_000551,Bacillus aryabhattai,pgp,Bacillus aryabhattai¬†SRB02 tolerates oxidative and nitrosative stress and promotes the growth of soybean by modulating the production of phytohormones
+asv_000551,Bacillus aryabhattai,pgp,Bacillus aryabhattai SRB02 tolerates oxidative and nitrosative stress and promotes the growth of soybean by modulating the production of phytohormones
 asv_000183,Bacillus fumarioli,,
 asv_001667,Blastococcus,,
 asv_000196,Bradyrhizobium elkanii,,
@@ -22,8 +22,8 @@ asv_000031,Burkholderia pseudomallei,,
 asv_002995,Burkholderia sp 1,,
 asv_000112,Burkholderia sp 2,,
 asv_014370,Burkholderia sp 3,,
-asv_000059,Burkholderia vietnamiensis,pgp,Improved Yield of Micropropagated Sugarcane Following Inoculation by Endophytic¬†Burkholderia vietnamiensis
-asv_001204,Candidatus Nitrocosmicus oleophilus,ammonia oxisizing,A hydrophobic ammonia‚Äêoxidizing archaeon of the¬†Nitrosocosmicus¬†clade isolated from coal tar‚Äêcontaminated sediment
+asv_000059,Burkholderia vietnamiensis,pgp,Improved Yield of Micropropagated Sugarcane Following Inoculation by Endophytic Burkholderia vietnamiensis
+asv_001204,Candidatus Nitrocosmicus oleophilus,ammonia oxisizing,A hydrophobic ammonia_oxidizing archaeon of the Nitrosocosmicus clade isolated from coal tar_contaminated sediment
 asv_000191,Candidatus Udaeobacter copiosus,pgp?,A small soil bacterium dominates
 asv_000492,Catenulispora acidiphila,,
 asv_001347,Cellulomonas aerilata,,
@@ -52,7 +52,7 @@ asv_000470,Dyadobacter fermentans 3,,
 asv_000049,Dyella jiangningensis,,
 asv_000251,Dyella marensis,,
 asv_002780,Ellin6067,,
-asv_000009,Enterobacter,pgp?,Phytoremediation of arsenate contaminated¬†soil¬†by transgenic canola and the plant growth-promoting bacterium¬†Enterobacter¬†cloacae CAL2
+asv_000009,Enterobacter,pgp?,Phytoremediation of arsenate contaminated soil by transgenic canola and the plant growth-promoting bacterium Enterobacter cloacae CAL2
 asv_000862,f_A21b,,
 asv_001207,f_Blastocatellaceae Unknown Genus,,
 asv_000672,f_Chitinophagaceae Unknown Genus,,
@@ -73,8 +73,8 @@ asv_001140,Flavisolibacter-Puia,,
 asv_002692,Flavobacterium anatoliense,,
 asv_001444,Gaiella,,
 asv_001244,Galbitalea,,
-asv_001772,Gemmatimonas,pgp?,"Gemmatimonas¬†aurantiaca gen. nov., sp. nov., a Gram-negative, aerobic, polyphosphate-accumulating micro-organism, the first cultured representative of the new¬†‚Ä¶"
-asv_001834,Herbaspirillum huttiense,pgp?,Real-Time PCR Quantification of the Plant Growth Promoting Bacteria¬†Herbaspirillum¬†seropedicae¬†Strain SmR1 in¬†Maize¬†Roots
+asv_001772,Gemmatimonas,pgp?,"Gemmatimonas aurantiaca gen. nov., sp. nov., a Gram-negative, aerobic, polyphosphate-accumulating micro-organism, the first cultured representative of the new …"
+asv_001834,Herbaspirillum huttiense,pgp?,Real-Time PCR Quantification of the Plant Growth Promoting Bacteria Herbaspirillum seropedicae Strain SmR1 in Maize Roots
 asv_001582,Ilumatobacter,,
 asv_001073,Kitasatospora setae,,
 asv_000896,Knoellia-Lapillicoccus,,
@@ -87,11 +87,11 @@ asv_000406,Massilia niabensis,,
 asv_000077,Massilia putida,pgp?,https://www.microbiologyresearch.org/content/journal/ijsem/10.1099/ijsem.0.001916
 asv_000370,Massilia varians,,
 asv_001370,Massilia violaceinigra,,
-asv_000396,Mesorhizobium huakuii,pgp,‚Ä¶¬†overexpression of quorum-sensing regulators to study cell-density-dependent phenotypes in a symbiotic plant bacterium¬†Mesorhizobium huakuii
+asv_000396,Mesorhizobium huakuii,pgp,… overexpression of quorum-sensing regulators to study cell-density-dependent phenotypes in a symbiotic plant bacterium Mesorhizobium huakuii
 asv_002354,Methylobacterium brachiatum,,
-asv_000311,Microbacterium testaceum,pgp?,Mode of action of antimicrobial substances from Burkholderia multivorans and¬†Microbacterium testaceum¬†against Schizophyllum commune Fr.
+asv_000311,Microbacterium testaceum,pgp?,Mode of action of antimicrobial substances from Burkholderia multivorans and Microbacterium testaceum against Schizophyllum commune Fr.
 asv_000155,Mucilaginibacter gossypii,,
-asv_001806,Mucilaginibacter ximonensis,pgp?,"Mucilaginibacter¬†gossypii sp. nov. and¬†Mucilaginibacter¬†gossypiicola sp. nov., plant-growth-promoting bacteria isolated from cotton rhizosphere soils"
+asv_001806,Mucilaginibacter ximonensis,pgp?,"Mucilaginibacter gossypii sp. nov. and Mucilaginibacter gossypiicola sp. nov., plant-growth-promoting bacteria isolated from cotton rhizosphere soils"
 asv_001169,Mycobacterium,,
 asv_002768,Neorhizobium,,
 asv_001323,Niabella yanshanensis,,
@@ -101,7 +101,7 @@ asv_000669,Nocardioides ,,
 asv_001303,Oryzihumus terrae,,
 asv_001660,Pajaroellobacter,,
 asv_000272,Pantoea ananatis,pathogen,Pantoea ananatis: an unconventional plant pathogen
-asv_001532,Paraburkholderia caffeinilytica,pgp?,"Paraburkholderia¬†panacihumi¬†sp. nov., an isolate from ginseng-cultivated soil, is antagonistic against root rot fungal pathogen"
+asv_001532,Paraburkholderia caffeinilytica,pgp?,"Paraburkholderia panacihumi sp. nov., an isolate from ginseng-cultivated soil, is antagonistic against root rot fungal pathogen"
 asv_001001,Parafilimonas,,
 asv_002136,Pedobacter agri,,
 asv_002018,Pelomonas saccharophila,,
@@ -109,12 +109,12 @@ asv_000330,Phenylobacterium muchangponense,,
 asv_001292,Piscinibacter,,
 asv_000341,Pseudarthrobacter,,
 asv_000237,Pseudoduganella,,
-asv_001529,Pseudomonas chlororaphis,pgp,"2R,3R-Butanediol, a Bacterial Volatile Produced by¬†Pseudomonas chlororaphis¬†O6, Is Involved in Induction of Systemic Tolerance to Drought in¬†Arabidopsis thaliana"
+asv_001529,Pseudomonas chlororaphis,pgp,"2R,3R-Butanediol, a Bacterial Volatile Produced by Pseudomonas chlororaphis O6, Is Involved in Induction of Systemic Tolerance to Drought in Arabidopsis thaliana"
 asv_001840,Pseudomonas citronellolis,,
-asv_001448,Pseudomonas mediterranea,pgp,Characterization of a Versatile Plant Growth-Promoting Rhizobacterium¬†Pseudomonas mediterranea¬†Strain S58
-asv_000245,Pseudomonas parafulva,pgp,Analysis of traits for biocontrol performance of¬†Pseudomonas parafulva¬†JBCS1880 against bacterial pustule in soybean plants
+asv_001448,Pseudomonas mediterranea,pgp,Characterization of a Versatile Plant Growth-Promoting Rhizobacterium Pseudomonas mediterranea Strain S58
+asv_000245,Pseudomonas parafulva,pgp,Analysis of traits for biocontrol performance of Pseudomonas parafulva JBCS1880 against bacterial pustule in soybean plants
 asv_001057,Pseudomonas sp 1,,
-asv_001659,Pseudomonas thivervalensis,pgp?,BTEX biodegradation and its nitrogen removal potential by a newly isolated¬†Pseudomonas thivervalensis¬†strain MAH1
+asv_001659,Pseudomonas thivervalensis,pgp?,BTEX biodegradation and its nitrogen removal potential by a newly isolated Pseudomonas thivervalensis strain MAH1
 asv_001416,Pseudomonas umsongensis,,
 asv_001063,Pseudonocardia,,
 asv_000001,Ralstonia pickettii,,
@@ -122,7 +122,7 @@ asv_000575,RB41 sp 1,,
 asv_000570,RB41 sp 2,,
 asv_000544,Rhizobium daejeonense,,
 asv_000791,Rhizobium mesosinicum,,
-asv_000986,Rhizobium phaseoli-multihospitium-favelukesii,pgp,Substrate-dependent auxin production by¬†Rhizobium phaseoli¬†improves the growth and yield of Vigna radiata L. under salt stress conditions
+asv_000986,Rhizobium phaseoli-multihospitium-favelukesii,pgp,Substrate-dependent auxin production by Rhizobium phaseoli improves the growth and yield of Vigna radiata L. under salt stress conditions
 asv_000596,Rhodoplanes,,
 asv_000920,Rudaea,,
 asv_001978,Salmonella bongori,,
@@ -132,12 +132,12 @@ asv_000281,Sphingoaurantiacus,,
 asv_000369,Sphingobacterium siyangense-multivorum,,
 asv_000013,Sphingobium herbicidovorans 1,pgp?,
 asv_000041,Sphingobium herbicidovorans 2,,
-asv_001276,Sphingomonas azotifigens-paucimobilis-leidyi,pgp?,"Sphingomonas azotifigens¬†sp. nov., a nitrogen-fixing bacterium isolated from the roots of Oryza sativa"
+asv_001276,Sphingomonas azotifigens-paucimobilis-leidyi,pgp?,"Sphingomonas azotifigens sp. nov., a nitrogen-fixing bacterium isolated from the roots of Oryza sativa"
 asv_000411,Sphingomonas crusticola,,
 asv_000241,Sphingomonas limnosediminicola,,
 asv_000641,Sphingomonas mali,,
-asv_001507,Stenotrophomonas maltophilia,pgp?,Growth promoting effects of¬†corn¬†(Zea mays) bacterial isolates under greenhouse and field conditions
-asv_000163,Stenotrophomonas pavanii,pgp,Prospects of¬†Stenotrophomonas pavanii¬†DB1 in diesel utilization and reduction of its phytotoxicity on¬†Vigna radiata
+asv_001507,Stenotrophomonas maltophilia,pgp?,Growth promoting effects of corn (Zea mays) bacterial isolates under greenhouse and field conditions
+asv_000163,Stenotrophomonas pavanii,pgp,Prospects of Stenotrophomonas pavanii DB1 in diesel utilization and reduction of its phytotoxicity on Vigna radiata
 asv_000498,Stenotrophomonas tumulicola,,
 asv_001993,Steroidobacter,,
 asv_000473,Streptomyces puniciscabiei-clavuligerus,pathogen?,Characterization of Potato Scab Pathogens (Streptomyces Species)
@@ -147,5 +147,5 @@ asv_001621,Terracidiphilus,,
 asv_000719,Terriglobus,,
 asv_001875,TM7a sp 1,,
 asv_000189,TM7a sp 2,,
-asv_000217,Variovorax paradoxus,pgp,"The rhizobacterium¬†Variovorax paradoxus¬†5C-2, containing ACC deaminase, promotes growth and development of¬†Arabidopsis thaliana¬†via an ethylene-dependent¬†‚Ä¶"
+asv_000217,Variovorax paradoxus,pgp,"The rhizobacterium Variovorax paradoxus 5C-2, containing ACC deaminase, promotes growth and development of Arabidopsis thaliana via an ethylene-dependent …"
 asv_004447,Variovorax soli,,

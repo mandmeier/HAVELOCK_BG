@@ -1,0 +1,137 @@
+---
+title: "Grab GCTB parRes from Gen"
+output: NULL
+date: 10-26-2020
+author: "Jinliang Yang"
+---
+
+
+```{r setup, include=TRUE}
+#setwd("~/Documents/Github/pvpDiallel/")
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+```
+
+
+### format phenotype for GCTB
+
+/common/jyanglab/gxu6/project/2-Coopration/Mike_micro/GCTB_micro
+
+```{r, eval=FALSE}
+get_gctb_parres <- function(path="largedata/bayesS"){
+  # df: must contain "FID" (family id), "IID" (individual id)
+  # cols: the idx of the phenotype columns
+  
+  files <- list.files(path, pattern="parRes", full.names = TRUE)
+  message(sprintf("###>>> [%s] files detected!", length(files)))
+  
+  res <- data.frame()
+  for(i in 1:length(files)){
+    ### read in the file by skip the first two rows:
+    pres <- read.table(files[i], skip = 2)
+    pres$par <- row.names(pres)
+    pres$file <- files[i]
+    pres$trait <- gsub(".*/|.parRes", "", pres$file)
+    res <- rbind(res, pres)
+  }
+  return(res)
+}
+
+### HN
+out1 <- get_gctb_parres(path="/common/jyanglab/gxu6/project/2-Coopration/Mike_micro/GCTB_micro/HN/Results_HN")
+write.table(out1[, -4], "cache/gtcb_HN_n150.csv", sep=",", row.names=FALSE, quote=FALSE)
+
+### LN
+out2 <- get_gctb_parres(path="/common/jyanglab/gxu6/project/2-Coopration/Mike_micro/GCTB_micro/LN/Results_LN")
+write.table(out2[, -4], "cache/gtcb_LN_n150.csv", sep=",", row.names=FALSE, quote=FALSE)
+
+```
+
+
+### Plot the S results
+
+```{r}
+library(ggplot2)
+df <- read.csv("cache/gtcb_HN_n150.csv")
+
+s <- subset(df, par %in% "S")
+s <- s[order(s$Mean, decreasing=FALSE),]
+
+s$trait <- factor(s$trait, levels = s$trait)
+s1 <- s
+
+p <- ggplot(s1, aes(x=Mean, y=trait)) +
+    geom_point() +
+    xlab("S") +
+    ylab("") +
+    ggtitle("") +
+    theme_classic() +
+    labs(color = "") +
+    #scale_y_continuous(limits = c(-1, 3)) +
+    #geom_vline(xintercept=0, linetype="dashed", color = "red") +
+    theme(plot.title = element_text(size=20, face = "bold"), 
+          axis.text=element_text(size=16, face="bold"),
+          strip.text.x = element_text(size = 16, face = "bold"),
+          axis.title=element_text(size=18, face="bold"),
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.position = c(0.8, 0.95), 
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.title = element_text(size=18, face="bold"),
+          legend.text = element_text(size=18))
+p + geom_vline(xintercept = 0)
+
+```
+
+```{r}
+library(ggplot2)
+df <- read.csv("cache/gtcb_LN_n150.csv")
+
+s <- subset(df, par %in% "S")
+s <- s[order(s$Mean, decreasing=FALSE),]
+
+s$trait <- factor(s$trait, levels = s$trait)
+
+s2 <- s
+p <- ggplot(s2, aes(x=Mean, y=trait)) +
+    geom_point() +
+    xlab("S") +
+    ylab("") +
+    ggtitle("") +
+    theme_classic() +
+    labs(color = "") +
+    #scale_y_continuous(limits = c(-1, 3)) +
+    #geom_vline(xintercept=0, linetype="dashed", color = "red") +
+    theme(plot.title = element_text(size=20, face = "bold"), 
+          axis.text=element_text(size=16, face="bold"),
+          strip.text.x = element_text(size = 16, face = "bold"),
+          axis.title=element_text(size=18, face="bold"),
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.position = c(0.8, 0.95), 
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.title = element_text(size=18, face="bold"),
+          legend.text = element_text(size=18))
+p + geom_vline(xintercept = 0)
+
+```
+
+## MCMC tracing plot
+
+/work/jyanglab/mmeier/HAVELOCK_BG/data/group_data.rda
+
+```{r}
+
+ob <- read.csv("data/microbe_references.csv", header=T)
+
+s1 <- merge(s1, ob, by.x="trait",  by.y="ASV")
+s1 <- s1[order(s1$Mean),]
+
+
+s2 <- merge(s2, ob, by.x="trait",  by.y="ASV")
+s2 <- s2[order(s2$Mean),]
+
+s2$sval <- s2$Mean+s2$SD
+out2 <- subset(s2, sval < 0)
+
+write.table(s1, "cache/microbe_HN.csv", sep=",", row.names=FALSE, quote=FALSE)
+write.table(s2, "cache/microbe_LN.csv", sep=",", row.names=FALSE, quote=FALSE)
+```
+
