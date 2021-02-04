@@ -3,6 +3,8 @@
 ### identified 53 (10kb) bins with > 25 significant snps and that were
 ### associated with gene models
 ### 53 top regions correspond to 28 traits and 70 genes
+library("tidyverse")
+library("grid")
 
 
 load("cache/gene_list_annotated_10kb_10above5.rda")
@@ -150,21 +152,242 @@ top_bins <- left_join(top_bins, ref)
 
 save(top_bins, file = "cache/top_taxa_bins_genes.rda")
 
-sort(unique(filter(top_bins, nitrogen == "+N")$tax_group))
 
-sort(unique(filter(top_bins, nitrogen == "-N")$tax_group))
-
-
-# These have a lot of noise, signals questionable
-exclude <- c("Chryseobacterium indologenes", "Chryseobacterium joostei", "Delftia tsuruhatensis", )
-
-# These show particularly nice signals
-best <- c("Acinetobacter nosocomialis", "Archangium gephyra","Candidatus Udaeobacter copiosus","f_A21b","f_Vicinamibacteraceae", "Filimonas sp 2",
-  "Ilumatobacter",  "Massilia niabensis", "Niabella yanshanensis","Oryzihumus terrae","Pajaroellobacter",
-  "Rhizobium daejeonense", "Rhizobium mesosinicum", "Stenotrophomonas maltophilia", )
 
 
 View(filter(top_bins, tax_group == "Pseudomonas chlororaphis"))
 
 	
+
+### plot essential data for top 22 tax groups:
+
+
+#1) total abundance (ASV counts)
+#2) differential abundance +N vs -N
+#3) top GWAS signals +N / -N
+#4) +/- selection under +N/-N
+
+load("data/group_data.rda")
+
+
+
+
+
+top_stdN <- sort(unique(filter(top_bins, nitrogen == "+N")$tax_group))
+
+top_lowN <- sort(unique(filter(top_bins, nitrogen == "-N")$tax_group))
+
+
+
+
+data_summary <- group_data
+
+
+## mark 22 traits with strongest GWAS results in +N / -N
+data_summary$top_stdN <- NA
+data_summary$top_lowN <- NA
+data_summary[data_summary$tax_group %in% top_stdN, ]$top_stdN <- "x"
+data_summary[data_summary$tax_group %in% top_lowN, ]$top_lowN <- "x"
+
+
+## add differential abundance
+
+data_summary$relab_stdN <- data_summary$count_stdN/sum(data_summary$count_stdN)
+data_summary$relab_lowN <- data_summary$count_lowN/sum(data_summary$count_lowN)
+data_summary$log2FC <- log2(data_summary$count_stdN/data_summary$count_lowN)
+data_summary$relab_log2FC <- log2(data_summary$relab_stdN/data_summary$relab_lowN)
+
+
+
+
+
+## add selection data
+
+gtcb_HN <- read_csv("cache/gtcb_HN_n150.csv")
+gtcb_HN <- subset(gtcb_HN, par %in% "S")
+gtcb_HN <- gtcb_HN[, c("Mean", "trait")]
+colnames(gtcb_HN) <- c("stdN_Mean_S", "ASV")
+
+
+gtcb_LN <- read_csv("cache/gtcb_LN_n150.csv")
+gtcb_LN <- subset(gtcb_LN, par %in% "S")
+gtcb_LN <- gtcb_LN[, c("Mean", "trait")]
+colnames(gtcb_LN) <- c("lowN_Mean_S", "ASV")
+
+
+data_summary <- left_join(data_summary, gtcb_HN)
+data_summary <- left_join(data_summary, gtcb_LN)
+
+
+data_summary_150_traits <- data_summary
+
+save(data_summary_150_traits, file = "data/data_summary_150_traits.rda")
+
+#load("data/data_summary_150_traits.rda")
+
+# subset to taxa
+
+
+common_names <- c("ASV", "Kingdom", "Phylum", "Class", "Order",
+  "Family", "tax_group", "unique_ASVs", "count",
+  "H2", "trait", "mean_blup", "top",
+  "relab", "log2FC", "relab_log2FC", "Mean_S", "nitrogen" )
+
+
+data_summary_stdN <- data_summary_150_traits %>%
+  select(ASV:unique_ASVs, count_stdN, H2_stdN, trait, mean_blup_stdN, top_stdN, relab_stdN, log2FC, relab_log2FC, stdN_Mean_S)
+data_summary_stdN$nitrogen <- "+N"
+colnames(data_summary_stdN) <- common_names
+
+
+data_summary_lowN <- data_summary_150_traits %>%
+  select(ASV:unique_ASVs, count_lowN, H2_lowN, trait, mean_blup_lowN, top_lowN, relab_lowN, log2FC, relab_log2FC, lowN_Mean_S)
+data_summary_lowN$nitrogen <- "-N"
+colnames(data_summary_lowN) <- common_names
+
+
+data_summary_long <- rbind(data_summary_stdN, data_summary_lowN)
+
+
+data_summary_long$top <- ifelse(is.na(data_summary_long$top), 0, 1)
+
+
+### order by differential abundance
+factors <- unique(arrange(data_summary_long, desc(relab_log2FC))[, "tax_group"])
+
+### order by mean
+factors <- unique(arrange(data_summary_long, desc(Mean_S))[, "tax_group"])
+
+data_summary_long$tax_group <- factor(data_summary_long$tax_group, levels = factors)
+
+
+### plot 150 tax groups
+
+plot1 <- ggplot(data_summary_long, aes(x = count/sum(data_summary_long$count)*100, y = tax_group)) +
+  geom_bar(stat="identity") +
+  xlab("% of core microbiome") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size=6), axis.title.y=element_blank())
+
+plot2 <- ggplot(data_summary_long, aes(x = H2, y = tax_group, color=nitrogen)) +
+  geom_point() +
+  scale_color_manual(values=c("red", "blue")) +
+  xlab("Heritability") +
+  theme_minimal()+
+  #facet_wrap(~nitrogen, ncol=2) +
+  theme(legend.position = "none",
+    axis.title.y=element_blank(),
+    axis.text.y=element_blank())
+
+plot3 <- ggplot(data_summary_long, aes(x = relab_log2FC, y = tax_group, fill = relab_log2FC < 0)) +
+  geom_bar(stat="identity") +
+  scale_fill_manual(guide = FALSE, breaks = c(TRUE, FALSE), values=c("red", "blue")) +
+  xlab("-N <- differential abundance -> +N") +
+  theme_minimal() +
+  theme(legend.position = "none",
+    axis.title.y=element_blank(),
+    axis.text.y=element_blank())
+
+plot4 <- ggplot(data_summary_long, aes(x = Mean_S, y = tax_group, color=nitrogen)) +
+  geom_point() +
+  scale_color_manual(values=c("red", "blue")) +
+  xlab("selection (mean S)") +
+  theme_minimal() +
+  theme(legend.position = "none",
+    axis.title.y=element_blank(),
+    axis.text.y=element_blank())
+
+plot5 <- ggplot(data_summary_long, aes(nitrogen, tax_group, fill=as.factor(top))) +
+  geom_tile(colour="white",size=0.25) +
+  coord_equal() +
+  theme_minimal() +
+  scale_fill_manual(values=c("#f9f9f9", "#008000")) +
+  xlab("strong GWAS signal") +
+  theme(plot.background=element_blank(),
+    panel.border=element_blank(),
+    legend.position = "none",
+    axis.title.y=element_blank(),
+    axis.text.y=element_blank())
+
+
+
+grid.newpage()
+grid.draw(cbind(
+  ggplotGrob(plot1),
+  ggplotGrob(plot2),
+  ggplotGrob(plot3),
+  ggplotGrob(plot4),
+  ggplotGrob(plot5),
+  size = "last"))
+
+
+### plot only top 22 taxa
+
+
+top22_taxa <- unique(as.character(filter(data_summary_long, top == 1)[, "tax_group"]))
+
+data_summary_top <- filter(data_summary_long, tax_group %in% top22_taxa)
+
+
+
+
+plot1 <- ggplot(data_summary_top, aes(x = count/sum(data_summary_long$count)*100, y = tax_group)) +
+  geom_bar(stat="identity") +
+  xlab("% of core microbiome") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size=12), axis.title.y=element_blank())
+
+plot2 <- ggplot(data_summary_top, aes(x = H2, y = tax_group, color=nitrogen)) +
+  geom_point() +
+  scale_color_manual(values=c("red", "blue")) +
+  xlab("Heritability") +
+  theme_minimal()+
+  #facet_wrap(~nitrogen, ncol=2) +
+  theme(legend.position = "none",
+    axis.title.y=element_blank(),
+    axis.text.y=element_blank())
+
+plot3 <- ggplot(data_summary_top, aes(x = relab_log2FC, y = tax_group, fill = relab_log2FC < 0)) +
+  geom_bar(stat="identity") +
+  scale_fill_manual(guide = FALSE, breaks = c(TRUE, FALSE), values=c("red", "blue")) +
+  xlab("-N <- differential abundance -> +N") +
+  theme_minimal() +
+  theme(legend.position = "none",
+  axis.title.y=element_blank(),
+  axis.text.y=element_blank())
+
+
+plot4 <- ggplot(data_summary_top, aes(x = Mean_S, y = tax_group, color=nitrogen)) +
+  geom_point() +
+  scale_color_manual(values=c("red", "blue")) +
+  xlab("selection (mean S)") +
+  theme_minimal() +
+  theme(legend.position = "none",
+  axis.title.y=element_blank(),
+  axis.text.y=element_blank())
+
+plot5 <- ggplot(data_summary_top, aes(nitrogen, tax_group, fill=as.factor(top))) +
+  geom_tile(colour="white",size=0.25) +
+  coord_equal() +
+  theme_minimal() +
+  scale_fill_manual(values=c("#f9f9f9", "#008000")) +
+  xlab("strong GWAS signal") +
+  theme(plot.background=element_blank(),
+    panel.border=element_blank(),
+    legend.position = "none",
+    axis.title.y=element_blank(),
+    axis.text.y=element_blank())
+
+
+
+grid.newpage()
+grid.draw(cbind(
+  ggplotGrob(plot1),
+  ggplotGrob(plot2),
+  ggplotGrob(plot3),
+  ggplotGrob(plot4),
+  ggplotGrob(plot5),
+  size = "last"))
+
+
 
