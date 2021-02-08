@@ -1,12 +1,13 @@
 ### Differential Abundance by genotype
-
+library("tidyverse")
 library("phyloseq")
 library("tidytext")
 
 load("data/data_summary_150_traits.rda")
 
-
 load("data/ps_grp.rda")
+
+load("data/group_data.rda")
 
 ps_grp
 
@@ -27,6 +28,8 @@ count_data <- sdat %>%
   summarise(count = sum(count))
   
 
+#save(count_data, file = "cache/counts_per_genotype.rda")
+
 ### filter top22 tax groups
 
 load("data/data_summary_150_traits.rda")
@@ -38,6 +41,8 @@ top_taxa <- unique(top_taxa$tax_group)
 
 
 count_data_top <- filter(count_data, tax_group %in% top_taxa)
+
+
 
 
 ### violin plot to find bimodal distributions of counts fro each microbe

@@ -4,7 +4,18 @@ library("genetics")
 library("LDheatmap")
 library("tidyverse")
 
+
+### find top bins
+
 load("cache/top_taxa_bins_genes.rda")
+unique(top_bins$tax_group)
+
+hmp_bins <- top_bins %>%
+  ungroup() %>%
+  dplyr::select(chr, bin, sign_snps) %>%
+  unique()
+
+write_csv(hmp_bins, file = "cache/hmp_bins.csv")
 
 
 data <- read.table("largedata/mdp_genotype.hmp.txt",head=T,com="",sep="\t",row=1,na.string="NN")
