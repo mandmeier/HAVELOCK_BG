@@ -1,6 +1,6 @@
 import pandas as pd
 
-hmp_large = '/common/jyanglab/shared/Gen_Xu/282_genotype+Q+K/hmp321_282_agpv4_maf005_miss03.hmp.txt'
+hmp_large = '/largedata/hmp321_282_agpv4_maf005_miss03.hmp.txt'
 hmp_bins = 'cache/hmp_bins.csv'
 hmp_out = 'cache/top_snps_hmp.txt'
 
