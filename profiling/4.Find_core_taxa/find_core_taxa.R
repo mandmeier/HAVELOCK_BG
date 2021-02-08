@@ -16,7 +16,7 @@ total_counts <- rownames_to_column(data.frame("stdN" = colSums(otu_table(stdN)),
 total_counts$total_counts <- total_counts$stdN + total_counts$lowN
 total_counts$ratioN <- total_counts$stdN/total_counts$lowN
 
-taxa <- data.frame(tax_table(ps_core5t))
+taxa <- rownames_to_column(data.frame(tax_table(ps_core5t)), var = "ASV")
 
 
 plot_data <- left_join(total_counts, taxa)
@@ -28,7 +28,7 @@ tree_plot <- function(ps, po, family){
   
   #ps <- ps_core5t
   #po <- plot_data
-  #family <- "Nitrosomonadaceae"
+  #family <- "Burkholderiaceae"
   
   ### Subset family
   ps_fam <- subset_taxa(ps, Family == family)
@@ -56,7 +56,24 @@ tree_plot <- function(ps, po, family){
   
 }
 
-fam
+
+burk_short <- tree_plot(ps_core5t, plot_data, "Burkholderiaceae")
+
+
+### save img to ppt as vector graphic
+
+library("officer")
+library("rvg")
+doc <- read_pptx()
+doc <- add_slide(doc, "Title and Content", "Office Theme")
+doc <- ph_with(doc, dml(ggobj = burk_short), location = ph_location_fullsize())
+print(doc, target = 'temp/burk_short.pptx')
+
+
+
+
+
+
 
 
 

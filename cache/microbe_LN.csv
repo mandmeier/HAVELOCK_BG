@@ -1,0 +1,120 @@
+trait,Mean,SD,par,tax_group,ability,ref,sval
+asv_001888,-2.366946,0.658302,S,Chryseobacterium sp 1,,,-1.708644
+asv_001529,-2.340133,0.388584,S,Pseudomonas chlororaphis,pgp,2R,3R-Butanediol, a Bacterial Volatile Produced by Pseudomonas chlororaphis O6, Is Involved in Induction of Systemic Tolerance to Drought in Arabidopsis thaliana,-1.951549
+asv_003033,-2.331809,0.418263,S,Luteibacter yeojuensis,,,-1.913546
+asv_001167,-2.320408,0.346052,S,Chitinophaga polysaccharea,,,-1.974356
+asv_002841,-2.309282,0.522603,S,Delftia tsuruhatensis,,,-1.786679
+asv_002692,-2.30767,0.510331,S,Flavobacterium anatoliense,,,-1.797339
+asv_001978,-2.178849,0.895913,S,Salmonella bongori,,,-1.282936
+asv_000260,-1.919197,0.68597,S,f_Comamonadaceae Unknown Genus,,,-1.233227
+asv_000281,-1.631102,0.629609,S,Sphingoaurantiacus,,,-1.001493
+asv_001875,-1.32041,1.042297,S,TM7a sp 1,,,-0.278113
+asv_000473,-1.308742,0.609221,S,Streptomyces puniciscabiei-clavuligerus,pathogen?,Characterization of Potato Scab Pathogens (Streptomyces Species),-0.699521
+asv_000549,-0.982497,0.531814,S,Amycolatopsis mediterranei,,,-0.450683
+asv_000245,-0.932931,1.013428,S,Pseudomonas parafulva,pgp,Analysis of traits for biocontrol performance of Pseudomonas parafulva JBCS1880 against bacterial pustule in soybean plants,0.080497
+asv_000406,-0.932488,0.626868,S,Massilia niabensis,,,-0.30562
+asv_000396,-0.890959,0.787926,S,Mesorhizobium huakuii,pgp,… overexpression of quorum-sensing regulators to study cell-density-dependent phenotypes in a symbiotic plant bacterium Mesorhizobium huakuii,-0.103033
+asv_000272,-0.864042,0.609718,S,Pantoea ananatis,pathogen,Pantoea ananatis: an unconventional plant pathogen,-0.254324
+asv_000217,-0.858558,1.252616,S,Variovorax paradoxus,pgp,The rhizobacterium Variovorax paradoxus 5C-2, containing ACC deaminase, promotes growth and development of Arabidopsis thaliana via an ethylene-dependent …,0.394058
+asv_002358,-0.790258,0.567057,S,f_WD2101 soil group,,,-0.223201
+asv_001657,-0.716603,0.682175,S,f_Sphingobacteriaceae Unknown Genus,,,-0.034428
+asv_000719,-0.715583,0.414106,S,Terriglobus,,,-0.301477
+asv_001416,-0.715563,0.733798,S,Pseudomonas umsongensis,,,0.018235
+asv_000112,-0.702972,0.618156,S,Burkholderia sp 2,,,-0.084816
+asv_002353,-0.685198,1.410045,S,Chitinophaga pinensis,,,0.724847
+asv_001323,-0.680171,0.811955,S,Niabella yanshanensis,,,0.131784
+asv_000155,-0.676573,0.772819,S,Mucilaginibacter gossypii,,,0.0962460000000001
+asv_002995,-0.643786,0.925072,S,Burkholderia sp 1,,,0.281286
+asv_001294,-0.615787,0.635986,S,Chitinophaga sancti,,,0.0201990000000001
+asv_001532,-0.583432,0.842596,S,Paraburkholderia caffeinilytica,pgp?,Paraburkholderia panacihumi sp. nov., an isolate from ginseng-cultivated soil, is antagonistic against root rot fungal pathogen,0.259164
+asv_000001,-0.57964,0.608963,S,Ralstonia pickettii,,,0.029323
+asv_000529,-0.531097,0.684328,S,Burkholderia oklahomensis,,,0.153231
+asv_000322,-0.530538,0.563606,S,Kribbella karoonensis,,,0.0330680000000001
+asv_002018,-0.50867,0.701093,S,Pelomonas saccharophila,,,0.192423
+asv_001772,-0.468558,0.487661,S,Gemmatimonas,pgp?,Gemmatimonas aurantiaca gen. nov., sp. nov., a Gram-negative, aerobic, polyphosphate-accumulating micro-organism, the first cultured representative of the new …,0.019103
+asv_002780,-0.452086,0.709169,S,Ellin6067,,,0.257083
+asv_000986,-0.450057,0.629036,S,Rhizobium phaseoli-multihospitium-favelukesii,pgp,Substrate-dependent auxin production by Rhizobium phaseoli improves the growth and yield of Vigna radiata L. under salt stress conditions,0.178979
+asv_001319,-0.432932,0.710592,S,Chryseobacterium taiwanense,,,0.27766
+asv_002172,-0.419259,1.271082,S,Streptomyces sp 1,,,0.851823
+asv_000920,-0.389343,0.917949,S,Rudaea,,,0.528606
+asv_001011,-0.359183,0.644067,S,Acidothermus,,,0.284884
+asv_001234,-0.347048,0.694762,S,Conexibacter,,,0.347714
+asv_000596,-0.343079,0.627444,S,Rhodoplanes,,,0.284365
+asv_000013,-0.342507,0.865286,S,Sphingobium herbicidovorans 1,pgp?,,0.522779
+asv_001749,-0.253574,0.847288,S,Arenimonas,,,0.593714
+asv_000369,-0.246695,0.820517,S,Sphingobacterium siyangense-multivorum,,,0.573822
+asv_001085,-0.229821,0.761255,S,f_JG30-KF-AS9,,,0.531434
+asv_000237,-0.218449,0.587329,S,Pseudoduganella,,,0.36888
+asv_000575,-0.201016,0.682965,S,RB41 sp 1,,,0.481949
+asv_000341,-0.182406,0.534671,S,Pseudarthrobacter,,,0.352265
+asv_001806,-0.179601,0.800772,S,Mucilaginibacter ximonensis,pgp?,Mucilaginibacter gossypii sp. nov. and Mucilaginibacter gossypiicola sp. nov., plant-growth-promoting bacteria isolated from cotton rhizosphere soils,0.621171
+asv_001063,-0.167128,0.869857,S,Pseudonocardia,,,0.702729
+asv_001073,-0.155227,1.058054,S,Kitasatospora setae,,,0.902827
+asv_001244,-0.142615,0.894405,S,Galbitalea,,,0.75179
+asv_000189,-0.127535,0.979959,S,TM7a sp 2,,,0.852424
+asv_000862,-0.121761,0.578545,S,f_A21b,,,0.456784
+asv_001660,-0.114883,0.767109,S,Pajaroellobacter,,,0.652226
+asv_000551,-0.113833,0.693752,S,Bacillus aryabhattai,pgp,Bacillus aryabhattai SRB02 tolerates oxidative and nitrosative stress and promotes the growth of soybean by modulating the production of phytohormones,0.579919
+asv_000711,-0.105476,1.049114,S,Niastella,,,0.943638
+asv_000330,-0.101328,0.57576,S,Phenylobacterium muchangponense,,,0.474432
+asv_001207,-0.097275,0.936231,S,f_Blastocatellaceae Unknown Genus,,,0.838956
+asv_001169,-0.097186,0.911302,S,Mycobacterium,,,0.814116
+asv_000487,-0.096455,0.725689,S,Achromobacter insolitus,,,0.629234
+asv_000511,-0.085245,0.939126,S,Marmoricola,,,0.853881
+asv_000191,-0.082143,0.649361,S,Candidatus Udaeobacter copiosus,pgp?,A small soil bacterium dominates,0.567218
+asv_004558,-0.075036,0.923235,S,f_Nitrososphaeraceae Unknown Genus 2,,,0.848199
+asv_000095,-0.068207,0.925237,S,Acinetobacter nosocomialis,,,0.85703
+asv_000196,-0.066249,0.782324,S,Bradyrhizobium elkanii,,,0.716075
+asv_001948,-0.062415,0.942386,S,Bacillus anthracis,,,0.879971
+asv_001461,-0.061719,0.917108,S,Duganella zoogloeoides,,,0.855389
+asv_000162,-0.048306,0.929969,S,Chitinophaga eiseniae,,,0.881663
+asv_001292,-0.047375,0.851197,S,Piscinibacter,,,0.803822
+asv_002138,-0.045268,1.03681,S,Duganella radicis,,,0.991542
+asv_000009,-0.034923,0.828699,S,Enterobacter,pgp?,Phytoremediation of arsenate contaminated soil by transgenic canola and the plant growth-promoting bacterium Enterobacter cloacae CAL2,0.793776
+asv_000552,-0.033265,0.57831,S,f_Nitrososphaeraceae Unknown Genus 1,,,0.545045
+asv_001204,-0.030977,0.727293,S,Candidatus Nitrocosmicus oleophilus,ammonia oxisizing,A hydrophobic ammonia_oxidizing archaeon of the Nitrosocosmicus clade isolated from coal tar_contaminated sediment,0.696316
+asv_001446,-0.027605,0.859298,S,Archangium gephyra,,,0.831693
+asv_000544,-0.023964,0.619675,S,Rhizobium daejeonense,,,0.595711
+asv_002796,-0.016534,0.861387,S,Filimonas sp 2,,,0.844853
+asv_002743,-0.016069,0.843059,S,Chitinophaga filiformis,,,0.82699
+asv_001001,0.000629,0.520316,S,Parafilimonas,,,0.520945
+asv_000570,0.002927,0.608635,S,RB41 sp 2,,,0.611562
+asv_000246,0.006657,0.928684,S,Labrys miyagiensis,,,0.935341
+asv_000311,0.00826,0.891774,S,Microbacterium testaceum,pgp?,Mode of action of antimicrobial substances from Burkholderia multivorans and Microbacterium testaceum against Schizophyllum commune Fr.,0.900034
+asv_001303,0.008503,0.543297,S,Oryzihumus terrae,,,0.5518
+asv_000498,0.028409,0.7322,S,Stenotrophomonas tumulicola,,,0.760609
+asv_000629,0.034334,0.859348,S,Dyadobacter fermentans 1,,,0.893682
+asv_002205,0.039653,0.81216,S,Acidibacter,,,0.851813
+asv_001582,0.039711,0.808873,S,Ilumatobacter,,,0.848584
+asv_000906,0.039915,0.861882,S,Chthoniobacter flavus,,,0.901797
+asv_001255,0.042268,0.603283,S,Nitrospira japonica,,,0.645551
+asv_001667,0.042802,0.717431,S,Blastococcus,,,0.760233
+asv_001183,0.056308,0.901637,S,Chitinophaga ginsengihumi,,,0.957945
+asv_000431,0.06641,0.549525,S,f_Vicinamibacteraceae,,,0.615935
+asv_000251,0.067177,0.835496,S,Dyella marensis,,,0.902673
+asv_000049,0.071566,0.953579,S,Dyella jiangningensis,,,1.025145
+asv_001499,0.076721,0.834918,S,Burkholderia insecticola,,,0.911639
+asv_000470,0.087161,0.82864,S,Dyadobacter fermentans 3,,,0.915801
+asv_000896,0.089113,0.850216,S,Knoellia-Lapillicoccus,,,0.939329
+asv_001993,0.090549,0.770318,S,Steroidobacter,,,0.860867
+asv_000672,0.095498,0.67155,S,f_Chitinophagaceae Unknown Genus,,,0.767048
+asv_001232,0.098358,0.838085,S,Luteolibacter pohnpeiensis,,,0.936443
+asv_000492,0.103335,0.87371,S,Catenulispora acidiphila,,,0.977045
+asv_001572,0.104038,0.842355,S,Filimonas sp 1,pgp?,https://www.microbiologyresearch.org/content/journal/ijsem/10.1099/ijsem.0.001116,0.946393
+asv_001370,0.109668,0.827085,S,Massilia violaceinigra,,,0.936753
+asv_002742,0.129344,0.874566,S,Taibaiella chishuiensis,,,1.00391
+asv_002354,0.136388,0.967496,S,Methylobacterium brachiatum,,,1.103884
+asv_000041,0.142006,0.939762,S,Sphingobium herbicidovorans 2,,,1.081768
+asv_000077,0.153111,0.896478,S,Massilia putida,pgp?,https://www.microbiologyresearch.org/content/journal/ijsem/10.1099/ijsem.0.001916,1.049589
+asv_000059,0.156524,0.872125,S,Burkholderia vietnamiensis,pgp,Improved Yield of Micropropagated Sugarcane Following Inoculation by Endophytic Burkholderia vietnamiensis,1.028649
+asv_001444,0.160269,0.757697,S,Gaiella,,,0.917966
+asv_000294,0.174333,0.827027,S,f_LWQ8,,,1.00136
+asv_000860,0.20045,0.834969,S,Skermanella,,,1.035419
+asv_001834,0.205653,0.941731,S,Herbaspirillum huttiense,pgp?,Real-Time PCR Quantification of the Plant Growth Promoting Bacteria Herbaspirillum seropedicae Strain SmR1 in Maize Roots,1.147384
+asv_001347,0.209323,0.906787,S,Cellulomonas aerilata,,,1.11611
+asv_003343,0.225599,0.922027,S,Arthrobacter ramosus,,,1.147626
+asv_004714,0.225955,0.867125,S,Acinetobacter bouvetii,,,1.09308
+asv_000669,0.226648,0.874828,S,Nocardioides ,,,1.101476
+asv_001312,0.243917,0.784288,S,Aridibacter,,,1.028205
+asv_001057,0.304179,0.858689,S,Pseudomonas sp 1,,,1.162868
+asv_000183,0.438704,0.557265,S,Bacillus fumarioli,,,0.995969
