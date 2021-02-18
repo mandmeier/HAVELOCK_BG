@@ -1,0 +1,23 @@
+﻿tax_group,trait,N_treatment,GWAS_signal,German_collection_of_microorganisms
+Acinetobacter nosocomialis,T6,stdN,strong,Acinetobacter nosocomialis
+Archangium gephyra,T37,stdN,,Archangium gephyra (22 strains)
+Candidatus Udaeobacter copiosus,T54,lowN,strong,
+Chryseobacterium joostei,T57,stdN,messy,Chryseobacterium joostei
+f_A21b,T128,stdN,strong,
+f_Comamonadaceae Unknown Genus,T145,stdN,strong,
+f_Vicinamibacteraceae,T39,lowN,,Vicinamibacter silvestris
+Filimonas sp 2,T75,lowN,strong,"Filimonas zeae, Filimonas lacunae"
+Ilumatobacter,T97,lowN,strong,Ilumatobacter fluminis
+Marmoricola,T100,lowN,,(12 species)
+Massilia niabensis,T130,lowN,strong,Massilia niabensis
+Massilia putida,T129,lowN,,
+Niabella yanshanensis,T83,stdN,strong,"(5 species, though no yanshanensis)"
+Oryzihumus terrae,T110,lowN,,Oryzihumus terrae
+Pajaroellobacter,T38,stdN,,
+Pseudomonas chlororaphis,T121,stdN_lowN,,Pseudomonas chlororaphis (13 strains)
+Ralstonia pickettii,T137,stdN,,Ralstonia pickettii
+Rhizobium daejeonense,T34,lowN,strong,Rhizobium daejeonense
+Rhizobium mesosinicum,T33,stdN,,
+Rhodoplanes,T7,lowN,,(6 species)
+Sphingobium herbicidovorans 1,T28,lowN,strong,Sphingobium herbicidovorans
+Stenotrophomonas maltophilia,T16,stdN,,Stenotrophomonas maltophilia
