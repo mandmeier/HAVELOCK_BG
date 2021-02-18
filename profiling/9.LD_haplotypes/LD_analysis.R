@@ -10,13 +10,13 @@ library("ggpubr")
 
 ### find top bins
 
-#load("cache/top_taxa_bins_genes.rda")
+#load("cache/top_taxa_bins_genes_10.rda")
 #unique(top_bins$tax_group)
 
 #hmp_bins <- top_bins %>%
-#  ungroup() %>%
-#  dplyr::select(chr, bin, sign_snps) %>%
-#  unique()
+  #ungroup() %>%
+  #dplyr::select(chr, bin, count) %>%
+  #unique()
 
 #write_csv(hmp_bins, file = "cache/hmp_bins.csv")
 
@@ -29,6 +29,10 @@ trait_dat <- top_bins %>%
   ungroup() %>%
   dplyr::select(trait, tax_group) %>%
   unique()
+
+
+test <- filter(top_bins, tax_group == "Acinetobacter nosocomialis")
+
 
 
 ### get haplotype data for top bins

@@ -26,17 +26,32 @@ plot_dat <- gwas_dat %>%
   mutate(bin = as.numeric(gsub(bin_regex, '', ps)) + 1) %>%
   group_by(chr, bin, nitrogen, trait) %>%
   add_count(count = sum(-log10(p_wald) >= 5)) %>%
-  filter(count >= 10) %>%
-  filter(bin %in% unique(gene_list_annotated$bin))
+  filter(count >= 10) #%>%
+  #filter(bin %in% unique(gene_list_annotated$bin))
 
 
+test <- plot_dat %>%
+  dplyr::filter(trait == "T6") %>%
+  mutate(log10p = -log10(p_wald))
 
-## these are the SNP counts for all 509 bins that had at least 10 SNPs above 5 for at least one trait,
+
+## DID NOT DO these are the SNP counts for all 509 bins that had at least 10 SNPs above 5 for at least one trait,
 ## and that overlapped with at least one gene model within +/- 10 kb
+## INCLUDED ALL SIGN SNPS even if there's no annotated gene
+
+### add trait names
+
+unique(plot_dat$trait)
+
+
+traits <- read_csv("data/microbial_traits.csv")
+load("data/data_summary_150_traits.rda")
 
 
 
-snp_counts <- left_join(plot_dat, gene_list_annotated)
+snp_counts <- plot_dat %>%
+  left_join(data_summary_150_traits) %>%
+  left_join(gene_list_annotated)
 
 
 snp_counts$psabs <- as.numeric(gsub('.{4}$', '', snp_counts$psabs))
@@ -143,14 +158,15 @@ ggplot(threshold_plot_data, aes(x=sign_snps, y=bins_retained)) +
 
 
 top_bins <- snp_counts %>%
-  filter(sign_snps >= 27) %>%
-  select(nitrogen, chr, bin, sign_snps, assoc_traits, tax_group, unique_ASVs, count_stdN, count_lowN, H2_stdN, H2_lowN, gene, description, kegg_enzyme, name_1006, definition_1006) %>%
+  filter(count >= 10) %>%
+  dplyr::select(nitrogen, chr, bin, count, assoc_traits, tax_group, unique_ASVs, count_stdN, count_lowN, H2_stdN, H2_lowN, gene, description, kegg_enzyme, name_1006, definition_1006) %>%
   distinct()
+
 
 
 top_bins <- left_join(top_bins, ref)
 
-save(top_bins, file = "cache/top_taxa_bins_genes.rda")
+#save(top_bins, file = "cache/top_taxa_bins_genes_10.rda")
 
 
 
