@@ -9,8 +9,7 @@ load("data/ps_grp.rda")
 
 load("data/group_data.rda")
 
-ps_grp
-
+## get absolute counts and relative abundance for each genotype
 ### get abundance by genotype
 
 counts <- data.frame(otu_table(ps_grp))
@@ -25,8 +24,12 @@ count_data <- sdat %>%
   pivot_longer(cols = starts_with("asv_"), names_to="ASV", values_to="count") %>%
   left_join(group_data[, c("ASV", "tax_group")]) %>%
   group_by(genotype, tax_group, nitrogen, subpopulation) %>%
-  summarise(count = sum(count))
-  
+  summarise(count = sum(count)) %>%
+  group_by(genotype, nitrogen) %>%
+  mutate(total_count = sum(count)) %>%
+  mutate( relab = count/total_count)
+
+
 
 #save(count_data, file = "cache/counts_per_genotype.rda")
 

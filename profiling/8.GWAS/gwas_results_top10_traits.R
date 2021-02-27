@@ -207,7 +207,7 @@ for (tgr in top_traits$tax_group){
 
 
 
-plot_zoom <- function(taxgroup, snps, bins, save = FALSE){
+plot_zoom <- function(taxgroup, snps, bins, interval = 10, save = FALSE){
   
   ## get chrom
   chrm <- str_split(bins[1], "_")[[1]][1]
@@ -219,8 +219,8 @@ plot_zoom <- function(taxgroup, snps, bins, save = FALSE){
   
   ## get middle position
   middle_pos <- (binpos[1]-1) + (binpos[length(binpos)]-(binpos[1]-1))/2
-  lower <- (middle_pos-10)*10000
-  upper <- (middle_pos+10)*10000
+  lower <- (middle_pos-interval)*10000
+  upper <- (middle_pos+interval)*10000
   zoom <- list(chrm, lower, upper)
   
   mplot <- draw_manhattan(snps, taxgroup, zoom = zoom)
@@ -291,6 +291,12 @@ mplot
 
 chr9_loc4 <- c("9_13916", "9_13917")
 mplot <- plot_zoom(tgr, tgr_snps, chr9_loc4, save = TRUE)
+mplot
+
+
+## larger window chr 9
+chr9 <- c("9_9220", "9_9285")
+mplot <- plot_zoom(tgr, tgr_snps, chr9, interval=35, save = TRUE)
 mplot
 
 
@@ -372,6 +378,12 @@ mplot <- plot_zoom(tgr, tgr_snps, chr5_loc3, save = TRUE)
 mplot
 
 
+## larger window chr 5
+chr5 <- c("5_8323", "5_8386")
+mplot <- plot_zoom(tgr, tgr_snps, chr5, interval=35, save = TRUE)
+mplot
+
+
 
 tgr <- "Massilia niabensis"
 tgr_snps <- read_tsv("largedata/top_10_traits/T130.assoc.txt")
@@ -392,13 +404,11 @@ tgr_top_snps <- plot_dat %>%
 tgr_top_bins <- unique(tgr_top_snps$chrbin)
 
 
-chr8_loc1 <- c("8_11943", "8_11944")
-mplot <- plot_zoom(tgr, tgr_snps, chr8_loc1, save = TRUE)
+chr8_loc1 <- c("8_11943", "8_11970")
+mplot <- plot_zoom(tgr, tgr_snps, chr8_loc1, interval = 15, save = TRUE)
 mplot
 
-chr8_loc2 <- c("8_11954", "8_11969")
-mplot <- plot_zoom(tgr, tgr_snps, chr8_loc2, save = TRUE)
-mplot
+
 
 
 
@@ -428,6 +438,11 @@ mplot
 
 ## omitted chr 7 and 10 "7_10195" "7_10217" "10_6676" "10_8723"
 
+
+## larger window chr 6
+chr6 <- c("6_1816", "6_1875")
+mplot <- plot_zoom(tgr, tgr_snps, chr6, interval=35, save = TRUE)
+mplot
 
 
 
