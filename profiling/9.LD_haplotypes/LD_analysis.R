@@ -279,6 +279,7 @@ top_snps$logrel <- log(top_snps$relab + 0.001)
 
 save(top_snps, file="data/top_snps_haplotypes.rda")
 
+#load("data/top_snps_haplotypes.rda")
 
 
 top10_taxa <- c("Acinetobacter nosocomialis", "Candidatus Udaeobacter copiosus",
@@ -292,7 +293,7 @@ top10_taxa <- c("Acinetobacter nosocomialis", "Candidatus Udaeobacter copiosus",
 colors <- c("major allele"="#ecb602", "minor allele"="#a45ee5")
 
 
-taxgrp <- top10_taxa[7]
+taxgrp <- top10_taxa[1]
 
 tax <- top_snps %>%
   filter(tax_group %in% taxgrp)
@@ -362,5 +363,85 @@ p <- ggplot(tax, aes(x=genotype, y=count, fill=haplotype)) +
   theme_bw()
 
 p
+
+
+
+
+
+
+
+
+
+
+
+
+### mark B73 and Nam parent to compare
+
+
+taxgrp <- top10_taxa[9]
+nitr = "-N"
+
+
+tax <- top_snps %>%
+  #filter(snp_id == "S8_119562405") %>%
+  filter(tax_group %in% taxgrp) %>%
+  filter(!genotype %in% NAM_set)
+
+NAM_tax <- NAM_top_snps %>%
+  filter(snp_id == "S8_119562405") %>%
+  filter(tax_group %in% taxgrp) %>%
+  mutate(col = ifelse(genotype == "B73", "green", "red"))
+
+
+B73_tax <- NAM_top_snps %>%
+  filter(snp_id == "S8_119562405") %>%
+  filter(tax_group %in% taxgrp) %>%
+  filter(genotype == "B73")
+
+parent_tax <- NAM_top_snps %>%
+  filter(snp_id == "S8_119562405") %>%
+  filter(tax_group %in% taxgrp) %>%
+  group_by(nitrogen) %>%
+  filter(allele == "minor allele") %>%
+  filter(count != 0) %>%
+  filter(logrel == min(logrel))
+
+marked <- rbind(B73_tax, parent_tax)
+
+marked <- marked %>%
+  filter(nitrogen == nitr) %>%
+  mutate(col = ifelse(genotype == "B73", "blue", "green"))
+
+
+marked_col <- marked %>%
+  dplyr::select(genotype, col) %>%
+  unique()
+
+cols <- marked_col$col
+names(cols) <- marked_col$genotype
+
+p <- ggplot(tax, aes(x=nitrogen, y=logrel, fill=allele)) +
+  #geom_boxplot() +
+  geom_boxplot(outlier.shape = NA) +
+  geom_point(pch = 21, size = 1, position = position_jitterdodge(jitter.width = 0.1)) +
+  facet_wrap(~snp_id, nrow = 1) +
+  stat_compare_means(aes(group = haplotype), label = "p.signif") +
+  ylab("log(relative microbe abundance)") +
+  #ylab("relative microbe abundance") +
+  #ylab("ASV count") +
+  scale_fill_manual(values = colors) +
+  geom_point(data=NAM_tax, aes(x=nitrogen, y=logrel), pch = 16, size = 2, color = 'red', position = position_jitterdodge(jitter.width = 0.1)) +
+   geom_point(data=marked, aes(x=nitrogen, y=logrel, color=genotype), pch = 16, size = 4, position = position_jitterdodge(jitter.width = 0.1)) +
+  scale_color_manual(values = cols)
+  ggtitle(paste(taxgrp, "|", tax$GWAS_nitrogen[1])) +
+  theme_bw() +
+  theme(axis.title.x = element_blank())
+
+p
+
+
+
+
+
 
 
