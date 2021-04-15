@@ -130,7 +130,7 @@ draw_manhattan <- function(snp_dat, taxgrp, nitr="+N", chromosomes = c(1:10), th
 plot_manh <- function(tgr, N){
   #tgr <- "Acinetobacter nosocomialis"
   trait <- filter(group_data, tax_group == tgr)$trait
-  infile <- paste0("largedata/GWAS/",ifelse(N == "+N", "out_traits_150_stdN_201109-103909", "out_traits_150_lowN_201109-100251"),"/", trait, ".assoc.txt")
+  infile <- paste0("largedata/GWAS/",ifelse(N == "+N", "short_1_out_traits_150_stdN_201109-103909", "short_1_out_traits_150_lowN_201109-100251"),"/", trait, ".assoc.txt")
   print(paste(N, "plotting", tgr))
   if(file.exists(infile)){
     snps <- read_tsv(infile)
@@ -146,12 +146,10 @@ plot_manh <- function(tgr, N){
 ## draw all 10 Manhattan plots
 
 for (N in c("+N", "-N")){
-  for (tgr in top_traits$tax_group){
+  for (tgr in group_data$tax_group){
     plot_manh(tgr, N)
   }
 }
-
-
 
 
 
