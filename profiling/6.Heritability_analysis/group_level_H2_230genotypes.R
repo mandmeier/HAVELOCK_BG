@@ -10,6 +10,8 @@
 # H2 formula: H2 <- round(Vg/(Vg + Ve/6), 6) 2 blocks x 3 subsamples = 6
 
 library("phyloseq")
+library("tidyverse")
+library("ggrepel")
 
 
 
@@ -159,7 +161,7 @@ load("data/group_data.rda")
 
 #save(group_data, file = "data/group_data.rda")
 
-
+load("data/group_data.rda")
 
 #### plot H2 +N vs abundance +N ####
 
@@ -213,11 +215,11 @@ h2_plot <- ggplot(group_data, aes(x=H2_lowN_19, y=H2_stdN_19)) +
   geom_point() +
   geom_abline(coef = c(0,1), color = "red") +
   #geom_label_repel(aes(label = group_data$tax_group),
-  #                 box.padding   = 0.05, 
-  #                 point.padding = 0.5,
-  #                 size = 2,
-  #                 min.segment.length = 0.5,
-  #                 segment.color = 'grey50') +
+  #                box.padding   = 0.05, 
+  #                point.padding = 0.5,
+  #                size = 2,
+  #                min.segment.length = 0.5,
+  #                segment.color = 'grey50') +
   theme_classic() +
   ylab("H2 +N") +
   xlab("H2 -N")
@@ -245,21 +247,23 @@ group_data$GWAS_signal_N <- ifelse(is.na(group_data$GWAS_signal_N), "none", grou
 group_data$GWAS_signal_N <- factor(group_data$GWAS_signal_N, levels=c("stdN", "lowN", "none" ))
 
 
-h2_plot <- ggplot(group_data, aes(x=H2_lowN_19, y=H2_stdN_19, color=GWAS_signal_N)) +
+h2_plot <- ggplot(group_data, aes(x=H2_lowN_19, y=H2_stdN_19)) +
+#h2_plot <- ggplot(group_data, aes(x=H2_lowN_19, y=H2_stdN_19, color=GWAS_signal_N)) +
 #h2_plot <- ggplot(group_data, aes(x=H2_lowN, y=H2_stdN, color=GWAS_signal_N)) +
   geom_point(size = 2) +
   geom_abline(coef = c(0,1), color = "red") +
-  geom_text_repel(data = . %>%
-                     mutate(label = ifelse(tax_group %in% top_traits$tax_group,
-                                           tax_group, "")),
-                   aes(label = label),
-                   #box.padding = 2,
-                   #size = 2,
-                   min.segment.length = 0,
-                   max.overlaps = 150,
-                   segment.color = 'grey50') +
-  scale_color_manual(values = c("lowN"="#C00001", "stdN"="#008000", "none"="#cccccc")) +
+  #geom_text_repel(data = . %>%
+  #                   mutate(label = ifelse(tax_group %in% top_traits$tax_group,
+  #                                         tax_group, "")),
+  #                 aes(label = label),
+  #                 #box.padding = 2,
+  #                 #size = 2,
+  #                 min.segment.length = 0,
+  #                 max.overlaps = 150,
+  #                 segment.color = 'grey50') +
+  #scale_color_manual(values = c("lowN"="#C00001", "stdN"="#008000", "none"="#cccccc")) +
   theme_classic() +
+  theme(text = element_text(size=20)) +
   labs(y = bquote(~H^2~'under +N treatment') , x = bquote(~H^2~'under -N treatment'))
   
 

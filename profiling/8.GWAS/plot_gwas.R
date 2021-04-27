@@ -29,11 +29,13 @@ draw_manhattan <- function(snp_dat, taxgrp, nitr="+N", chromosomes = c(1:10), th
   #snp_dat <- read_tsv("largedata/top_10_traits/T75.assoc.txt")
   #snp_dat <- read_tsv("largedata/top_10_traits/T6.assoc.txt")
   #taxgrp <- "Acinetobacter nosocomialis"
+  #taxgrp <- "Acinetobacter johnsonii"
+  
   #chromosomes <- c(1:10)
   #threshold_line <- 5
-  
   #snp_dat <- snps
   #taxgrp <- tgr
+  #nitr <- N
   
   
   sign_snps <- plot_dat %>%
@@ -97,7 +99,7 @@ draw_manhattan <- function(snp_dat, taxgrp, nitr="+N", chromosomes = c(1:10), th
              "2" = "#183059", "4" = "#183059", "6" = "#183059", "8" = "#183059", "10" = "#183059", "sig" = "#ff0000")
   
  
-  manhplot <- ggplot(plot_obj, aes(x = psabs, y = log10p, color = color_group)) +
+  manhplot <- ggplot(plot_obj, aes(x = psabs, y = log10p, color = as.factor(color_group))) +
     geom_point(alpha = 0.75) +
     #geom_hline(yintercept = -log10(5), color = "grey40", linetype = "dashed") + 
     #scale_x_continuous(label = axis_set$chr, breaks = axis_set$center, limits = c(1273000000, 1273300000)) +
@@ -129,16 +131,23 @@ draw_manhattan <- function(snp_dat, taxgrp, nitr="+N", chromosomes = c(1:10), th
 
 plot_manh <- function(tgr, N){
   #tgr <- "Acinetobacter nosocomialis"
+  #N <- "+N"
+  #tgr <- "Acidibacter"
+  #tgr <- "Acinetobacter johnsonii"
   trait <- filter(group_data, tax_group == tgr)$trait
   infile <- paste0("largedata/GWAS/",ifelse(N == "+N", "short_1_out_traits_150_stdN_201109-103909", "short_1_out_traits_150_lowN_201109-100251"),"/", trait, ".assoc.txt")
   print(paste(N, "plotting", tgr))
   if(file.exists(infile)){
     snps <- read_tsv(infile)
-    mplot <- draw_manhattan(snps, tgr, nitr=N, chromosomes = c(1:10))
-    outfile <- paste0("largedata/manhattan_plots/",ifelse(N == "+N", "stdN", "lowN"),"/", str_replace_all(tgr," ","_"),".png")
-    ggsave(filename=outfile, plot=mplot, width = 8, height = 4)
+    if(nrow(snps) > 0){
+      mplot <- draw_manhattan(snps, tgr, nitr=N, chromosomes = c(1:10))
+      outfile <- paste0("largedata/manhattan_plots/",ifelse(N == "+N", "stdN", "lowN"),"/", str_replace_all(tgr," ","_"),".png")
+      ggsave(filename=outfile, plot=mplot, width = 8, height = 4)
+    } else {
+      print(paste(infile, "no sign SNPs > 1"))
+    }
   } else {
-    print(paste(infile, "not found"))
+    print(paste(infile, " file not found"))
   }
 }
 
@@ -146,15 +155,10 @@ plot_manh <- function(tgr, N){
 ## draw all 10 Manhattan plots
 
 for (N in c("+N", "-N")){
-  for (tgr in group_data$tax_group){
+  for (tgr in cgroup_data$tax_group){
     plot_manh(tgr, N)
   }
 }
-
-
-
-
-
 
 
 
