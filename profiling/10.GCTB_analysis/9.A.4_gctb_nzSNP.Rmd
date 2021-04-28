@@ -1,0 +1,100 @@
+---
+title: "S"
+output: NULL
+date: 04-26-2021
+author: "Jinliang Yang"
+---
+
+
+```{r setup, include=TRUE}
+#setwd("~/Documents/Github/pvpDiallel/")
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+```
+
+## GTCB results from Gen
+
+pars:
+
+```{r}
+
+HN <- read.csv("cache/HN_parRes.csv")
+LN <- read.csv("cache/LN_parRes.csv")
+
+
+### get taxa groups < 0
+Hnz <- subset(HN, Type %in% "NnzSnp") 
+Hnz$treatment <- "HN"
+Lnz <- subset(LN, Type %in% "NnzSnp") 
+Lnz$treatment <- "LN"
+
+nz <- rbind(Hnz, Lnz)
+```
+
+
+
+
+
+```{r}
+nz <- nz[order(nz$value, decreasing = T),]
+nz <- subset(nz, value < 5000)
+
+library(ggplot2)
+p1 <- ggplot(nz, aes(x=value, color=treatment)) +
+    geom_histogram(fill="white") +
+    xlab("Minor Allele Frequency") +
+    ylab("SNP Effect") +
+    ggtitle("# of Non Zero SNP") +
+    theme_classic() +
+    #labs(color = "") +
+    #scale_y_continuous(limits = c(-0.01, 1)) +
+    #geom_vline(xintercept=0, linetype="dashed", color = "red") +
+    theme(plot.title = element_text(size=20, face = "bold"), 
+          axis.text=element_text(size=16, face="bold"),
+          #strip.text.x = element_text(size = 16, face = "bold"),
+          axis.title=element_text(size=18, face="bold"),
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.position = "top", 
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.title = element_text(size=18, face="bold"),
+          legend.text = element_text(size=18))
+
+p1
+```
+
+
+
+### Make direction comparison
+
+Heritability:
+
+```{r}
+HN$uid <- gsub(".*\\/|.parRes", "", HN$file)
+LN$uid <- gsub(".*\\/|.parRes", "", LN$file)
+
+
+
+dh <- merge(subset(HN[, c("uid", "Type", "value")], Type %in% "hsq"), 
+            subset(LN[, c("uid", "Type", "value")], Type == "hsq"), by="uid")
+dh$diff <- dh$value.x - dh$value.y
+t.test(dh$value.x, dh$value.y, paired = TRUE)
+
+
+plot(dh$value.x, dh$value.y)
+
+hist(dh$value.x - dh$value.y)
+```
+
+Non-Zero SNPs:
+
+```{r}
+dnz <- merge(subset(HN[, c("uid", "Type", "value")], Type %in% "NnzSnp"), 
+            subset(LN[, c("uid", "Type", "value")], Type == "NnzSnp"), by="uid")
+dnz$diff <- dnz$value.x - dnz$value.y
+dnz <- subset(dnz, abs(diff) < 30000)
+t.test(dnz$value.x, dnz$value.y, paired = TRUE)
+
+
+plot(dnz$value.x, dnz$value.y)
+
+hist(dh$value.x - dh$value.y)
+```
