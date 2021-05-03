@@ -11,6 +11,38 @@ author: "Jinliang Yang"
 knitr::opts_knit$set(root.dir=normalizePath('../../'))
 ```
 
+## GCTB SNP effects
+
+get top non-zero SNPs from tthe GCTB results
+
+```{r}
+library("data.table")
+
+getsnpeff <- function(df=HN, outfile="cache/snpeff/HN_"){
+  nz <- subset(df, Type %in% "NnzSnp")
+  for(i in 1:nrow(nz)){
+    
+    file <- gsub("parRes", "snpRes", nz$file[i])
+    snp <- fread(file)
+    snp <- snp[order(snp$A1Effect, decreasing = TRUE),]
+    snp0 <- snp[1:round(nz$value[i]),]
+    
+    aid <- gsub(".*\\/|.parRes", "", nz$file[i])
+    fwrite(snp0, paste0(outfile, aid, ".csv"), sep=",", row.names=FALSE, quote=FALSE)
+  }
+}
+
+HN <- read.csv("cache/HN_parRes.csv")
+getsnpeff(df=HN, outfile="cache/snpeff/HN_")
+  
+  
+LN <- read.csv("cache/LN_parRes.csv")
+getsnpeff(df=LN, outfile="cache/snpeff/LN_")
+
+```
+
+
+
 ## GTCB results from Gen
 
 pars:
@@ -18,35 +50,17 @@ pars:
 ```{r}
 
 HN <- read.csv("cache/HN_parRes.csv")
-LN <- read.csv("cache/LN_parRes.csv")
-
-
-### get taxa groups < 0
-HS <- subset(HN, Type %in% "S") 
-HS$vsd <- HS$value + HS$sd
-HS <- subset(HS, vsd < 0)
+HN <- subset(HN, Type %in% "S")
+#LN <- read.csv("cache/LN_parRes.csv")
+HN <- HN[order(HN$value, decreasing = TRUE),]
 ```
 
 
 
-```{r}
-library("data.table")
-
-subset(HN, file %in% "/common/jyanglab/gxu6/project/2-Coopration/Mike_micro/GCTB_micro/HN/Results_HN/asv_014370.parRes")
-snp <- fread("/common/jyanglab/gxu6/project/2-Coopration/Mike_micro/GCTB_micro/HN/Results_HN/asv_014370.snpRes")
-
-
-snp <- snp[order(snp$A1Effect, decreasing = TRUE),]
-snp0 <- snp[1:500,]
-
-fwrite(snp0, "cache/snp_eff.csv", sep=",", row.names=FALSE, quote=FALSE)
-```
-
-
 
 ```{r}
-snp0 <- read.csv("cache/snp_eff.csv")
-snp0 <- snp0[1:75,]
+snp0 <- read.csv("cache/snpeff/HN_asv_014370.csv")
+#snp0 <- snp0[1:100,]
 
 library(ggplot2)
 p1 <- ggplot(snp0, aes(x=A1Frq, y=A1Effect)) +
@@ -74,3 +88,30 @@ p1
 
 
 
+```{r}
+snp0 <- read.csv("cache/snpeff/HN_asv_000544.csv")
+#snp0 <- snp0[1:100,]
+
+library(ggplot2)
+p1 <- ggplot(snp0, aes(x=A1Frq, y=A1Effect)) +
+  geom_point() +
+    geom_smooth(method=loess) +
+    xlab("Minor Allele Frequency") +
+    ylab("SNP Effect") +
+    ggtitle("asv_014370") +
+    theme_classic() +
+    #labs(color = "") +
+    #scale_y_continuous(limits = c(-0.01, 1)) +
+    #geom_vline(xintercept=0, linetype="dashed", color = "red") +
+    theme(plot.title = element_text(size=20, face = "bold"), 
+          axis.text=element_text(size=16, face="bold"),
+          strip.text.x = element_text(size = 16, face = "bold"),
+          axis.title=element_text(size=18, face="bold"),
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.position = "none", 
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.title = element_text(size=18, face="bold"),
+          legend.text = element_text(size=18))
+
+p1
+```

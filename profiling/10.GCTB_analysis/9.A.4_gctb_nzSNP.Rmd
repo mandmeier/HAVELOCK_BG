@@ -98,3 +98,48 @@ plot(dnz$value.x, dnz$value.y)
 
 hist(dh$value.x - dh$value.y)
 ```
+
+
+# Scatter plots with contour heat overlay
+
+https://stats.stackexchange.com/questions/31726/scatterplot-with-contour-heat-overlay
+
+```{r}
+library(MASS)
+library(ggplot2)
+
+commonTheme = list(labs(color="Density",fill="Density",
+                        x="+N",
+                        y="-N"),
+                   theme_bw(),
+                   theme(legend.position=c(0,1),
+                         legend.justification=c(0,1)))
+
+ggplot(data=dnz,aes(value.x, value.y)) + 
+  stat_density2d(aes(fill=..level..,alpha=..level..),geom='polygon',colour='black') + 
+  scale_fill_continuous(low="green",high="red") +
+  geom_smooth(method=lm,linetype=2,colour="red",se=T) + 
+  geom_abline(intercept =0 , slope = 1) +
+  guides(alpha="none") +
+  geom_point() + commonTheme
+```
+
+```{r}
+library(MASS)
+library(ggplot2)
+
+commonTheme = list(labs(color="Density",fill="Density",
+                        x="+N",
+                        y="-N"),
+                   theme_bw(),
+                   theme(legend.position=c(0,1),
+                         legend.justification=c(0,1)))
+
+ggplot(data=dh,aes(value.x, value.y)) + 
+  stat_density2d(aes(fill=..level..,alpha=..level..),geom='polygon',colour='black') + 
+  scale_fill_continuous(low="green",high="red") +
+  geom_smooth(method=lm,linetype=2,colour="red",se=T) + 
+  geom_abline(intercept =0 , slope = 1) +
+  guides(alpha="none") +
+  geom_point() + commonTheme
+```
