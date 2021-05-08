@@ -138,7 +138,8 @@ S_plot <- ggplot(group_data, aes(x=lowN_S, y=stdN_S, color=GWAS_signal_N)) +
 
 S_plot
 
-
+```
+```{r}
 
 
 ## plot S with std deviation
@@ -169,20 +170,24 @@ S_sd_plot_stdN <- ggplot(S_data %>% filter(nitrogen == "+N") %>% drop_na(S) %>% 
   coord_flip() +
   scale_color_manual(values = c("lowN"="#C00001", "stdN"="#008000", "none"="#cccccc")) +
   facet_wrap(~nitrogen, ncol = 2) +
+  geom_hline(yintercept=0, linetype="dashed", color = "red") +
   theme_bw() +
-  theme(axis.title.y = element_blank())#+
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
   #theme(text = element_text(size=10))
 
 S_sd_plot_stdN
 
-
+```
 
 
 
 ## H2 vs h2
 
 
-
+```{r}
 lowN_H2_h2 <- ggplot(group_data, aes(x=H2_lowN_19, y=lowN_hsq, color=GWAS_signal_N)) +
   geom_point(size = 2) +
   geom_text_repel(data = . %>%
@@ -246,7 +251,8 @@ Pi_plot <- ggplot(group_data, aes(x=lowN_Pi, y=stdN_Pi, color=GWAS_signal_N)) +
                   segment.color = 'grey50') +
   scale_color_manual(values = c("lowN"="#C00001", "stdN"="#008000", "none"="#cccccc")) +
   theme_classic() +
-  theme(text = element_text(size=20)) +
+  theme(text = element_text(size=20),
+        axis.text=element_text(size=20, face="bold")) +
   labs(y = bquote('polygenicity under +N treatment') , x = bquote('polygenicity under -N treatment'))
 
 
@@ -265,7 +271,11 @@ S_sd_plot_lowN <- ggplot(S_data %>% filter(nitrogen == "-N") %>% drop_na(S) %>% 
   scale_color_manual(values = c("lowN"="#C00001", "stdN"="#008000", "none"="#cccccc")) +
   facet_wrap(~nitrogen, ncol = 2) +
   theme_bw() +
-  theme(axis.title.y = element_blank())#+
+  geom_hline(yintercept=0, linetype="dashed", color = "red") +
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
 #theme(text = element_text(size=10))
 
 S_sd_plot_lowN

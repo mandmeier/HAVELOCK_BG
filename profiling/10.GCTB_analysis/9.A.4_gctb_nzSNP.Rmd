@@ -19,15 +19,19 @@ pars:
 
 HN <- read.csv("cache/HN_parRes.csv")
 LN <- read.csv("cache/LN_parRes.csv")
-
+HN$treatment <- "HN"
+LN$treatment <- "LN"
+out <- rbind(HN, LN)
+write.table(out, "cache/gctb_micro.csv", sep=",", row.names=FALSE, quote=FALSE)
 
 ### get taxa groups < 0
 Hnz <- subset(HN, Type %in% "NnzSnp") 
-Hnz$treatment <- "HN"
+
 Lnz <- subset(LN, Type %in% "NnzSnp") 
-Lnz$treatment <- "LN"
+
 
 nz <- rbind(Hnz, Lnz)
+write.table(nz, "cache/gctb_micro.csv", sep=",", row.names=FALSE, quote=FALSE)
 ```
 
 
