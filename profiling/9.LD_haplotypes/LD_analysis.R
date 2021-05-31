@@ -293,7 +293,7 @@ top10_taxa <- c("Acinetobacter nosocomialis", "Candidatus Udaeobacter copiosus",
 colors <- c("major allele"="#ecb602", "minor allele"="#a45ee5")
 
 
-taxgrp <- top10_taxa[1]
+taxgrp <- top10_taxa[7]
 
 tax <- top_snps %>%
   filter(tax_group %in% taxgrp)
