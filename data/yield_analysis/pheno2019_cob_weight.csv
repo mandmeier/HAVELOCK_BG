@@ -1,0 +1,1009 @@
+﻿row,I,year,field,experiment,pheno,K,DNA,field_note,block,nitrogen,sb,spb,Pedigree,Genotype,Treatment,Rep,quadrant,Average.cob.weight
+1001,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 19311,A641,Nitrogen,1,1,
+1003,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 550483,B76,Nitrogen,1,1,18.63333333
+1005,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 587141,A654,Nitrogen,1,1,
+1007,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 23405,A239,Nitrogen,1,1,8.35
+1009,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 587143,A682,Nitrogen,1,1,14.4
+1011,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 19313,C123,Nitrogen,1,1,
+1013,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 587138,A554,Nitrogen,1,1,9.633333333
+1015,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 27111,EP1,Nitrogen,1,1,6.45
+1017,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Check,Check,Nitrogen,1,1,21.23333333
+1019,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,PI 257507,F7,Nitrogen,1,1,9.4
+1021,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,PI 686057,I29,Nitrogen,1,1,16.23333333
+1023,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 27105,CO106,Nitrogen,1,1,16.26666667
+1025,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 24734,MS153,Nitrogen,1,1,20.92
+1027,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 20140,Mt42,Nitrogen,1,1,9.7
+1029,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,PI 531085,NC262,Nitrogen,1,1,14.6
+1031,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,PI 550566,N192,Nitrogen,1,1,13.175
+1033,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 19016,Va59,Nitrogen,1,1,15.5
+1035,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 27142,NC292,Nitrogen,1,1,
+1037,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,PI 524969,SD44,Nitrogen,1,1,8.916666667
+1039,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 19330,W182B,Nitrogen,1,1,14.93333333
+1041,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Check,Check,Nitrogen,1,1,18.56666667
+1043,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 21512,CI31A,Nitrogen,1,1,12.53333333
+1045,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,PI 606329,DE1,Nitrogen,1,1,6.766666667
+1047,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Check,Check,Nitrogen,1,1,21.81666667
+1049,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 19309,A635,Nitrogen,1,1,7.133333333
+1051,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Check,Check,Nitrogen,1,1,17.2
+1053,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 19284,C103,Nitrogen,1,1,19.78333333
+1055,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 27112,F2834T,Nitrogen,1,1,11.2
+1057,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Check,Check,Nitrogen,1,1,14.93333333
+1059,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27260,Ki44,Nitrogen,1,1,3.36
+1061,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27141,NC290A,Nitrogen,1,1,14.46
+1063,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,PI 520774,NC264,Nitrogen,1,1,7.266666667
+1065,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Check,Check,Nitrogen,1,1,15.56666667
+1067,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27172,NC352,Nitrogen,1,1,8.466666667
+1069,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27147,NC302,Nitrogen,1,1,9
+1071,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,NSL 30053,W22,Nitrogen,1,1,13.12
+1073,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Check,Check,Nitrogen,1,1,14.33333333
+1075,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Check,Check,Nitrogen,1,1,10.9
+1077,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,PI 587152,W64A,Nitrogen,1,1,5.7
+1079,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Check,Check,Nitrogen,1,1,14.75
+1081,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 27181,NC370,Nitrogen,1,1,8.9
+1083,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,PI 686065,SA24,Nitrogen,1,1,9.233333333
+1101,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 19316,CM174,Nitrogen,1,1,16.06666667
+1103,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 608774,B75,Nitrogen,1,1,14.8
+1105,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 22443,A188,Nitrogen,1,1,11.1
+1107,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 594046,B103,Nitrogen,1,1,12.43333333
+1109,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Check,Check,Nitrogen,1,1,17.03333333
+1111,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 587139,A619,Nitrogen,1,1,8.933333333
+1113,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 27067,C49A,Nitrogen,1,1,16.06666667
+1115,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 27135,MEF156-55-2,Nitrogen,1,1,
+1117,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 20190,CM37,Nitrogen,1,1,10.21666667
+1119,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,PI 587135,Ia5125,Nitrogen,1,1,5.2
+1121,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 27104,CMV3,Nitrogen,1,1,
+1123,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,PI 686063,IDS91,Nitrogen,1,1,9.916666667
+1125,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 27107,CO255,Nitrogen,1,1,8.633333333
+1127,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 27070,CM7,Nitrogen,1,1,7.44
+1129,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 27154,NC316,Nitrogen,1,1,
+1131,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Check,Check,Nitrogen,1,1,20.4
+1133,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,PI 587154,W153R,Nitrogen,1,1,7.033333333
+1135,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 27162,NC332,Nitrogen,1,1,25.23333333
+1137,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 19288,Oh43,Nitrogen,1,1,17.36666667
+1139,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Check,Check,Nitrogen,1,1,19.43333333
+1141,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 19326,R168,Nitrogen,1,1,5.116666667
+1143,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 27087,CML220,Nitrogen,1,1,15.86666667
+1145,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,PI 608766,B79,Nitrogen,1,1,14.03333333
+1147,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,PI 587131,HP301,Nitrogen,1,1,10.5
+1149,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 27120,Il677a,Nitrogen,1,1,11.21666667
+1151,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 27083,CML154Q,Nitrogen,1,1,32.1
+1153,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,PI 594047,B104,Nitrogen,1,1,21.93333333
+1155,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 19319,H95,Nitrogen,1,1,13.8
+1157,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 12731,NC230,Nitrogen,1,1,10.01666667
+1159,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 12734,NC236,Nitrogen,1,1,11.36666667
+1161,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27137,N6,Nitrogen,1,1,17.2
+1163,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 28366,N7A,Nitrogen,1,1,
+1165,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27164,NC336,Nitrogen,1,1,10.13333333
+1167,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27158,NC324,Nitrogen,1,1,12.15
+1169,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27175,NC358,Nitrogen,1,1,12.8
+1171,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 27184,Pa762,Nitrogen,1,1,16.16666667
+1173,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 19323,Oh7B,Nitrogen,1,1,12.5
+1175,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,PI 587151,Va102,Nitrogen,1,1,22.26666667
+1177,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 8399,W117HT,Nitrogen,1,1,6.22
+1179,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,PI 573098,Oh603,Nitrogen,1,1,
+1181,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 27183,Oh43E,Nitrogen,1,1,9.071428571
+1183,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 27185,Pa875,Nitrogen,1,1,7.6
+1201,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 607521,A661,Nitrogen,1,1,16.5
+1203,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 19308,A634,Nitrogen,1,1,17.43333333
+1205,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 587124,CM105,Nitrogen,1,1,20.36666667
+1207,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,NSL 81599,A659,Nitrogen,1,1,24.83333333
+1209,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 27068,CH9,Nitrogen,1,1,16.73333333
+1211,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,PI 550440,B64,Nitrogen,1,1,14
+1213,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb1,Ames 23450,A556,Nitrogen,1,1,20.48333333
+1215,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,NSL 30867,M14,Nitrogen,1,1,11.73333333
+1217,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 28364,IA2132,Nitrogen,1,1,10.96666667
+1219,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,PI 587127,H105W,Nitrogen,1,1,19.8
+1221,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,PI 587129,H99,Nitrogen,1,1,14.96666667
+1223,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 24752,MS1334,Nitrogen,1,1,17.56666667
+1225,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,PI 583352,Mo47,Nitrogen,1,1,13.86666667
+1227,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb2,Ames 27106,CO125,Nitrogen,1,1,8.733333333
+1229,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 27161,NC330,Nitrogen,1,1,22.73333333
+1231,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 27163,NC334,Nitrogen,1,1,8.7
+1233,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 28186,P39,Nitrogen,1,1,3.65
+1235,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 27152,NC312,Nitrogen,1,1,12.8
+1237,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,Ames 27150,NC308,Nitrogen,1,1,15.33333333
+1239,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,PI 587145,NC268,Nitrogen,1,1,11.05
+1241,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb1,spb3,PI 550490,ND246,Nitrogen,1,1,10
+1243,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 27097,CML323,Nitrogen,1,1,10.46666667
+1245,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 26138,CI187-2,Nitrogen,1,1,
+1247,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 22440,CI90C,Nitrogen,1,1,16.3
+1249,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,PI 594048,B105,Nitrogen,1,1,19.13333333
+1251,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,Ames 22754,K55,Nitrogen,1,1,24.23333333
+1253,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,PI 550472,B57,Nitrogen,1,1,25.56666667
+1255,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb1,PI 587128,H84,Nitrogen,1,1,10.43333333
+1257,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,PI 543916,Mp339,Nitrogen,1,1,8.45
+1259,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 12732,NC232,Nitrogen,1,1,28.8
+1261,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27124,Ki11,Nitrogen,1,1,18.53333333
+1263,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,PI 583351,Mo46,Nitrogen,1,1,16.53333333
+1265,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27174,NC356,Nitrogen,1,1,7.466666667
+1267,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,Ames 27138,N28Ht,Nitrogen,1,1,13.36666667
+1269,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb2,PI 550555,NC250,Nitrogen,1,1,17.03333333
+1271,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,PI 587150,Va35,Nitrogen,1,1,19.4
+1273,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 27194,W401,Nitrogen,1,1,15.43333333
+1275,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,PI 686066,SG18,Nitrogen,1,1,11.13333333
+1277,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 27190,T234,Nitrogen,1,1,12.825
+1279,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 19000,VaW6,Nitrogen,1,1,11.88333333
+1281,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,NSL 53094,SC357,Nitrogen,1,1,19
+1283,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb2,spb3,Ames 27182,NC372,Nitrogen,1,1,22.5
+1301,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 26604,38-11,Nitrogen,1,1,15.06666667
+1303,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27085,CML158Q,Nitrogen,1,1,15.23333333
+1305,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27082,CML108,Nitrogen,1,1,19.06666667
+1307,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Check,Check,Nitrogen,1,1,15.66666667
+1309,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Check,Check,Nitrogen,1,1,13.83333333
+1311,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Check,Check,Nitrogen,1,1,9.2
+1313,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,PI 595542,CML254,Nitrogen,1,1,3.45
+1315,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27165,NC338,Nitrogen,1,1,19
+1317,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27169,NC346,Nitrogen,1,1,7.95
+1319,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27170,NC348,Nitrogen,1,1,8.7
+1321,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27110,E2558W,Nitrogen,1,1,13.46666667
+1323,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Check,Check,Nitrogen,1,1,16.5
+1325,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27156,NC320,Nitrogen,1,1,10.96666667
+1327,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,PI 550558,DE811,Nitrogen,1,1,12.2
+1329,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Ames 27129,KUI2021,Nitrogen,1,1,17.06666667
+1331,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Check,Check,Nitrogen,1,1,18.03333333
+1333,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 506255,Tzi25,Nitrogen,1,1,14.16666667
+1335,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Check,Check,Nitrogen,1,1,15.63333333
+1337,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 506246,Tzi8,Nitrogen,1,1,18.2
+1339,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Ames 26808,Ill.Hy,Nitrogen,1,1,13.23333333
+1341,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 587147,Pa91,Nitrogen,1,1,15
+1343,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 587142,A679,Nitrogen,1,1,17.05
+1345,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 550469,B46,Nitrogen,1,1,26.6
+1347,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Ames 27114,H91,Nitrogen,1,1,21.1
+1349,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 550461,B14A,Nitrogen,1,1,17.8
+1351,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Ames 23503,A680,Nitrogen,1,1,22.03333333
+1353,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 550473,B73,Nitrogen,1,1,21.7
+1355,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,NSL 30904,4226,Nitrogen,1,1,14.63333333
+1357,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Check,Check,Nitrogen,1,1,15.33333333
+1359,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27143,NC294,Nitrogen,1,1,9.366666667
+1361,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27140,NC260,Nitrogen,1,1,14.4
+1363,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27177,NC362,Nitrogen,1,1,16.6
+1365,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,PI 517974,Pa880,Nitrogen,1,1,17.23333333
+1367,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,NSL 30894,R177,Nitrogen,1,1,19
+1369,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,PI 558532,Mo17,Nitrogen,1,1,13.96666667
+1371,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,CIze 44,CI44,Nitrogen,1,1,11.84285714
+1373,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Check,Check,Nitrogen,1,1,21.76666667
+1375,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 31536,A214NGoodman-Buckler,Nitrogen,1,1,11.6
+1377,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,PI 587125,CO109,Nitrogen,1,1,8.028571429
+1379,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 31535,38-11Goodman-Buckler,Nitrogen,1,1,15.475
+1381,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 28290,C49,Nitrogen,1,1,9.66
+1383,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,PI 550518,T8,Nitrogen,1,1,14.63333333
+1401,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27094,CML314,Nitrogen,1,1,12.81428571
+1403,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Check,Check,Nitrogen,1,1,13.2
+1405,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27086,CML218,Nitrogen,1,1,14.23333333
+1407,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27081,CML103,Nitrogen,1,1,10.36666667
+1409,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Check,Check,Nitrogen,1,1,13.96666667
+1411,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27091,CML261,Nitrogen,1,1,5.85
+1413,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,PI 587130,4722,Nitrogen,1,1,14.76666667
+1415,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27134,M162W,Nitrogen,1,1,9.7
+1417,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27133,M37W,Nitrogen,1,1,14.63333333
+1419,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27155,NC318,Nitrogen,1,1,7.666666667
+1421,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 10248,GA209,Nitrogen,1,1,6.6
+1423,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 28184,CML69,Nitrogen,1,1,11.1
+1425,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,PI 531084,NC258,Nitrogen,1,1,14.73333333
+1427,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,NSL 22893,F44,Nitrogen,1,1,7.8
+1429,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Ames 27189,SC55,Nitrogen,1,1,11.1
+1431,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 257506,F2,Nitrogen,1,1,6.25
+1433,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Ames 27119,Il101T,Nitrogen,1,1,7.833333333
+1435,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 606330,DE2,Nitrogen,1,1,22.63333333
+1437,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Ames 22763,Tx601,Nitrogen,1,1,15.82
+1439,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Check,Check,Nitrogen,1,1,15.16666667
+1441,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 550522,T232,Nitrogen,1,1,13.5
+1443,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 564682,B97,Nitrogen,1,1,13.65
+1445,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Ames 26769,B2,Nitrogen,1,1,20.25
+1447,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 608765,B77,Nitrogen,1,1,10.2
+1449,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Ames 26116,CI3A,Nitrogen,1,1,9.4
+1451,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 550467,B37,Nitrogen,1,1,26.075
+1453,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Ames 19314,CI64,Nitrogen,1,1,17.93333333
+1455,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 597927,B109,Nitrogen,1,1,18.13333333
+1457,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27167,NC342,Nitrogen,1,1,14.4
+1459,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,NSL 65873,L317,Nitrogen,1,1,21.3
+1461,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 28939,Mo44,Nitrogen,1,1,18.11666667
+1463,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,PI 583350,Mo45,Nitrogen,1,1,19.26666667
+1465,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27180,NC368,Nitrogen,1,1,13.63333333
+1467,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,NSL 28966,Oh40B,Nitrogen,1,1,19.43333333
+1469,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27151,NC310,Nitrogen,1,1,16.83333333
+1471,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 19293,Wf9,Nitrogen,1,1,35.4
+1473,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,PI 587132,Sg1533,Nitrogen,1,1,7.533333333
+1475,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 26771,33-16,Nitrogen,1,1,16.83333333
+1477,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,PI 592734,R229,Nitrogen,1,1,18.8
+1479,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 27196,Yu796_NS,Nitrogen,1,1,13.43333333
+1481,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 27193,Va85,Nitrogen,1,1,23.74
+1483,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Check,Check,Nitrogen,1,1,12.63333333
+1501,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,PI 595550,CML277,Nitrogen,1,1,16.76666667
+1503,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,PI 406112,A214N,Nitrogen,1,1,11.5
+1505,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,PI 550465,B68,Nitrogen,1,1,21.91666667
+1507,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27096,CML322,Nitrogen,1,1,14.35
+1509,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27101,CML333,Nitrogen,1,1,18.4
+1511,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,Ames 27072,CML10,Nitrogen,1,1,12.5
+1513,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb1,PI 595561,CML52,Nitrogen,1,1,11.66666667
+1515,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,PI 587144,Mo24W,Nitrogen,1,1,33
+1517,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Check,Check,Nitrogen,1,1,18.83333333
+1519,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 12729,NC222,Nitrogen,1,1,10.78333333
+1521,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27144,NC296,Nitrogen,1,1,6.9
+1523,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,NSL 30038,K4,Nitrogen,1,1,12.7
+1525,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Check,Check,Nitrogen,1,1,20.96666667
+1527,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb2,Ames 27121,K64,Nitrogen,1,1,18.7
+1529,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 506248,Tzi10,Nitrogen,1,1,
+1531,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Ames 27179,NC366,Nitrogen,1,1,12.2
+1533,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 540745,Tzi11,Nitrogen,1,1,9.175
+1535,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Ames 27131,Ky226,Nitrogen,1,1,16.8
+1537,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 558520,Mo1W,Nitrogen,1,1,14.63333333
+1539,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,Ames 22748,H100,Nitrogen,1,1,16.98333333
+1541,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb3,spb3,PI 506253,Tzi18,Nitrogen,1,1,19.66666667
+1543,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Ames 27065,B73Htrhm,Nitrogen,1,1,17.06666667
+1545,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Ames 27069,CH701-30,Nitrogen,1,1,10.88
+1547,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 686059,IDS28,Nitrogen,1,1,7.316666667
+1549,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Check,Check,Nitrogen,1,1,17.23333333
+1551,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 608767,B84,Nitrogen,1,1,11.72
+1553,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,PI 587140,A632,Nitrogen,1,1,12.86666667
+1555,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb1,Ames 27066,B164,Nitrogen,1,1,13.83333333
+1557,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27149,NC306,Nitrogen,1,1,16.2
+1559,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,NSL 65874,Os420,Nitrogen,1,1,20.12
+1561,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27178,NC364,Nitrogen,1,1,14
+1563,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27160,NC328,Nitrogen,1,1,13.6
+1565,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27159,NC326,Nitrogen,1,1,25.83333333
+1567,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27118,Il14H,Nitrogen,1,1,7.457142857
+1569,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb2,Ames 27168,NC344,Nitrogen,1,1,15.43333333
+1571,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,PI 587149,Va26,Nitrogen,1,1,18.03333333
+1573,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 19328,Va22,Nitrogen,1,1,18.43333333
+1575,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 31534,CI90CGoodman-Buckler,Nitrogen,1,1,15.06666667
+1577,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,PI 606768,SD40,Nitrogen,1,1,9.425
+1579,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 28367,CI7Goodman-Buckler,Nitrogen,1,1,19.2
+1581,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 27187,R4,Nitrogen,1,1,13.86666667
+1583,JY,2019,Havelock,282+N-N,yes,45,No,,B1,+N,sb4,spb3,Ames 24989,Va99,Nitrogen,1,1,11.7
+2001,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,PI 587131,HP301,No Nitrogen,1,2,8.975
+2003,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,PI 550472,B57,No Nitrogen,1,2,13.9
+2005,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 19284,C103,No Nitrogen,1,2,26.41666667
+2007,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,PI 594047,B104,No Nitrogen,1,2,25.08333333
+2009,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 19319,H95,No Nitrogen,1,2,14.45
+2011,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Check,Check,No Nitrogen,1,2,18.86666667
+2013,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 22754,K55,No Nitrogen,1,2,20.3
+2015,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,PI 550555,NC250,No Nitrogen,1,2,
+2017,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 12732,NC232,No Nitrogen,1,2,26.03333333
+2019,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27138,N28Ht,No Nitrogen,1,2,19.8
+2021,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 12731,NC230,No Nitrogen,1,2,10.4
+2023,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27147,NC302,No Nitrogen,1,2,9.866666667
+2025,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27261,NC298,No Nitrogen,1,2,16.3
+2027,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27172,NC352,No Nitrogen,1,2,12.36666667
+2029,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,PI 686066,SG18,No Nitrogen,1,2,9.225
+2031,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,PI 573098,Oh603,No Nitrogen,1,2,12.15
+2033,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 27182,NC372,No Nitrogen,1,2,17.66666667
+2035,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 27194,W401,No Nitrogen,1,2,11.6
+2037,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Check,Check,No Nitrogen,1,2,10.83333333
+2039,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,PI 686065,SA24,No Nitrogen,1,2,9.2
+2041,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 27185,Pa875,No Nitrogen,1,2,5.966666667
+2043,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 587138,A554,No Nitrogen,1,2,8.833333333
+2045,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,NSL 81599,A659,No Nitrogen,1,2,16.46666667
+2047,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 23405,A239,No Nitrogen,1,2,11.1
+2049,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 23450,A556,No Nitrogen,1,2,18.56666667
+2051,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 27067,C49A,No Nitrogen,1,2,10.4
+2053,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 19311,A641,No Nitrogen,1,2,15.58
+2055,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 19316,CM174,No Nitrogen,1,2,15.86666667
+2057,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,PI 257507,F7,No Nitrogen,1,2,9.975
+2059,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,PI 686057,I29,No Nitrogen,1,2,14.36666667
+2061,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 27106,CO125,No Nitrogen,1,2,14.65
+2063,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 27070,CM7,No Nitrogen,1,2,6.475
+2065,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 24734,MS153,No Nitrogen,1,2,11.06666667
+2067,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 27104,CMV3,No Nitrogen,1,2,7.45
+2069,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 27105,CO106,No Nitrogen,1,2,12.6
+2071,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 27162,NC332,No Nitrogen,1,2,16.8
+2073,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,PI 550490,ND246,No Nitrogen,1,2,11.22
+2075,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 19288,Oh43,No Nitrogen,1,2,10.55
+2077,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 27154,NC316,No Nitrogen,1,2,1.7
+2079,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,PI 524969,SD44,No Nitrogen,1,2,10.82
+2081,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 19016,Va59,No Nitrogen,1,2,8.9
+2083,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 28186,P39,No Nitrogen,1,2,7.15
+2101,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 19309,A635,No Nitrogen,1,2,12.9
+2103,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 21512,CI31A,No Nitrogen,1,2,9.166666667
+2105,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Check,Check,No Nitrogen,1,2,
+2107,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,PI 594048,B105,No Nitrogen,1,2,
+2109,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 26138,CI187-2,No Nitrogen,1,2,
+2111,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 27087,CML220,No Nitrogen,1,2,
+2113,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 27097,CML323,No Nitrogen,1,2,11.7
+2115,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27141,NC290A,No Nitrogen,1,2,
+2117,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27137,N6,No Nitrogen,1,2,9.283333333
+2119,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Check,Check,No Nitrogen,1,2,11.8
+2121,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27174,NC356,No Nitrogen,1,2,
+2123,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,PI 520774,NC264,No Nitrogen,1,2,9.04
+2125,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27158,NC324,No Nitrogen,1,2,13.03333333
+2127,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 28366,N7A,No Nitrogen,1,2,10.41666667
+2129,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 27190,T234,No Nitrogen,1,2,
+2131,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 27181,NC370,No Nitrogen,1,2,7.883333333
+2133,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 19000,VaW6,No Nitrogen,1,2,15.8
+2135,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,PI 587151,Va102,No Nitrogen,1,2,15.93333333
+2137,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,NSL 53094,SC357,No Nitrogen,1,2,15.06
+2139,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 27176,NC360,No Nitrogen,1,2,12.33333333
+2141,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,PI 587152,W64A,No Nitrogen,1,2,13.6
+2143,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 22443,A188,No Nitrogen,1,2,9.033333333
+2145,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 19313,C123,No Nitrogen,1,2,
+2147,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 608774,B75,No Nitrogen,1,2,17.43333333
+2149,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 607521,A661,No Nitrogen,1,2,17.34
+2151,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 587139,A619,No Nitrogen,1,2,18.4
+2153,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 594046,B103,No Nitrogen,1,2,12.63333333
+2155,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 27068,CH9,No Nitrogen,1,2,
+2157,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Check,Check,No Nitrogen,1,2,13.7
+2159,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 20140,Mt42,No Nitrogen,1,2,7.785714286
+2161,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,PI 587129,H99,No Nitrogen,1,2,9.716666667
+2163,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 27135,MEF156-55-2,No Nitrogen,1,2,
+2165,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 20190,CM37,No Nitrogen,1,2,8.483333333
+2167,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,PI 583352,Mo47,No Nitrogen,1,2,11.03333333
+2169,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,PI 587135,Ia5125,No Nitrogen,1,2,4.16
+2171,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,PI 531085,NC262,No Nitrogen,1,2,14.08333333
+2173,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Check,Check,No Nitrogen,1,2,14.83333333
+2175,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 27161,NC330,No Nitrogen,1,2,23.93333333
+2177,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,PI 587137,Ms71,No Nitrogen,1,2,18.75
+2179,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 27163,NC334,No Nitrogen,1,2,8.066666667
+2181,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,PI 587145,NC268,No Nitrogen,1,2,12.04
+2183,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,PI 550566,N192,No Nitrogen,1,2,21.85
+2201,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 22440,CI90C,No Nitrogen,1,2,10.2
+2203,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,PI 587128,H84,No Nitrogen,1,2,12.9
+2205,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,PI 608766,B79,No Nitrogen,1,2,14.64285714
+2207,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 27112,F2834T,No Nitrogen,1,2,9.933333333
+2209,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 27083,CML154Q,No Nitrogen,1,2,39.9
+2211,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,Ames 27120,Il677a,No Nitrogen,1,2,11.66666667
+2213,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb1,PI 606329,DE1,No Nitrogen,1,2,10.45
+2215,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27124,Ki11,No Nitrogen,1,2,31.8
+2217,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,PI 543916,Mp339,No Nitrogen,1,2,10.03333333
+2219,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,PI 583351,Mo46,No Nitrogen,1,2,23.96
+2221,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27260,Ki44,No Nitrogen,1,2,3.866666667
+2223,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Check,Check,No Nitrogen,1,2,15.06666667
+2225,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27175,NC358,No Nitrogen,1,2,10.35
+2227,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb2,Ames 27164,NC336,No Nitrogen,1,2,11.76666667
+2229,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 27183,Oh43E,No Nitrogen,1,2,8.166666667
+2231,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,NSL 30053,W22,No Nitrogen,1,2,13.5
+2233,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 8399,W117HT,No Nitrogen,1,2,4.285714286
+2235,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Check,Check,No Nitrogen,1,2,10.33333333
+2237,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,PI 587150,Va35,No Nitrogen,1,2,12.66
+2239,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 19323,Oh7B,No Nitrogen,1,2,12.725
+2241,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb1,spb3,Ames 27184,Pa762,No Nitrogen,1,2,12.35
+2243,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 550440,B64,No Nitrogen,1,2,16.08571429
+2245,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Ames 19308,A634,No Nitrogen,1,2,18
+2247,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 587141,A654,No Nitrogen,1,2,26
+2249,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,Check,Check,No Nitrogen,1,2,14.23333333
+2251,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 550483,B76,No Nitrogen,1,2,8.516666667
+2253,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 587143,A682,No Nitrogen,1,2,15.43333333
+2255,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb1,PI 587124,CM105,No Nitrogen,1,2,18.13333333
+2257,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 24752,MS1334,No Nitrogen,1,2,14.7
+2259,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 28364,IA2132,No Nitrogen,1,2,7.3
+2261,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,NSL 30867,M14,No Nitrogen,1,2,18.53333333
+2263,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 27111,EP1,No Nitrogen,1,2,5.433333333
+2265,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,PI 686063,IDS91,No Nitrogen,1,2,9.733333333
+2267,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,Ames 27107,CO255,No Nitrogen,1,2,9.05
+2269,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb2,PI 587127,H105W,No Nitrogen,1,2,19.825
+2271,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 27150,NC308,No Nitrogen,1,2,14.13333333
+2273,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 27142,NC292,No Nitrogen,1,2,16.92
+2275,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 27152,NC312,No Nitrogen,1,2,13.16666667
+2277,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,PI 587154,W153R,No Nitrogen,1,2,11.05
+2279,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 19326,R168,No Nitrogen,1,2,6.533333333
+2281,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Check,Check,No Nitrogen,1,2,13.83333333
+2283,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb2,spb3,Ames 19330,W182B,No Nitrogen,1,2,12.675
+2301,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 550469,B46,No Nitrogen,1,2,16.3
+2303,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 686059,IDS28,No Nitrogen,1,2,6.775
+2305,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 550467,B37,No Nitrogen,1,2,23.16666667
+2307,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Check,Check,No Nitrogen,1,2,10.14
+2309,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Ames 27066,B164,No Nitrogen,1,2,7.833333333
+2311,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Check,Check,No Nitrogen,1,2,10.12
+2313,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 550461,B14A,No Nitrogen,1,2,16.7
+2315,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27140,NC260,No Nitrogen,1,2,16.2
+2317,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,NSL 30894,R177,No Nitrogen,1,2,
+2319,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27151,NC310,No Nitrogen,1,2,18.68333333
+2321,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27178,NC364,No Nitrogen,1,2,
+2323,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,NSL 65873,L317,No Nitrogen,1,2,
+2325,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,NSL 28966,Oh40B,No Nitrogen,1,2,13.81666667
+2327,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27168,NC344,No Nitrogen,1,2,15.03333333
+2329,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 19328,Va22,No Nitrogen,1,2,
+2331,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,CIze 44,CI44,No Nitrogen,1,2,12.83333333
+2333,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 28290,C49,No Nitrogen,1,2,9.95
+2335,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 28367,CI7Goodman-Buckler,No Nitrogen,1,2,
+2337,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 27193,Va85,No Nitrogen,1,2,
+2339,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,PI 587149,Va26,No Nitrogen,1,2,12.93333333
+2341,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 26771,33-16,No Nitrogen,1,2,11.95
+2343,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,PI 595565,CML287,No Nitrogen,1,2,
+2345,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Check,Check,No Nitrogen,1,2,12.06666667
+2347,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Ames 27082,CML108,No Nitrogen,1,2,13
+2349,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Ames 27091,CML261,No Nitrogen,1,2,1.4
+2351,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Check,Check,No Nitrogen,1,2,23.03333333
+2353,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Ames 27081,CML103,No Nitrogen,1,2,8.866666667
+2355,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Ames 27101,CML333,No Nitrogen,1,2,15.4
+2357,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27156,NC320,No Nitrogen,1,2,12.76666667
+2359,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27165,NC338,No Nitrogen,1,2,18.625
+2361,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,NSL 30038,K4,No Nitrogen,1,2,16.76666667
+2363,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,PI 550558,DE811,No Nitrogen,1,2,5.75
+2365,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27144,NC296,No Nitrogen,1,2,9.533333333
+2367,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27110,E2558W,No Nitrogen,1,2,11.73333333
+2369,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Check,Check,No Nitrogen,1,2,12.83333333
+2371,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,PI 506253,Tzi18,No Nitrogen,1,2,
+2373,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Ames 27131,Ky226,No Nitrogen,1,2,18.76666667
+2375,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Ames 22748,H100,No Nitrogen,1,2,11.63333333
+2377,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,PI 540745,Tzi11,No Nitrogen,1,2,11.55
+2379,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,PI 506255,Tzi25,No Nitrogen,1,2,16.76666667
+2381,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Check,Check,No Nitrogen,1,2,
+2383,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Ames 27179,NC366,No Nitrogen,1,2,8.7
+2401,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Ames 27114,H91,No Nitrogen,1,2,25.65
+2403,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,NSL 30904,4226,No Nitrogen,1,2,
+2405,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 550473,B73,No Nitrogen,1,2,
+2407,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 608765,B77,No Nitrogen,1,2,
+2409,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 587140,A632,No Nitrogen,1,2,
+2411,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Ames 26769,B2,No Nitrogen,1,2,
+2413,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Ames 27069,CH701-30,No Nitrogen,1,2,
+2415,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,NSL 65874,Os420,No Nitrogen,1,2,
+2417,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,PI 517974,Pa880,No Nitrogen,1,2,23.13333333
+2419,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 28939,Mo44,No Nitrogen,1,2,
+2421,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27159,NC326,No Nitrogen,1,2,
+2423,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27143,NC294,No Nitrogen,1,2,
+2425,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27160,NC328,No Nitrogen,1,2,18.5
+2427,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27118,Il14H,No Nitrogen,1,2,
+2429,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 19293,Wf9,No Nitrogen,1,2,
+2431,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 31536,A214NGoodman-Buckler,No Nitrogen,1,2,
+2433,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 27196,Yu796_NS,No Nitrogen,1,2,
+2435,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 31535,38-11Goodman-Buckler,No Nitrogen,1,2,12.45
+2437,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,PI 550518,T8,No Nitrogen,1,2,
+2439,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,PI 606768,SD40,No Nitrogen,1,2,
+2441,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 24989,Va99,No Nitrogen,1,2,
+2443,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Check,Check,No Nitrogen,1,2,
+2445,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Check,Check,No Nitrogen,1,2,
+2447,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Check,Check,No Nitrogen,1,2,
+2449,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Ames 27086,CML218,No Nitrogen,1,2,
+2451,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,PI 595561,CML52,No Nitrogen,1,2,6.933333333
+2453,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,PI 595542,CML254,No Nitrogen,1,2,4.516666667
+2455,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Ames 26604,38-11,No Nitrogen,1,2,12.58
+2457,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27134,M162W,No Nitrogen,1,2,15.73333333
+2459,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 10248,GA209,No Nitrogen,1,2,
+2461,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27155,NC318,No Nitrogen,1,2,9.366666667
+2463,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 28184,CML69,No Nitrogen,1,2,16.06666667
+2465,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,PI 587144,Mo24W,No Nitrogen,1,2,
+2467,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Check,Check,No Nitrogen,1,2,14.43333333
+2469,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27121,K64,No Nitrogen,1,2,10.65
+2471,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,PI 550522,T232,No Nitrogen,1,2,
+2473,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Ames 27189,SC55,No Nitrogen,1,2,
+2475,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Ames 22763,Tx601,No Nitrogen,1,2,19.91666667
+2477,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,PI 257506,F2,No Nitrogen,1,2,7.95
+2479,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,PI 606330,DE2,No Nitrogen,1,2,14.63333333
+2481,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Ames 26808,Ill.Hy,No Nitrogen,1,2,13.9
+2483,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Check,Check,No Nitrogen,1,2,
+2501,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Ames 19314,CI64,No Nitrogen,1,2,14.68333333
+2503,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Ames 27065,B73Htrhm,No Nitrogen,1,2,21.475
+2505,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 608767,B84,No Nitrogen,1,2,11.76
+2507,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 564682,B97,No Nitrogen,1,2,14.86666667
+2509,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 597927,B109,No Nitrogen,1,2,15.56666667
+2511,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,Ames 23503,A680,No Nitrogen,1,2,19
+2513,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb1,PI 587142,A679,No Nitrogen,1,2,18.4
+2515,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,PI 558532,Mo17,No Nitrogen,1,2,13.46666667
+2517,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27149,NC306,No Nitrogen,1,2,
+2519,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27180,NC368,No Nitrogen,1,2,13.66666667
+2521,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Check,Check,No Nitrogen,1,2,12.33333333
+2523,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27167,NC342,No Nitrogen,1,2,11.28
+2525,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,PI 583350,Mo45,No Nitrogen,1,2,
+2527,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb2,Ames 27177,NC362,No Nitrogen,1,2,
+2529,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 31534,CI90CGoodman-Buckler,No Nitrogen,1,2,6.733333333
+2531,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Check,Check,No Nitrogen,1,2,
+2533,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,PI 592734,R229,No Nitrogen,1,2,10.06666667
+2535,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,PI 587132,Sg1533,No Nitrogen,1,2,
+2537,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Check,Check,No Nitrogen,1,2,
+2539,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,PI 587125,CO109,No Nitrogen,1,2,6.614285714
+2541,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb3,spb3,Ames 27187,R4,No Nitrogen,1,2,
+2543,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Check,Check,No Nitrogen,1,2,
+2545,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Ames 27096,CML322,No Nitrogen,1,2,12.31666667
+2547,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,PI 550465,B68,No Nitrogen,1,2,11.41666667
+2549,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,PI 406112,A214N,No Nitrogen,1,2,11.45
+2551,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,PI 587130,4722,No Nitrogen,1,2,
+2553,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Ames 27095,CML321,No Nitrogen,1,2,17.91666667
+2555,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb1,Check,Check,No Nitrogen,1,2,16.76666667
+2557,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,PI 531084,NC258,No Nitrogen,1,2,10.16666667
+2559,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,NSL 22893,F44,No Nitrogen,1,2,4.28
+2561,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 12729,NC222,No Nitrogen,1,2,
+2563,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27133,M37W,No Nitrogen,1,2,14.36666667
+2565,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Check,Check,No Nitrogen,1,2,
+2567,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27170,NC348,No Nitrogen,1,2,
+2569,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb2,Ames 27169,NC346,No Nitrogen,1,2,
+2571,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Check,Check,No Nitrogen,1,2,
+2573,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Check,Check,No Nitrogen,1,2,
+2575,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,PI 558520,Mo1W,No Nitrogen,1,2,2.95
+2577,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Check,Check,No Nitrogen,1,2,
+2579,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Ames 27129,KUI2021,No Nitrogen,1,2,13.48333333
+2581,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,Ames 27119,Il101T,No Nitrogen,1,2,5.633333333
+2583,JY,2019,Havelock,282+N-N,yes,45,No,,B1,-N,sb4,spb3,PI 587147,Pa91,No Nitrogen,1,2,12.22
+3001,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,PI 406112,A214N,No Nitrogen,2,3,11.38
+3003,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,NSL 65865,B10,No Nitrogen,2,3,18.1
+3005,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Ames 27081,CML103,No Nitrogen,2,3,14.1
+3007,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,PI 595550,CML277,No Nitrogen,2,3,
+3009,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,11.03333333
+3011,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Ames 26604,38-11,No Nitrogen,2,3,7.875
+3013,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,11.56666667
+3015,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Check,Check,No Nitrogen,2,3,10.43333333
+3017,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27156,NC320,No Nitrogen,2,3,6.083333333
+3019,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Check,Check,No Nitrogen,2,3,10.33333333
+3021,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,NSL 22893,F44,No Nitrogen,2,3,4.76
+3023,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27134,M162W,No Nitrogen,2,3,13.98333333
+3025,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 28184,CML69,No Nitrogen,2,3,
+3027,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,PI 550558,DE811,No Nitrogen,2,3,14
+3029,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Ames 22748,H100,No Nitrogen,2,3,12.83333333
+3031,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 558520,Mo1W,No Nitrogen,2,3,12.73333333
+3033,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 506253,Tzi18,No Nitrogen,2,3,19.71666667
+3035,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 506246,Tzi8,No Nitrogen,2,3,8.05
+3037,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Check,Check,No Nitrogen,2,3,10.76666667
+3039,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Ames 26808,Ill.Hy,No Nitrogen,2,3,18.25
+3041,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 257506,F2,No Nitrogen,2,3,7.266666667
+3043,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 22443,A188,No Nitrogen,2,3,8.183333333
+3045,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 27068,CH9,No Nitrogen,2,3,14.46666667
+3047,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 587143,A682,No Nitrogen,2,3,8.533333333
+3049,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Check,Check,No Nitrogen,2,3,15.25
+3051,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 19311,A641,No Nitrogen,2,3,12.86
+3053,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 23450,A556,No Nitrogen,2,3,15.6
+3055,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 587124,CM105,No Nitrogen,2,3,22.33333333
+3057,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 27135,MEF156-55-2,No Nitrogen,2,3,
+3059,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 20140,Mt42,No Nitrogen,2,3,8.433333333
+3061,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,PI 583352,Mo47,No Nitrogen,2,3,9.7
+3063,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Check,Check,No Nitrogen,2,3,11.2
+3065,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,PI 587129,H99,No Nitrogen,2,3,9.666666667
+3067,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,PI 587127,H105W,No Nitrogen,2,3,10.2
+3069,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Check,Check,No Nitrogen,2,3,13.05
+3071,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,PI 587145,NC268,No Nitrogen,2,3,9.766666667
+3073,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 27162,NC332,No Nitrogen,2,3,23.9
+3075,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,PI 587154,W153R,No Nitrogen,2,3,5.8
+3077,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,PI 550490,ND246,No Nitrogen,2,3,12.53333333
+3079,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 28186,P39,No Nitrogen,2,3,6.35
+3081,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 19016,Va59,No Nitrogen,2,3,11.3
+3083,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,PI 524969,SD44,No Nitrogen,2,3,8.5
+3101,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Ames 27082,CML108,No Nitrogen,2,3,14.86666667
+3103,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,14.66666667
+3105,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,8.433333333
+3107,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,
+3109,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,10.71666667
+3111,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,PI 550465,B68,No Nitrogen,2,3,
+3113,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,13.9
+3115,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27166,NC340,No Nitrogen,2,3,17.33333333
+3117,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27169,NC346,No Nitrogen,2,3,6.333333333
+3119,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27155,NC318,No Nitrogen,2,3,6.666666667
+3121,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 10248,GA209,No Nitrogen,2,3,
+3123,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27133,M37W,No Nitrogen,2,3,16.43333333
+3125,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27165,NC338,No Nitrogen,2,3,
+3127,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27121,K64,No Nitrogen,2,3,
+3129,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 587147,Pa91,No Nitrogen,2,3,12.73333333
+3131,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 550522,T232,No Nitrogen,2,3,11.3
+3133,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Check,Check,No Nitrogen,2,3,13.16666667
+3135,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 506255,Tzi25,No Nitrogen,2,3,14.4
+3137,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 606330,DE2,No Nitrogen,2,3,14.46666667
+3139,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Ames 27119,Il101T,No Nitrogen,2,3,
+3141,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Ames 27129,KUI2021,No Nitrogen,2,3,
+3143,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 27067,C49A,No Nitrogen,2,3,
+3145,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 607521,A661,No Nitrogen,2,3,
+3147,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 608774,B75,No Nitrogen,2,3,
+3149,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 587139,A619,No Nitrogen,2,3,
+3151,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 594046,B103,No Nitrogen,2,3,
+3153,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,NSL 81599,A659,No Nitrogen,2,3,23.63333333
+3155,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 587138,A554,No Nitrogen,2,3,12.13333333
+3157,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 27106,CO125,No Nitrogen,2,3,8.8
+3159,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,PI 686057,I29,No Nitrogen,2,3,
+3161,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 20190,CM37,No Nitrogen,2,3,7.383333333
+3163,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 24752,MS1334,No Nitrogen,2,3,14.43333333
+3165,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 27111,EP1,No Nitrogen,2,3,7
+3167,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 27107,CO255,No Nitrogen,2,3,9.014285714
+3169,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,PI 686063,IDS91,No Nitrogen,2,3,8.7
+3171,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 27152,NC312,No Nitrogen,2,3,13.26666667
+3173,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Check,Check,No Nitrogen,2,3,14.9
+3175,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 19330,W182B,No Nitrogen,2,3,
+3177,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 19288,Oh43,No Nitrogen,2,3,13.06666667
+3179,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 27154,NC316,No Nitrogen,2,3,
+3181,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 27142,NC292,No Nitrogen,2,3,21.81666667
+3183,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 27163,NC334,No Nitrogen,2,3,10.2
+3201,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,PI 587130,4722,No Nitrogen,2,3,4.775
+3203,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,14.13333333
+3205,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Ames 27096,CML322,No Nitrogen,2,3,13.13333333
+3207,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Ames 27101,CML333,No Nitrogen,2,3,
+3209,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Ames 27085,CML158Q,No Nitrogen,2,3,15.8
+3211,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Check,Check,No Nitrogen,2,3,11.1
+3213,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb1,Ames 27086,CML218,No Nitrogen,2,3,8.1
+3215,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27170,NC348,No Nitrogen,2,3,6.633333333
+3217,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,PI 531084,NC258,No Nitrogen,2,3,13.06666667
+3219,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27144,NC296,No Nitrogen,2,3,6.833333333
+3221,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,NSL 30038,K4,No Nitrogen,2,3,6.15
+3223,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,PI 587144,Mo24W,No Nitrogen,2,3,23.8
+3225,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 27110,E2558W,No Nitrogen,2,3,14.15
+3227,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb2,Ames 12729,NC222,No Nitrogen,2,3,7.733333333
+3229,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Ames 27131,Ky226,No Nitrogen,2,3,14.1
+3231,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Check,Check,No Nitrogen,2,3,11.93333333
+3233,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 506247,Tzi9,No Nitrogen,2,3,11.3
+3235,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Ames 27189,SC55,No Nitrogen,2,3,8.8
+3237,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,PI 540745,Tzi11,No Nitrogen,2,3,6.533333333
+3239,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Ames 27179,NC366,No Nitrogen,2,3,
+3241,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb1,spb3,Check,Check,No Nitrogen,2,3,
+3243,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 23405,A239,No Nitrogen,2,3,
+3245,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 19313,C123,No Nitrogen,2,3,
+3247,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 19316,CM174,No Nitrogen,2,3,17.86666667
+3249,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 550483,B76,No Nitrogen,2,3,14.975
+3251,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 587141,A654,No Nitrogen,2,3,24.55
+3253,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,PI 550440,B64,No Nitrogen,2,3,16.9
+3255,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb1,Ames 19308,A634,No Nitrogen,2,3,19.4
+3257,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 24734,MS153,No Nitrogen,2,3,14.93333333
+3259,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,PI 257507,F7,No Nitrogen,2,3,8.666666667
+3261,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 27105,CO106,No Nitrogen,2,3,9.7
+3263,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 27104,CMV3,No Nitrogen,2,3,
+3265,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,NSL 30867,M14,No Nitrogen,2,3,
+3267,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 28364,IA2132,No Nitrogen,2,3,17.73333333
+3269,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb2,Ames 27070,CM7,No Nitrogen,2,3,
+3271,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,PI 531085,NC262,No Nitrogen,2,3,16.46666667
+3273,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Check,Check,No Nitrogen,2,3,13.06666667
+3275,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 19326,R168,No Nitrogen,2,3,
+3277,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 27150,NC308,No Nitrogen,2,3,16.13333333
+3279,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,PI 550566,N192,No Nitrogen,2,3,20.93333333
+3281,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Ames 27161,NC330,No Nitrogen,2,3,
+3283,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb2,spb3,Check,Check,No Nitrogen,2,3,18.8
+3301,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 19309,A635,No Nitrogen,2,3,5.057142857
+3303,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Check,Check,No Nitrogen,2,3,
+3305,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 26138,CI187-2,No Nitrogen,2,3,6.566666667
+3307,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 27087,CML220,No Nitrogen,2,3,12
+3309,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,PI 608766,B79,No Nitrogen,2,3,13.42857143
+3311,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 27083,CML154Q,No Nitrogen,2,3,38.03333333
+3313,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 27112,F2834T,No Nitrogen,2,3,7.566666667
+3315,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Check,Check,No Nitrogen,2,3,13.6
+3317,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27164,NC336,No Nitrogen,2,3,7.833333333
+3319,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 12732,NC232,No Nitrogen,2,3,25.93333333
+3321,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27137,N6,No Nitrogen,2,3,15.36666667
+3323,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,PI 583351,Mo46,No Nitrogen,2,3,17.12
+3325,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27147,NC302,No Nitrogen,2,3,7.533333333
+3327,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 28366,N7A,No Nitrogen,2,3,13
+3329,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 27183,Oh43E,No Nitrogen,2,3,8.233333333
+3331,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 19323,Oh7B,No Nitrogen,2,3,14.6
+3333,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 27184,Pa762,No Nitrogen,2,3,11.2
+3335,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,PI 587150,Va35,No Nitrogen,2,3,11.13333333
+3337,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,PI 587152,W64A,No Nitrogen,2,3,13.63333333
+3339,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,PI 686065,SA24,No Nitrogen,2,3,8.428571429
+3341,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Check,Check,No Nitrogen,2,3,10
+3343,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 564682,B97,No Nitrogen,2,3,16.06666667
+3345,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,NSL 30904,4226,No Nitrogen,2,3,15.16666667
+3347,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 550467,B37,No Nitrogen,2,3,21.13333333
+3349,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 550469,B46,No Nitrogen,2,3,23.15714286
+3351,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 608767,B84,No Nitrogen,2,3,16.35
+3353,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 597927,B109,No Nitrogen,2,3,
+3355,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Ames 27065,B73Htrhm,No Nitrogen,2,3,14.36
+3357,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,NSL 30894,R177,No Nitrogen,2,3,18.55
+3359,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,NSL 65874,Os420,No Nitrogen,2,3,16.1
+3361,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27159,NC326,No Nitrogen,2,3,20.53333333
+3363,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27143,NC294,No Nitrogen,2,3,12.5
+3365,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27180,NC368,No Nitrogen,2,3,13.23333333
+3367,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27118,Il14H,No Nitrogen,2,3,7.15
+3369,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,NSL 28966,Oh40B,No Nitrogen,2,3,15.275
+3371,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,PI 587132,Sg1533,No Nitrogen,2,3,8.966666667
+3373,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 28290,C49,No Nitrogen,2,3,2.9
+3375,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,PI 587149,Va26,No Nitrogen,2,3,13.46666667
+3377,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Check,Check,No Nitrogen,2,3,11.43333333
+3379,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 24989,Va99,No Nitrogen,2,3,15.96666667
+3381,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 27196,Yu796_NS,No Nitrogen,2,3,6.5
+3383,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,PI 550518,T8,No Nitrogen,2,3,7.266666667
+3401,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,PI 587131,HP301,No Nitrogen,2,3,7.3
+3403,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,PI 550472,B57,No Nitrogen,2,3,15.86666667
+3405,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,PI 594047,B104,No Nitrogen,2,3,14.5
+3407,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 22754,K55,No Nitrogen,2,3,13.63333333
+3409,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Check,Check,No Nitrogen,2,3,
+3411,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Check,Check,No Nitrogen,2,3,
+3413,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 21512,CI31A,No Nitrogen,2,3,
+3415,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27172,NC352,No Nitrogen,2,3,9.65
+3417,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Check,Check,No Nitrogen,2,3,
+3419,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,PI 520774,NC264,No Nitrogen,2,3,7.1
+3421,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27138,N28Ht,No Nitrogen,2,3,14.31428571
+3423,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,PI 543916,Mp339,No Nitrogen,2,3,
+3425,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27141,NC290A,No Nitrogen,2,3,
+3427,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,PI 550555,NC250,No Nitrogen,2,3,14.36666667
+3429,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 19000,VaW6,No Nitrogen,2,3,15.21666667
+3431,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,NSL 53094,SC357,No Nitrogen,2,3,16.2
+3433,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 27185,Pa875,No Nitrogen,2,3,11.56666667
+3435,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 27181,NC370,No Nitrogen,2,3,
+3437,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Check,Check,No Nitrogen,2,3,18.13333333
+3439,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 8399,W117HT,No Nitrogen,2,3,5.216666667
+3441,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,PI 587151,Va102,No Nitrogen,2,3,
+3443,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 587140,A632,No Nitrogen,2,3,9.25
+3445,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Check,Check,No Nitrogen,2,3,10.23333333
+3447,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Ames 27069,CH701-30,No Nitrogen,2,3,
+3449,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 550461,B14A,No Nitrogen,2,3,
+3451,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 608765,B77,No Nitrogen,2,3,10.7
+3453,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 686059,IDS28,No Nitrogen,2,3,8.22
+3455,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Ames 23503,A680,No Nitrogen,2,3,18.5
+3457,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 28939,Mo44,No Nitrogen,2,3,
+3459,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27149,NC306,No Nitrogen,2,3,14.16666667
+3461,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Check,Check,No Nitrogen,2,3,
+3463,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,PI 517974,Pa880,No Nitrogen,2,3,
+3465,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27178,NC364,No Nitrogen,2,3,10.16666667
+3467,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27168,NC344,No Nitrogen,2,3,11.83333333
+3469,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,NSL 65873,L317,No Nitrogen,2,3,
+3471,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 19328,Va22,No Nitrogen,2,3,13.43333333
+3473,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 27187,R4,No Nitrogen,2,3,
+3475,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 31535,38-11Goodman-Buckler,No Nitrogen,2,3,
+3477,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,CIze 44,CI44,No Nitrogen,2,3,18
+3479,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 31534,CI90CGoodman-Buckler,No Nitrogen,2,3,10.83333333
+3481,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 28367,CI7Goodman-Buckler,No Nitrogen,2,3,14.63333333
+3483,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Check,Check,No Nitrogen,2,3,11.4
+3501,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 27097,CML323,No Nitrogen,2,3,10.06666667
+3503,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,PI 606329,DE1,No Nitrogen,2,3,14.75
+3505,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 27120,Il677a,No Nitrogen,2,3,11.95
+3507,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 22440,CI90C,No Nitrogen,2,3,12.03333333
+3509,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,PI 587128,H84,No Nitrogen,2,3,16.6
+3511,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,Ames 19319,H95,No Nitrogen,2,3,6.066666667
+3513,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb1,PI 594048,B105,No Nitrogen,2,3,18.23333333
+3515,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27158,NC324,No Nitrogen,2,3,13.5
+3517,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27260,Ki44,No Nitrogen,2,3,0.85
+3519,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Check,Check,No Nitrogen,2,3,9.866666667
+3521,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27175,NC358,No Nitrogen,2,3,8.733333333
+3523,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 27174,NC356,No Nitrogen,2,3,5.45
+3525,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Check,Check,No Nitrogen,2,3,18.86666667
+3527,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb2,Ames 12731,NC230,No Nitrogen,2,3,10.13333333
+3529,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,NSL 30053,W22,No Nitrogen,2,3,14.13333333
+3531,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 27182,NC372,No Nitrogen,2,3,15.2
+3533,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,PI 573098,Oh603,No Nitrogen,2,3,12.06666667
+3535,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 27194,W401,No Nitrogen,2,3,15.48333333
+3537,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 27176,NC360,No Nitrogen,2,3,10.83333333
+3539,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,Ames 27190,T234,No Nitrogen,2,3,13.96666667
+3541,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb3,spb3,PI 686066,SG18,No Nitrogen,2,3,10.1
+3543,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Ames 26769,B2,No Nitrogen,2,3,
+3545,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Ames 27114,H91,No Nitrogen,2,3,28.45
+3547,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Ames 27066,B164,No Nitrogen,2,3,13.86666667
+3549,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 550473,B73,No Nitrogen,2,3,13.53333333
+3551,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Check,Check,No Nitrogen,2,3,14.26666667
+3553,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,Check,Check,No Nitrogen,2,3,11
+3555,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb1,PI 587142,A679,No Nitrogen,2,3,11.63333333
+3557,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27167,NC342,No Nitrogen,2,3,33.96666667
+3559,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,PI 558532,Mo17,No Nitrogen,2,3,10.8
+3561,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27177,NC362,No Nitrogen,2,3,
+3563,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27160,NC328,No Nitrogen,2,3,15.33333333
+3565,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27151,NC310,No Nitrogen,2,3,13.6
+3567,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,PI 583350,Mo45,No Nitrogen,2,3,15.7
+3569,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb2,Ames 27140,NC260,No Nitrogen,2,3,
+3571,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 19293,Wf9,No Nitrogen,2,3,20.32
+3573,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,PI 606768,SD40,No Nitrogen,2,3,11.5
+3575,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,PI 587125,CO109,No Nitrogen,2,3,7.54
+3577,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 26771,33-16,No Nitrogen,2,3,11.1
+3579,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 31536,A214NGoodman-Buckler,No Nitrogen,2,3,12.33333333
+3581,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,PI 592734,R229,No Nitrogen,2,3,17.63333333
+3583,JY,2019,Havelock,282+N-N,yes,45,No,,B2,-N,sb4,spb3,Ames 27193,Va85,No Nitrogen,2,3,11.96666667
+4001,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 550467,B37,Nitrogen,2,4,16.53333333
+4003,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 550461,B14A,Nitrogen,2,4,24.06666667
+4005,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,NSL 30904,4226,Nitrogen,2,4,19.4
+4007,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 564682,B97,Nitrogen,2,4,13.5
+4009,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 550473,B73,Nitrogen,2,4,18.92857143
+4011,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 587142,A679,Nitrogen,2,4,15.63333333
+4013,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Check,Check,Nitrogen,2,4,17.33333333
+4015,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27177,NC362,Nitrogen,2,4,8.066666667
+4017,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27167,NC342,Nitrogen,2,4,12.63333333
+4019,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27178,NC364,Nitrogen,2,4,14.66666667
+4021,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27143,NC294,Nitrogen,2,4,11.06666667
+4023,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Check,Check,Nitrogen,2,4,17.7
+4025,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27140,NC260,Nitrogen,2,4,
+4027,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27160,NC328,Nitrogen,2,4,18.36666667
+4029,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 19328,Va22,Nitrogen,2,4,16.6
+4031,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 19293,Wf9,Nitrogen,2,4,10.76666667
+4033,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 31534,CI90CGoodman-Buckler,Nitrogen,2,4,12.7
+4035,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 27196,Yu796_NS,Nitrogen,2,4,9.233333333
+4037,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,PI 550518,T8,Nitrogen,2,4,9.433333333
+4039,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 26771,33-16,Nitrogen,2,4,14.31666667
+4041,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,PI 587149,Va26,Nitrogen,2,4,
+4043,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 27097,CML323,Nitrogen,2,4,6.233333333
+4045,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 19319,H95,Nitrogen,2,4,
+4047,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,PI 608766,B79,Nitrogen,2,4,13.86666667
+4049,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,PI 606329,DE1,Nitrogen,2,4,
+4051,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 27112,F2834T,Nitrogen,2,4,9.533333333
+4053,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 19309,A635,Nitrogen,2,4,11.93333333
+4055,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,PI 594048,B105,Nitrogen,2,4,18.06666667
+4057,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27138,N28Ht,Nitrogen,2,4,13.94
+4059,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27158,NC324,Nitrogen,2,4,10.725
+4061,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,PI 520774,NC264,Nitrogen,2,4,
+4063,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27175,NC358,Nitrogen,2,4,
+4065,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Check,Check,Nitrogen,2,4,
+4067,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,PI 583351,Mo46,Nitrogen,2,4,14.2
+4069,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27141,NC290A,Nitrogen,2,4,
+4071,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 27190,T234,Nitrogen,2,4,
+4073,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 8399,W117HT,Nitrogen,2,4,3.975
+4075,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,PI 587151,Va102,Nitrogen,2,4,
+4077,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,PI 686066,SG18,Nitrogen,2,4,9.425
+4079,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 19000,VaW6,Nitrogen,2,4,16.33333333
+4081,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,PI 573098,Oh603,Nitrogen,2,4,
+4083,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,PI 587150,Va35,Nitrogen,2,4,
+4101,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 608765,B77,Nitrogen,2,4,9.683333333
+4103,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Ames 23503,A680,Nitrogen,2,4,16.5
+4105,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Check,Check,Nitrogen,2,4,18.56666667
+4107,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 686059,IDS28,Nitrogen,2,4,3.725
+4109,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 550469,B46,Nitrogen,2,4,30.33333333
+4111,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Ames 27114,H91,Nitrogen,2,4,14.96
+4113,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 597927,B109,Nitrogen,2,4,19.46666667
+4115,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27151,NC310,Nitrogen,2,4,17.13333333
+4117,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,NSL 30894,R177,Nitrogen,2,4,20.33333333
+4119,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27118,Il14H,Nitrogen,2,4,7.3
+4121,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,NSL 65873,L317,Nitrogen,2,4,18.6
+4123,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27149,NC306,Nitrogen,2,4,14.73333333
+4125,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,NSL 65874,Os420,Nitrogen,2,4,20.8
+4127,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,PI 583350,Mo45,Nitrogen,2,4,16.63333333
+4129,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 27187,R4,Nitrogen,2,4,13.63333333
+4131,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,PI 606768,SD40,Nitrogen,2,4,6.833333333
+4133,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Check,Check,Nitrogen,2,4,17.4
+4135,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,PI 592734,R229,Nitrogen,2,4,15.75
+4137,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,PI 587125,CO109,Nitrogen,2,4,9.76
+4139,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 28290,C49,Nitrogen,2,4,8.5
+4141,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 27193,Va85,Nitrogen,2,4,23.2
+4143,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 26138,CI187-2,Nitrogen,2,4,
+4145,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 27087,CML220,Nitrogen,2,4,15.86666667
+4147,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 27083,CML154Q,Nitrogen,2,4,32.36666667
+4149,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 19284,C103,Nitrogen,2,4,23.33333333
+4151,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 22754,K55,Nitrogen,2,4,28.9
+4153,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,PI 587131,HP301,Nitrogen,2,4,8.65
+4155,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Check,Check,Nitrogen,2,4,26.9
+4157,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27172,NC352,Nitrogen,2,4,8.766666667
+4159,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27137,N6,Nitrogen,2,4,16.18333333
+4161,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 12732,NC232,Nitrogen,2,4,22.78333333
+4163,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27260,Ki44,Nitrogen,2,4,6.04
+4165,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27174,NC356,Nitrogen,2,4,5.36
+4167,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27261,NC298,Nitrogen,2,4,13.63333333
+4169,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27164,NC336,Nitrogen,2,4,10.35
+4171,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 27176,NC360,Nitrogen,2,4,15.8
+4173,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 27182,NC372,Nitrogen,2,4,26.76666667
+4175,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Check,Check,Nitrogen,2,4,18.53333333
+4177,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,PI 686065,SA24,Nitrogen,2,4,11.84
+4179,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,PI 587152,W64A,Nitrogen,2,4,19.13333333
+4181,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 27194,W401,Nitrogen,2,4,10.58
+4183,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 27183,Oh43E,Nitrogen,2,4,23.2
+4201,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Ames 27065,B73Htrhm,Nitrogen,2,4,11.56666667
+4203,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Ames 27069,CH701-30,Nitrogen,2,4,11.53333333
+4205,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 608767,B84,Nitrogen,2,4,18.03333333
+4207,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Check,Check,Nitrogen,2,4,
+4209,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Ames 27066,B164,Nitrogen,2,4,13.5
+4211,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,Ames 26769,B2,Nitrogen,2,4,15
+4213,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb1,PI 587140,A632,Nitrogen,2,4,13.56666667
+4215,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,PI 517974,Pa880,Nitrogen,2,4,22.66666667
+4217,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,NSL 28966,Oh40B,Nitrogen,2,4,20.7
+4219,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 28939,Mo44,Nitrogen,2,4,20.4
+4221,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27180,NC368,Nitrogen,2,4,16.9
+4223,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27159,NC326,Nitrogen,2,4,20
+4225,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,PI 558532,Mo17,Nitrogen,2,4,15.86666667
+4227,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb2,Ames 27168,NC344,Nitrogen,2,4,20
+4229,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 31536,A214NGoodman-Buckler,Nitrogen,2,4,24.5
+4231,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,CIze 44,CI44,Nitrogen,2,4,10.41666667
+4233,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 28367,CI7Goodman-Buckler,Nitrogen,2,4,16.33333333
+4235,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,PI 587132,Sg1533,Nitrogen,2,4,7.6
+4237,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 24989,Va99,Nitrogen,2,4,13.1
+4239,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Check,Check,Nitrogen,2,4,18.46666667
+4241,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb1,spb3,Ames 31535,38-11Goodman-Buckler,Nitrogen,2,4,13.93333333
+4243,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,PI 550472,B57,Nitrogen,2,4,20.36666667
+4245,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Check,Check,Nitrogen,2,4,23.33333333
+4247,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 22440,CI90C,Nitrogen,2,4,6.95
+4249,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Ames 21512,CI31A,Nitrogen,2,4,
+4251,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,PI 594047,B104,Nitrogen,2,4,
+4253,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,PI 587128,H84,Nitrogen,2,4,
+4255,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb1,Check,Check,Nitrogen,2,4,
+4257,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 28366,N7A,Nitrogen,2,4,15.32
+4259,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,PI 550555,NC250,Nitrogen,2,4,
+4261,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,PI 543916,Mp339,Nitrogen,2,4,
+4263,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27124,Ki11,Nitrogen,2,4,30.48333333
+4265,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 12731,NC230,Nitrogen,2,4,
+4267,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Check,Check,Nitrogen,2,4,22.2
+4269,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb2,Ames 27147,NC302,Nitrogen,2,4,6.033333333
+4271,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,NSL 53094,SC357,Nitrogen,2,4,15.25
+4273,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Check,Check,Nitrogen,2,4,15.73333333
+4275,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 27184,Pa762,Nitrogen,2,4,10.9
+4277,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 27185,Pa875,Nitrogen,2,4,10.91666667
+4279,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 27181,NC370,Nitrogen,2,4,8.9
+4281,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,NSL 30053,W22,Nitrogen,2,4,14.8
+4283,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb2,spb3,Ames 19323,Oh7B,Nitrogen,2,4,
+4301,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,11.16666667
+4303,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,15.1
+4305,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Ames 26604,38-11,Nitrogen,2,4,10.1
+4307,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,14.55
+4309,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Ames 27081,CML103,Nitrogen,2,4,33.83333333
+4311,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Ames 27085,CML158Q,Nitrogen,2,4,21.35
+4313,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,PI 550465,B68,Nitrogen,2,4,19.2
+4315,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27133,M37W,Nitrogen,2,4,16.525
+4317,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Check,Check,Nitrogen,2,4,18.3
+4319,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 10248,GA209,Nitrogen,2,4,4.766666667
+4321,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,PI 587144,Mo24W,Nitrogen,2,4,32.46
+4323,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 12729,NC222,Nitrogen,2,4,
+4325,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27155,NC318,Nitrogen,2,4,8.933333333
+4327,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Check,Check,Nitrogen,2,4,19.1
+4329,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 506247,Tzi9,Nitrogen,2,4,15.86666667
+4331,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Ames 27189,SC55,Nitrogen,2,4,8.9
+4333,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Check,Check,Nitrogen,2,4,19.6
+4335,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 257506,F2,Nitrogen,2,4,4.12
+4337,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Ames 22748,H100,Nitrogen,2,4,12.41666667
+4339,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 506255,Tzi25,Nitrogen,2,4,13.56666667
+4341,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Ames 27129,KUI2021,Nitrogen,2,4,18.48333333
+4343,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 23405,A239,Nitrogen,2,4,17.8
+4345,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 587141,A654,Nitrogen,2,4,20.11428571
+4347,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 22443,A188,Nitrogen,2,4,
+4349,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 587139,A619,Nitrogen,2,4,
+4351,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 608774,B75,Nitrogen,2,4,17.33333333
+4353,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 27068,CH9,Nitrogen,2,4,15.85
+4355,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 587143,A682,Nitrogen,2,4,12.625
+4357,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,PI 686057,I29,Nitrogen,2,4,
+4359,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 27104,CMV3,Nitrogen,2,4,8.433333333
+4361,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 27106,CO125,Nitrogen,2,4,11.64285714
+4363,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,PI 587127,H105W,Nitrogen,2,4,18.6
+4365,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 24752,MS1334,Nitrogen,2,4,14.2
+4367,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,PI 686063,IDS91,Nitrogen,2,4,8.433333333
+4369,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,NSL 30867,M14,Nitrogen,2,4,14.95
+4371,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 19326,R168,Nitrogen,2,4,7.766666667
+4373,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 27150,NC308,Nitrogen,2,4,17.6
+4375,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,PI 550490,ND246,Nitrogen,2,4,12.36666667
+4377,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 28186,P39,Nitrogen,2,4,
+4379,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 19330,W182B,Nitrogen,2,4,10.66666667
+4381,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 27162,NC332,Nitrogen,2,4,17.58333333
+4383,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,PI 587154,W153R,Nitrogen,2,4,10.38
+4401,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,9.7
+4403,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,9.3
+4405,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Ames 27101,CML333,Nitrogen,2,4,1.466666667
+4407,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,18.03333333
+4409,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,13.13333333
+4411,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Ames 27086,CML218,Nitrogen,2,4,14.96666667
+4413,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,15.9
+4415,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27169,NC346,Nitrogen,2,4,6.533333333
+4417,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 28184,CML69,Nitrogen,2,4,14.46666667
+4419,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27110,E2558W,Nitrogen,2,4,
+4421,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27165,NC338,Nitrogen,2,4,16.43333333
+4423,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,NSL 30038,K4,Nitrogen,2,4,11.56666667
+4425,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,NSL 22893,F44,Nitrogen,2,4,8.283333333
+4427,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27166,NC340,Nitrogen,2,4,17.8
+4429,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 558520,Mo1W,Nitrogen,2,4,13.76666667
+4431,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Ames 26808,Ill.Hy,Nitrogen,2,4,17.3
+4433,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Check,Check,Nitrogen,2,4,16.23333333
+4435,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Ames 27131,Ky226,Nitrogen,2,4,14.7
+4437,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Ames 27179,NC366,Nitrogen,2,4,12.13333333
+4439,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 606330,DE2,Nitrogen,2,4,14.5
+4441,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 506253,Tzi18,Nitrogen,2,4,24.36666667
+4443,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 587124,CM105,Nitrogen,2,4,22.83333333
+4445,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 550440,B64,Nitrogen,2,4,18.3
+4447,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 594046,B103,Nitrogen,2,4,13.33333333
+4449,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 27067,C49A,Nitrogen,2,4,8.2
+4451,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Check,Check,Nitrogen,2,4,19.16666667
+4453,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 607521,A661,Nitrogen,2,4,13.56666667
+4455,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 19313,C123,Nitrogen,2,4,
+4457,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 24734,MS153,Nitrogen,2,4,14.25
+4459,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Check,Check,Nitrogen,2,4,23.63333333
+4461,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 20190,CM37,Nitrogen,2,4,6
+4463,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,PI 583352,Mo47,Nitrogen,2,4,13.7
+4465,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 27135,MEF156-55-2,Nitrogen,2,4,
+4467,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 27105,CO106,Nitrogen,2,4,16.36666667
+4469,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 28364,IA2132,Nitrogen,2,4,9.45
+4471,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 19288,Oh43,Nitrogen,2,4,13.75
+4473,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Check,Check,Nitrogen,2,4,17.6
+4475,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 27161,NC330,Nitrogen,2,4,28.45
+4477,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 27163,NC334,Nitrogen,2,4,9.833333333
+4479,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,PI 587145,NC268,Nitrogen,2,4,12.45
+4481,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 27154,NC316,Nitrogen,2,4,13.28
+4483,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 19016,Va59,Nitrogen,2,4,13.44
+4501,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,11.8
+4503,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Ames 27095,CML321,Nitrogen,2,4,
+4505,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,
+4507,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,PI 406112,A214N,Nitrogen,2,4,
+4509,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Check,Check,Nitrogen,2,4,
+4511,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,Ames 27096,CML322,Nitrogen,2,4,14.6
+4513,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb1,PI 587130,4722,Nitrogen,2,4,9.766666667
+4515,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27144,NC296,Nitrogen,2,4,6.183333333
+4517,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Check,Check,Nitrogen,2,4,
+4519,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27121,K64,Nitrogen,2,4,14.8
+4521,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,PI 531084,NC258,Nitrogen,2,4,18.76666667
+4523,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27134,M162W,Nitrogen,2,4,
+4525,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,PI 550558,DE811,Nitrogen,2,4,8.833333333
+4527,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb2,Ames 27156,NC320,Nitrogen,2,4,
+4529,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 506246,Tzi8,Nitrogen,2,4,9.266666667
+4531,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 540745,Tzi11,Nitrogen,2,4,8.375
+4533,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 587147,Pa91,Nitrogen,2,4,
+4535,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Ames 27119,Il101T,Nitrogen,2,4,6.933333333
+4537,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,PI 550522,T232,Nitrogen,2,4,14.33333333
+4539,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Check,Check,Nitrogen,2,4,19.4
+4541,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb3,spb3,Check,Check,Nitrogen,2,4,
+4543,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,NSL 81599,A659,Nitrogen,2,4,
+4545,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 19316,CM174,Nitrogen,2,4,
+4547,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 23450,A556,Nitrogen,2,4,15.6
+4549,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 587138,A554,Nitrogen,2,4,12.83333333
+4551,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 19308,A634,Nitrogen,2,4,14.075
+4553,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,PI 550483,B76,Nitrogen,2,4,
+4555,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb1,Ames 19311,A641,Nitrogen,2,4,
+4557,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Check,Check,Nitrogen,2,4,21.26666667
+4559,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 27070,CM7,Nitrogen,2,4,5.06
+4561,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,PI 587129,H99,Nitrogen,2,4,8.566666667
+4563,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 20140,Mt42,Nitrogen,2,4,10.3
+4565,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 27111,EP1,Nitrogen,2,4,7.633333333
+4567,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,PI 257507,F7,Nitrogen,2,4,8.22
+4569,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb2,Ames 27107,CO255,Nitrogen,2,4,
+4571,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Check,Check,Nitrogen,2,4,19.46666667
+4573,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,PI 550566,N192,Nitrogen,2,4,17.95
+4575,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 27152,NC312,Nitrogen,2,4,16.91666667
+4577,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Ames 27142,NC292,Nitrogen,2,4,16.71428571
+4579,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,PI 524969,SD44,Nitrogen,2,4,17.475
+4581,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,Check,Check,Nitrogen,2,4,14.86666667
+4583,JY,2019,Havelock,282+N-N,yes,45,No,,B2,+N,sb4,spb3,PI 531085,NC262,Nitrogen,2,4,5.333333333

@@ -86,7 +86,7 @@ ps_core <- prune_taxa(asvs_to_keep, ps_short)
 save(ps_core, file = "cache/ps_core.rda")
 #sum(otu_table(ps_core))
 
-
+load("cache/ps_core.rda")
 
 
 #### ) remove taxa (genus or family) with less than 5 observed ASVs ####
@@ -102,6 +102,11 @@ taxfreq <- plyr::count(taxtab, 'taxa') %>%
 
 taxa_to_keep <- taxfreq %>%
   filter(freq >= 5)
+
+removed_taxa <- taxfreq %>%
+  filter(freq < 5)
+
+
 
 asvs_to_keep <- taxtab %>%
   filter(taxa %in% taxa_to_keep$taxa)

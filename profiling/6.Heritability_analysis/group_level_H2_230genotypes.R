@@ -229,6 +229,99 @@ h2_plot
 
 
 
+# permutation test to find threshold
+
+mean(group_data$H2_lowN_19)
+mean(group_data$H2_stdN_19)
+
+
+# lets calculate the absolute diff in means
+test.stat1 <- abs(mean(group_data$H2_lowN_19) - 
+                    mean(group_data$H2_stdN_19)) 
+
+perm_data <- group_data %>%
+  dplyr::select(tax_group, H2_lowN_19, H2_stdN_19) %>%
+  pivot_longer(cols = starts_with("H2_"), names_to = "nitrogen", values_to = "H2") %>%
+  mutate(nitrogen = ifelse(nitrogen == 'H2_stdN_19', '+N', '-N'))
+
+?pivot_longer
+
+set.seed(2021)
+
+n <- length(perm_data$nitrogen)
+P <- 100000
+variable <- perm_data$H2
+
+PermSamples <- matrix(0, nrow = n, ncol = P)
+
+for(i in 1:P){
+  PermSamples[,i] <- sample(variable, size = n, replace = FALSE)
+}
+
+PermSamples[,1:5]
+
+
+# initialize vectors to store all of the Test-stats:
+means_lowN <- means_stdN <- permutationMeans <- rep(0, P)
+
+# loop thru, and calculate the test-stats
+for (i in 1:P){
+  # calculate the perm-test-stat1 and save it
+  means_lowN[i] <- mean(PermSamples[perm_data$nitrogen=="-N",i])
+  means_stdN[i] <- mean(PermSamples[perm_data$nitrogen=="+N",i])
+  permutationMeans[i] <- mean(PermSamples[,i])
+  
+}
+
+
+mean(perm_data$H2) # overall mean 0.335919
+
+threshold_lowN <- mean(means_lowN) # permutation mean 0.3359948 use this as threshold heritable/not heritable
+mean(group_data$H2_lowN_19) # data mean 0.352033
+
+threshold_stdN <- mean(means_stdN) # permutation mean 0.3358431 use this as threshold heritable/not heritable
+mean(group_data$H2_stdN_19) # data mean 0.3198049
+
+
+
+
+
+h2_plotperm <- ggplot(group_data, aes(x=H2_lowN_19, y=H2_stdN_19)) +
+  geom_density_2d() +
+  geom_point(alpha=0.7) +
+  geom_abline(coef = c(0,1), linetype="dashed") +
+  geom_vline(xintercept = threshold_lowN, color = "red") +
+  geom_hline(yintercept = threshold_stdN, color = "red") +
+  geom_smooth(method='lm', se=TRUE, color="#008000") +
+  #geom_label_repel(aes(label = group_data$tax_group),
+  #                box.padding   = 0.05, 
+  #                point.padding = 0.5,
+  #                size = 2,
+  #                min.segment.length = 0.5,
+  #                segment.color = 'grey50') +
+  theme_classic() +
+  ylab("H2 +N") +
+  xlab("H2 -N")
+
+
+h2_plotperm
+
+
+
+
+?geom_smooth
+
+
+
+
+
+
+
+# calculate p value for all 100k permutations
+
+mean(Perm.test.stat1 >= test.stat1)
+
+
 #### plot H2 +N vs -N, overlay labels for groups with strong GWAS signal ####
 
 microbe_traits <- read_csv("data/microbial_traits.csv")

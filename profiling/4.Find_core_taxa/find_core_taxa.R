@@ -147,6 +147,7 @@ unique_asvs <- plot_data %>%
   arrange(desc(unique_ASVs)) %>%
   filter(unique_ASVs >= 5)
 
+#save(unique_asvs, file="cache/unique_asvs.rda")
 
 ## remove taxonomic groups with fewer than 5 ASVs
 ## this will be the final table at the group level
@@ -165,6 +166,9 @@ save(ps_asv, file = "data/ps_asv.rda")
 
 #### draw phylogenetic tree ####
 
+load("data/ps_grp.rda")
+load("cache/unique_asvs.rda")
+load("data/group_data.rda")
 
 
 ### find node number between archaea and nearest bacteria
@@ -193,9 +197,39 @@ plot_data <- data.frame(tax_table(ps_grp)) %>%
 plot_data$unique_ASVs <- unique_asvs$unique_ASVs
 
 
+load("data/group_data.rda")
+
+
 ### save data for later in group data summary
-group_data <- plot_data
-save(group_data, file = "data/group_data.rda")
+plot_data <- left_join(plot_data, group_data)
+#save(group_data, file = "data/group_data.rda")
+
+
+
+## add heritability categories data
+
+# LowN permutation mean 0.3359948 use this as threshold heritable/not heritable
+# StdN permutation mean 0.3358431 use this as threshold heritable/not heritable
+
+
+plot_data$heritability_group <- "not heritable"
+plot_data$heritability_group[plot_data$H2_stdN_19 > 0.3358431 & plot_data$H2_lowN_19 < 0.3359948] <- "lowN heritable"
+plot_data$heritability_group[plot_data$H2_stdN_19 < 0.3358431 & plot_data$H2_lowN_19 > 0.3359948] <- "stdN heritable"
+plot_data$heritability_group[plot_data$H2_stdN_19 > 0.3358431 & plot_data$H2_lowN_19 > 0.3359948] <- "both heritable"
+
+table(plot_data$heritability_group)
+
+
+## calculate diffab
+
+plot_data$diffab <- plot_data$mean_blup_stdN/plot_data$mean_blup_lowN
+diffab_sd <- sd(plot_data$diffab)
+
+plot_data$diffab_group <- NA
+plot_data$diffab_group[plot_data$diffab > 1] <- "more abundant under -N"
+plot_data$diffab_group[plot_data$diffab < 1] <- "more abundant under +N"
+
+
 
 
 mycols <- c('#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075')
@@ -211,9 +245,10 @@ p2 <-gheatmap(p, class, offset=3, width=0.1, font.size=3, colnames=F) +
 
 p3 <- p2 %<+% plot_data +
   geom_tiplab2(aes(angle = angle, label=unique_ASVs), size = 2, offset = 1) +
-  geom_tiplab2(aes(angle = angle, label=tax_group), size = 2.1, offset = 7) +
+  geom_tiplab2(aes(angle = angle, label=tax_group, color=diffab_group), size = 2.1, offset = 7) +
   theme(plot.margin = unit(c(2,0,2,0), "cm"), legend.margin=margin(0,0,0,0, unit = "cm"), legend.box.margin=margin(0,0,0,1, unit = "cm")) +
-  labs(fill="Class") 
+  labs(fill="Class") +
+  scale_color_manual(values= c("#C00001", "#000080"))
 
 p3
 

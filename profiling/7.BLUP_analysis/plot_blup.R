@@ -65,8 +65,8 @@ blup_pc <- blup_pc %>%
 
 ### plot PC
 pc_plot <- ggplot(blup_pc, aes(x=PC1, y=PC2, color=nitrogen)) +
-  geom_point() +
-  scale_color_manual(values = c("#C00001", "#008000")) +
+  geom_point(alpha=0.6) +
+  scale_color_manual(values = c("#C00001", "#000080")) +
   theme_classic()
 pc_plot
 

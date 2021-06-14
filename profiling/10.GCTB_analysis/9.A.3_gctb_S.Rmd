@@ -61,14 +61,29 @@ HN <- HN[order(HN$value, decreasing = TRUE),]
 ```{r}
 snp0 <- read.csv("cache/snpeff/HN_asv_014370.csv")
 #snp0 <- snp0[1:100,]
-
 library(ggplot2)
+
+snp0 <- read.csv("cache/snpeff/HN_asv_001659.csv") # Pseudomonas thivervalensis
+snp0 <- read.csv("cache/snpeff/HN_asv_001416.csv") # Pseudomonas umsongensis
+snp0 <- read.csv("cache/snpeff/LN_asv_000406.csv") # Massilia niabensis
+
+snp0 <- read.csv("cache/snpeff/HN_asv_001529.csv") # Pseudomonas chlororaphis
+snp0 <- read.csv("cache/snpeff/LN_asv_001529.csv") # Pseudomonas chlororaphis
+
+snp0 <- read.csv("cache/snpeff/HN_asv_002138.csv") # Duganella radicis
+
+snp0 <- read.csv("cache/snpeff/HN_asv_001294.csv") # Chitinophaga sancti
+
+
+
+
+
 p1 <- ggplot(snp0, aes(x=A1Frq, y=A1Effect)) +
   geom_point() +
     geom_smooth(method=loess) +
     xlab("Minor Allele Frequency") +
     ylab("SNP Effect") +
-    ggtitle("asv_014370") +
+    ggtitle("Chitinophaga sancti") +
     theme_classic() +
     #labs(color = "") +
     #scale_y_continuous(limits = c(-0.01, 1)) +
@@ -98,7 +113,7 @@ p1 <- ggplot(snp0, aes(x=A1Frq, y=A1Effect)) +
     geom_smooth(method=loess) +
     xlab("Minor Allele Frequency") +
     ylab("SNP Effect") +
-    ggtitle("asv_014370") +
+    ggtitle("Rhizobium daejeonense") +
     theme_classic() +
     #labs(color = "") +
     #scale_y_continuous(limits = c(-0.01, 1)) +
