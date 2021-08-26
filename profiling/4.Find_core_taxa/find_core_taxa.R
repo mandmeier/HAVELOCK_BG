@@ -1,7 +1,7 @@
 library("phyloseq")
 library("tidyverse")
 library("ggtree")
-library("ggstance")
+#library("ggstance")
 library("ape")
 
 
@@ -191,13 +191,10 @@ unique_asvs <- unique_asvs %>%
 
 plot_data <- data.frame(tax_table(ps_grp)) %>%
   arrange(tax_group) %>%
-  select(-Genus,-Species) %>%
+  dplyr::select(-Genus,-Species) %>%
   rownames_to_column(var = "ASV")
 
 plot_data$unique_ASVs <- unique_asvs$unique_ASVs
-
-
-load("data/group_data.rda")
 
 
 ### save data for later in group data summary
@@ -212,22 +209,38 @@ plot_data <- left_join(plot_data, group_data)
 # StdN permutation mean 0.3358431 use this as threshold heritable/not heritable
 
 
-plot_data$heritability_group <- "not heritable"
-plot_data$heritability_group[plot_data$H2_stdN_19 > 0.3358431 & plot_data$H2_lowN_19 < 0.3359948] <- "lowN heritable"
-plot_data$heritability_group[plot_data$H2_stdN_19 < 0.3358431 & plot_data$H2_lowN_19 > 0.3359948] <- "stdN heritable"
-plot_data$heritability_group[plot_data$H2_stdN_19 > 0.3358431 & plot_data$H2_lowN_19 > 0.3359948] <- "both heritable"
+#plot_data$heritability_group <- "not heritable"
+#plot_data$heritability_group[plot_data$H2_stdN_19 > 0.3358431 & plot_data$H2_lowN_19 < 0.3359948] <- "lowN heritable"
+#plot_data$heritability_group[plot_data$H2_stdN_19 < 0.3358431 & plot_data$H2_lowN_19 > 0.3359948] <- "stdN heritable"
+#plot_data$heritability_group[plot_data$H2_stdN_19 > 0.3358431 & plot_data$H2_lowN_19 > 0.3359948] <- "both heritable"
 
-table(plot_data$heritability_group)
+#table(plot_data$heritability_group)
 
 
 ## calculate diffab
 
-plot_data$diffab <- plot_data$mean_blup_stdN/plot_data$mean_blup_lowN
-diffab_sd <- sd(plot_data$diffab)
 
-plot_data$diffab_group <- NA
-plot_data$diffab_group[plot_data$diffab > 1] <- "more abundant under -N"
-plot_data$diffab_group[plot_data$diffab < 1] <- "more abundant under +N"
+plot_data <- group_data %>%
+  mutate(diffab_group = ifelse(log2FoldChange < 0, "negative", "positive")) %>%
+  mutate(diffab_group = ifelse(padj >= 0.05, "n.s.", diffab_group))
+
+
+plot_data$diffab_group <- factor(plot_data$diffab_group, levels=c("positive", "negative", "n.s."))
+
+
+### annotate heritability data
+
+
+plot_data$sign_lowN <- ifelse(plot_data$perm_p_lowN < 0.05, "sign", "n.s.")
+plot_data$sign_stdN <- ifelse(plot_data$perm_p_stdN < 0.05, "sign", "n.s.")
+
+plot_data$sign_group <- "none"
+plot_data$sign_group <- ifelse(plot_data$sign_lowN == "sign", "lowN", plot_data$sign_group)
+plot_data$sign_group <- ifelse(plot_data$sign_stdN == "sign", "stdN", plot_data$sign_group)
+plot_data$sign_group <- ifelse(plot_data$sign_stdN == "sign" & plot_data$sign_lowN == "sign", "both", plot_data$sign_group)
+plot_data$sign_group <- factor(plot_data$sign_group, levels = c("stdN", "lowN", "both", "none"))
+
+plot_data
 
 
 
@@ -237,6 +250,9 @@ mycols <- c('#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#
 class <- tax_table(ps_grp)[,3]
 #class[class == "Blastocatellia_(Subgroup_4)"] <- "Blastocatellia" ### fix that long name
 
+
+# ATTENTION: ggtree only works with dplyr version 1.0.4 or below!!
+
 p <- ggtree(phy_tree(ps_grp), layout = "circular",  branch.length = "none") +
   scale_x_continuous(expand=expand_scale(0.5))
 
@@ -245,12 +261,15 @@ p2 <-gheatmap(p, class, offset=3, width=0.1, font.size=3, colnames=F) +
 
 p3 <- p2 %<+% plot_data +
   geom_tiplab2(aes(angle = angle, label=unique_ASVs), size = 2, offset = 1) +
-  geom_tiplab2(aes(angle = angle, label=tax_group, color=diffab_group), size = 2.1, offset = 7) +
+  geom_tiplab2(aes(angle = angle, label=tax_group, color=sign_group), size = 2.1, offset = 7) +
   theme(plot.margin = unit(c(2,0,2,0), "cm"), legend.margin=margin(0,0,0,0, unit = "cm"), legend.box.margin=margin(0,0,0,1, unit = "cm")) +
   labs(fill="Class") +
-  scale_color_manual(values= c("#C00001", "#000080"))
-
+  #scale_color_manual(values= c(negative="#C00001", positive="#000080", n.s.="#999999"), labels=c(negative="more abundant under -N", positive="more abundant under +N", n.s.="no significant difference"))
+  scale_color_manual(values= c(lowN="#C00001", stdN="#000080", none="#999999", both="#800080"), labels=c(lowN="heritable under -N", stdN="heritable under +N", both="heritable under both treatments", none="heritability not significant"))
+  
 p3
+
+
 
 
 ### save img to ppt as vector graphic

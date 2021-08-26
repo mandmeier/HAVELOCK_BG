@@ -64,14 +64,14 @@ yield_components <- cob_length %>%
   left_join(cob_width) %>%
   left_join(cob_weight) %>%
   dplyr::rename(GX_name = Genotype) %>%
-  left_join(select(names, MM_name, GX_name)) %>%
+  left_join(dplyr::select(names, MM_name, GX_name)) %>%
   filter(GX_name != "Check") %>%
   rename(genotype = MM_name) %>%
   rename(cob_length = Average.cob.length) %>%
   rename(cob_width = Average.cob.width) %>%
   rename(cob_weight = Average.cob.weight) %>%
   mutate(block = ifelse(row < 2999, "N", "S")) %>%
-  select(genotype, nitrogen, block, sb, spb, row, cob_width, cob_length, cob_weight)
+  dplyr::select(genotype, nitrogen, block, sb, spb, row, cob_width, cob_length, cob_weight)
   
 
 
@@ -149,9 +149,32 @@ yield_components_BLUPs <- rbind(blup_stdN, blup_lowN) %>%
 #save(yield_components_BLUPs, file="data/yield_analysis/yield_components_BLUPs.rda")
 
 
+load("data/yield_analysis/yield_components_BLUPs.rda")
 
 yield_components_BLUPs
 
+
+# combine yield data for each genotype
+
+names <- read_csv("data/BG_MM_Gen_names.csv")
+names <- names %>%
+  rename(genotype=BG_original) %>%
+  dplyr::select(genotype, GX_name)
+
+
+
+yield_per_genotype <- yield_components_BLUPs %>%
+    left_join(names) %>%
+    left_join(CC) %>%
+    left_join(VI) %>%
+    dplyr::select(genotype, GX_name, nitrogen, cob_length, cob_width, cob_weight, CC_Aug12, ExG_Aug12)
+  
+  
+save(yield_per_genotype, file="data/yield_analysis/yield_per_genotype.rda")
+
+
+
+top_12_MAPLs <- read_csv("data/top_12_MAPLs.csv")
 
 
 # combine data
@@ -165,7 +188,10 @@ plant_fitness_data <- top_snps %>%
 #save(plant_fitness_data, file="data/yield_analysis/plant_fitness_data.rda")
 
 
-#load("data/yield_analysis/plant_fitness_data.rda")
+load("data/yield_analysis/plant_fitness_data.rda")
+
+
+unique(plant_fitness_data$tax_group)
 
 
 ### look at top 10 taxa and associated SNPs

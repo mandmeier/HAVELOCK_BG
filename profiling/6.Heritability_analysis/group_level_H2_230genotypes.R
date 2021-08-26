@@ -38,7 +38,7 @@ mean_counts_logrel <- cbind(data.frame(mean_counts[, 1:6]), logrel)
 
 
 
-### split stdN, lowN samples, retain only genotxpes with complete set of 4 reps
+### split stdN, lowN samples, retain only genotypes with complete set of 4 reps
 
 h2dat_stdN <- mean_counts_logrel %>%
   filter(nitrogen == "+N") %>%
@@ -46,6 +46,9 @@ h2dat_stdN <- mean_counts_logrel %>%
   add_tally(name="count") %>%
   filter(count >= 2) %>%
   dplyr::select(-count)
+
+
+#save(h2dat_stdN, file = "cache/h2dat_stdN.rda")
 
 # unique(as.character(h2dat_stdN$genotype))
 # 206 genotypes
@@ -56,6 +59,8 @@ h2dat_lowN <- mean_counts_logrel %>%
   add_tally(name="count") %>%
   filter(count >= 2) %>%
   dplyr::select(-count)
+
+#save(h2dat_lowN, file = "cache/h2dat_lowN.rda")
 
 # unique(as.character(h2dat_lowN$genotype))
 # 206 genotypes
@@ -111,10 +116,7 @@ for(trait in traits){
 H2_lowN
 
 
-
-
 ### H2 for BOTH N treatments
-
 
 h2dat <- mean_counts_logrel %>%
   group_by(genotype) %>%
@@ -229,6 +231,10 @@ h2_plot
 
 
 
+### shortcut
+
+load("data/group_data.rda")
+
 # permutation test to find threshold
 
 mean(group_data$H2_lowN_19)
@@ -244,7 +250,6 @@ perm_data <- group_data %>%
   pivot_longer(cols = starts_with("H2_"), names_to = "nitrogen", values_to = "H2") %>%
   mutate(nitrogen = ifelse(nitrogen == 'H2_stdN_19', '+N', '-N'))
 
-?pivot_longer
 
 set.seed(2021)
 
@@ -285,26 +290,88 @@ mean(group_data$H2_stdN_19) # data mean 0.3198049
 
 
 
+plot_data <- group_data %>%
+  mutate(diffab_group = ifelse(log2FoldChange < 0, "negative", "positive")) %>%
+  mutate(diffab_group = ifelse(padj >= 0.05, "n.s.", diffab_group))
 
-h2_plotperm <- ggplot(group_data, aes(x=H2_lowN_19, y=H2_stdN_19)) +
-  geom_density_2d() +
+
+
+# count tax groups in each quartile
+
+top <- plot_data %>%
+  filter(H2_lowN_19 > 0.6 & H2_stdN_19 > 0.6)
+
+both <- plot_data %>%
+  filter(H2_lowN_19 > threshold_lowN & H2_stdN_19 > threshold_stdN)
+
+stdN <- plot_data %>%
+  filter(H2_lowN_19 < threshold_lowN & H2_stdN_19 > threshold_stdN)
+
+lowN <- plot_data %>%
+  filter(H2_lowN_19 > threshold_lowN & H2_stdN_19 < threshold_stdN)
+
+none <- plot_data %>%
+  filter(H2_lowN_19 < threshold_lowN & H2_stdN_19 < threshold_stdN)
+
+
+
+plot_data$sign_lowN <- ifelse(plot_data$perm_p_lowN < 0.05, "sign", "n.s.")
+plot_data$sign_stdN <- ifelse(plot_data$perm_p_stdN < 0.05, "sign", "n.s.")
+
+plot_data$sign_group <- "none"
+plot_data$sign_group <- ifelse(plot_data$sign_lowN == "sign", "lowN", plot_data$sign_group)
+plot_data$sign_group <- ifelse(plot_data$sign_stdN == "sign", "stdN", plot_data$sign_group)
+plot_data$sign_group <- ifelse(plot_data$sign_stdN == "sign" & plot_data$sign_lowN == "sign", "both", plot_data$sign_group)
+plot_data$sign_group <- factor(plot_data$sign_group, levels = c("stdN", "lowN", "both", "none"))
+
+plot_data
+
+
+table(plot_data$sign_group)
+
+
+
+#library("ggforce")
+
+
+
+h2_plotperm <- ggplot(plot_data, aes(x=H2_lowN_19, y=H2_stdN_19, color = sign_group)) +
+  geom_density_2d(color="#cccccc") +
   geom_point(alpha=0.7) +
   geom_abline(coef = c(0,1), linetype="dashed") +
-  geom_vline(xintercept = threshold_lowN, color = "red") +
-  geom_hline(yintercept = threshold_stdN, color = "red") +
+  ##geom_mark_hull() +
+  #geom_vline(xintercept = threshold_lowN, linetype="dashed") +
+  #geom_hline(yintercept = threshold_stdN, linetype="dashed") +
+  geom_vline(xintercept = 0.6) +
+  geom_hline(yintercept = 0.6) +
   geom_smooth(method='lm', se=TRUE, color="#008000") +
-  #geom_label_repel(aes(label = group_data$tax_group),
-  #                box.padding   = 0.05, 
-  #                point.padding = 0.5,
-  #                size = 2,
-  #                min.segment.length = 0.5,
-  #                segment.color = 'grey50') +
+  geom_text_repel(data=top, aes(label=tax_group)) +
+  scale_color_manual(values= c(lowN="#C00001", stdN="#000080", none="#999999", both="#800080"), labels=c(lowN="heritable under -N", stdN="heritable under +N", both="heritable under both treatments", none="heritability not significant"))+
+  #scale_color_manual(values= c(negative="#C00001", positive="#000080", n.s.="#999999"), labels=c(negative="more abundant under -N", positive="more abundant under +N", n.s.="no significant difference"))+
   theme_classic() +
-  ylab("H2 +N") +
-  xlab("H2 -N")
+  ylab("Heritability under +N") +
+  xlab("Heritability under -N")
 
 
 h2_plotperm
+
+
+
+## get r square value
+
+lm_eqn <- function(df){
+  m <- lm(H2_stdN_19 ~ H2_lowN_19, df);
+  eq <- substitute(italic(y) == a + b %.% italic(x)*","~~italic(r)^2~"="~r2, 
+                   list(a = format(unname(coef(m)[1]), digits = 2),
+                        b = format(unname(coef(m)[2]), digits = 2),
+                        r2 = format(summary(m)$r.squared, digits = 3)))
+  print(summary(m))
+  return (as.character(as.expression(eq)))
+}
+
+lm_eqn(plot_data)
+
+
 
 
 

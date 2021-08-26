@@ -29,8 +29,7 @@ logrel <- t(apply(asvtab, 1, function(x) log(x/sum(x) + 0.001)))
 mean_counts_logrel <- cbind(data.frame(mean_counts[, 1:6]), logrel)
 
 
-save(mean_counts_logrel, file = "cache/logrel_for_asv_blup.rda")
-
+save(mean_counts_logrel, file = "cache/mean_counts_logrel.rda")
 
 
 

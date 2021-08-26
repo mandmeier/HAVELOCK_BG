@@ -110,7 +110,7 @@ ps_common <- merge_phyloseq(ps_common, tre)
 sample_data(ps_common)
 sample_data(ps_common)[, 'nitrogen'] <- c(ifelse(sample_data(ps_common)[, 'row'] > 2000 & sample_data(ps_common)[, 'row'] < 3999, "-N", "+N"))
 
-save(ps_common, file = "cache/ps_common.rda")
+#save(ps_common, file = "cache/ps_common.rda")
 
 
 
@@ -132,7 +132,6 @@ common_asvs <- Reduce(intersect, list(names(y2018_asvs_lt0),names(y2019_asvs_lt0
 ## plot shannon diversity between 4632 (common_asvs) and 3728 sets (ps_bothyears)
 
 ps_bothyears <- prune_taxa(common_asvs, ps_common)
-
 
 
 rch_4632 <- estimate_richness(ps_common, measures = c("Observed", "Chao1", "Shannon", "Simpson", "InvSimpson", "Fisher"))
@@ -213,29 +212,17 @@ length(names(y2019_asvs_lt0)[!names(y2019_asvs_lt0) %in% common_asvs])
 length(names(y2018_asvs_lt0)[!names(y2018_asvs_lt0) %in% common_asvs])
 
 
-
-
-
 load("cache/ps_common.rda")
 
 
-
-#### Constrained ordination ####
+#### Constrained ordination, 4632 ASVs ####
 
 ## https://rdrr.io/rforge/vegan/man/adonis.html
-
 # convert to relative abundance, aka Total Sum Normalization [TSS] and log transform ASV counts
 ps <- transform_sample_counts(ps_common, function(x) x / sum(x))
-
-
 sdat <- data.frame(sample_data(ps))
-
-
 # exclude checks
 ps <- subset_samples(ps, !genotype %in% c("CHECK", "CHECK2"))
-
-
-
 
 ## get distance matrix: this takes a long time!
 #dm <- distance(ps, method = "wunifrac")
@@ -250,32 +237,36 @@ load("largedata/distance_matrix_wunifrac.rda")
 
 ## calculate bray-custis distance matrix
 bray.cap.whole <- capscale(as.dist(dm) ~ year + genotype + nitrogen + block + sp + spb, data = sdat, add = T, na.action = na.exclude)
-
-
 #save(bray.cap.whole, file='largedata/bray.cap.whole.rda')
 
-#anova(bray.cap.whole, by = "terms")
 
-bray.cap.whole.axes <- data.frame(cbind(sdat, scores(bray.cap.whole)$sites))
+
+#anova(bray.cap.whole, by = "terms")
 
 ## Permutation ANOVA (this takes 24h or so...)
 #permanova <- adonis(dm~year + genotype + nitrogen + block + sp + spb,data = sdat,add = T)
 
 #save(permanova, file = "largedata/permanova.rda")
 
+#### shortcut
+load("data/ps_asv.rda")
+sdat <- data.frame(sample_data(ps_asv))
+load("largedata/bray.cap.whole.rda")
+caps <- rownames_to_column(data.frame(scores(bray.cap.whole)$sites), var = "Sample_ID")
+#caps$Sample_ID[!(caps$Sample_ID %in% sdat$Sample_ID)] sample HAV_2372 missing
+bray.cap.whole.axes <- left_join(sdat, caps)
 load("largedata/permanova.rda")
 
-permanova
 
-percent_explained <- bray.cap.whole$CCA$eig / sum(bray.cap.whole$CCA$eig) * 100
-percent_explained
+#percent_explained <- bray.cap.whole$CCA$eig / sum(bray.cap.whole$CCA$eig) * 100
+#percent_explained
 
 colors <- c("#ff0000", "#0000ff")
 
 
 
 #find genotypes common to both years, without check
-sdat <- data.frame(sample_data(ps_asv))
+
 y2018 <- sdat %>%
   filter(year == "Y2018")
 y2019 <- sdat %>%
@@ -283,21 +274,13 @@ y2019 <- sdat %>%
 common_genotypes <- Reduce(intersect, list(unique(y2018$genotype),unique(y2019$genotype)))
 common_genotypes <- common_genotypes[-1]
 
-
-
 bray.cap.whole.axes$color_groups <- ifelse(bray.cap.whole.axes$genotype %in% common_genotypes, "common_HN", bray.cap.whole.axes$nitrogen)
-
 bray.cap.whole.axes$color_groups <- ifelse(bray.cap.whole.axes$genotype %in% common_genotypes & bray.cap.whole.axes$nitrogen == "-N", "common_LN", bray.cap.whole.axes$color_groups)
 
-
 bray.cap.whole.axes$shape_groups <- ifelse(bray.cap.whole.axes$genotype %in% common_genotypes, "common", "unique")
-
 bray.cap.whole.axes$shape_groups <- factor(bray.cap.whole.axes$shape_groups, levels = c("unique", "common"))
 
 colors <- c("-N"="#ff0000","common_LN"="#C00001", "+N"="#0000ff", "common_HN"="#000080")
-
-colors <- c("#ff0000", "#0000ff")
-
 colors = c("#ffc30b", "#000000")
 
 
@@ -308,4 +291,86 @@ ord_plot <- ggplot(bray.cap.whole.axes, aes(x = CAP1, y = CAP2, color = shape_gr
   labs(x = "Constrained PCo1 (31.80%)", y = "Constrained PCo2 (26.24%)") +
   theme_bw()
 
-ord_plot    
+ord_plot
+
+
+
+## ord plot 2019
+colors = c("#c00001", "#000080")
+
+ord_plot <- ggplot(filter(bray.cap.whole.axes, year=="Y2019"), aes(x = CAP1, y = CAP2, color = nitrogen)) +
+  geom_point(size=1, alpha = 0.5) +
+  scale_color_manual(values=colors) +
+  labs(x = "Constrained PCo1 (31.80%)", y = "Constrained PCo2 (26.24%)") +
+  theme_bw()
+
+ord_plot
+
+
+
+
+
+### ord plot for 3618 ASVs
+
+
+
+load("data/ps_asv.rda")
+
+ps_asv
+
+## https://rdrr.io/rforge/vegan/man/adonis.html
+# convert to relative abundance, aka Total Sum Normalization [TSS] and log transform ASV counts
+ps <- transform_sample_counts(ps_asv, function(x) log(x / sum(x) + 0.001))
+# exclude checks
+ps <- subset_samples(ps, !genotype %in% c("CHECK", "CHECK2"))
+sdat <- data.frame(sample_data(ps))
+
+## get distance matrix: this takes a long time!
+dm <- distance(ps, method = "wunifrac")
+
+
+### replace missing values with median
+#dm[is.na(dm)] <- median(dm, na.rm = TRUE)
+#save(dm, file='largedata/distance_matrix_wunifrac_3618.rda')
+
+
+
+
+
+
+#load("largedata/distance_matrix_wunifrac_3618.rda")
+
+## calculate bray-curtis distance matrix
+
+#dm[is.na(dm)] <- median(dm, na.rm = TRUE)
+
+bray.cap.whole <- capscale(as.dist(dm) ~ year + genotype + nitrogen + block + sp + spb, data = sdat, add = T, na.action = na.exclude)
+
+
+
+#save(bray.cap.whole, file='largedata/bray.cap.whole_3618.rda')
+
+
+
+#### shortcut
+load("data/ps_asv.rda")
+sdat <- data.frame(sample_data(ps_asv))
+load("largedata/bray.cap.whole_3618.rda")
+caps <- rownames_to_column(data.frame(scores(bray.cap.whole)$sites), var = "Sample_ID")
+#caps$Sample_ID[!(caps$Sample_ID %in% sdat$Sample_ID)] sample HAV_2372 missing
+bray.cap.whole.axes <- left_join(sdat, caps)
+load("largedata/permanova.rda")
+
+
+
+colors = c("#c00001", "#000080")
+#colors = c("#ff0000", "#0000ff")
+
+ord_plot <- ggplot(filter(bray.cap.whole.axes, year=="Y2019"), aes(x = CAP1, y = CAP2, color = nitrogen)) +
+  geom_point(size=2, alpha = 0.5, shape=18) +
+  scale_color_manual(values=colors) +
+  labs(x = "Constrained PCo1 (31.80%)", y = "Constrained PCo2 (26.24%)") +
+  theme_bw()
+
+ord_plot
+

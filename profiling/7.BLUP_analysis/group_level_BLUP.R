@@ -30,6 +30,23 @@ mean_counts_logrel <- cbind(data.frame(mean_counts[, 1:6]), logrel)
 
 
 
+##### logrel data for GEN
+
+
+names <- read_csv("data/BG_MM_Gen_names.csv")
+
+abundance_logrel <- mean_counts_logrel %>%
+  rename(MM_name=genotype) %>%
+  left_join(dplyr::select(names, MM_name, GX_name)) %>%
+  mutate(MM_name = GX_name) %>%
+  dplyr::select(-GX_name) %>%
+  rename(genotype=MM_name) %>%
+  mutate(nitrogen = ifelse(nitrogen == "+N", "HN", "LN"))
+  
+write_csv(abundance_logrel, file = "data/abundance_logrel.csv")
+  
+
+
 ### BLUP std N
 
 if(!(exists("blup_stdN"))){
@@ -37,6 +54,8 @@ if(!(exists("blup_stdN"))){
 }
 
 for (asvid in colnames(asvtab)){
+  
+asvid <- "asv_000406"
   
 df <- mean_counts_logrel %>%
   filter(nitrogen == "+N") %>%

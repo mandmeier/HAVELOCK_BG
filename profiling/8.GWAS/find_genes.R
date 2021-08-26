@@ -88,3 +88,82 @@ save(gene_list_annotated, file ="cache/gene_list_annotated_10kb_10above5.rda")
 
 
 
+
+
+##### find genes for MAPLs
+
+
+
+load("cache/top_loci_traits.rda")
+
+
+
+shortlist <- top_loci_traits %>%
+  ungroup() %>%
+  select(nitrogen, chr, bin) %>%
+  unique() %>%
+  mutate(ext_bin_start = (bin-2)*10000+1, ext_bin_end = (bin+1)*10000)
+
+
+
+
+
+
+
+
+### import gene map
+gene_pos <- read_delim(file="largedata/RNAseq/Zea_mays.B73_RefGen_v4.46.chr.txt", delim="\t")
+colnames(gene_pos) <- c("seqid", "source", "type", "start", "end", "score", "strand", "phase", "attributes")
+gene_pos$gene_len = gene_pos$end-gene_pos$start
+gene_pos <- filter(gene_pos, type == "gene")
+
+
+
+
+
+
+
+### find all genes in there. for each bin
+
+shortlist$genes <- NA
+gene_list <- c()
+for(i in c(1:nrow(shortlist))){
+  #i <- 1
+  chr <- shortlist$chr[i]
+  print(paste("MAPL",i))
+  range_low <- (shortlist$bin[i]*10000) - 100000
+  range_hi <- (shortlist$bin[i]*10000) + 100000
+  gene_window <- gene_pos %>%
+    filter(seqid == chr) %>%
+    filter(start > range_low & end < range_hi)
+  
+  if (nrow(gene_window) > 0){
+    genes <- c()
+    for (gene in c(1:nrow(gene_window))){
+      #gene <- 1
+      overlap <- sum(c(gene_window$start[gene]:gene_window$end[gene]) %in% c(shortlist$ext_bin_start[i]:shortlist$ext_bin_end[i]))
+      #print(overlap)
+      if(overlap > 0){
+        #print("gene is near bin")
+        gene <- str_match(gene_window$attributes[gene], "gene_id=(.+);")[2]
+        #genes <- c(genes, str_match(gene_window$attributes[gene], "gene_id=(.+);")[2])
+        row <- shortlist[i,]
+        row$genes <- gene
+        print(gene)
+        gene_list <- rbind(gene_list, row)
+      }
+    }
+    shortlist$genes[i] <- ifelse(is.null(genes), NA, paste(genes, collapse = ';'))
+  }
+}
+
+unique(gene_list$genes)
+
+
+
+MAPL_genes <- gene_list
+
+#save(MAPL_genes, file = "cache/MAPL_genes.rda")
+
+
+
