@@ -72,6 +72,18 @@ LS <- read.table("data/GCTB_analysis/LN-Micro_pi_S_h.txt")
 
 
 HS 
+
+HS$news <- HS$S+HS$sd_S
+out1 <- subset(HS, news < 0)
+out1$treatment <- "HN"
+
+LS$news <- LS$S+LS$sd_S
+out2 <- subset(LS, news < 0)
+out2$treatment <- "LN"
+
+out <- rbind(out1, out2)
+write.table(out, "largedata/beneficial_microbes.csv", sep=",", row.names = FALSE, quote=FALSE)
+
 ```
 
 
