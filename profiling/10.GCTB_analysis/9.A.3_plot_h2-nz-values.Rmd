@@ -1,0 +1,76 @@
+---
+title: "GCTB: nz and h2 values"
+output: NULL
+date: 09-02-2021
+author: "Jinliang Yang"
+---
+
+
+```{r setup, include=TRUE}
+#setwd("~/Documents/Github/pvpDiallel/")
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+```
+
+
+### Plot the S results
+
+```{r}
+library(ggplot2)
+df <- read.csv("cache/gtcb_HN_LN_1869traits.csv")
+df$file <- gsub(".*282_GCTB\\/", "", df$file)
+df$type <- gsub("\\/.*", "", df$file)
+df$treatment <- gsub("N\\/.*", "N", df$file)
+df$treatment <- gsub(".*\\/", "", df$treatment)
+df$trait <- gsub(".*-", "", df$trait)
+```
+
+
+
+```{r}
+h <- subset(df, par %in% "hsq" & type %in% c("leaf_nutrient_traits_Field", "microbe_from_Mike"))
+
+p2 <- ggplot(h, aes(x=type, y=Mean, color=treatment)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_point(position=position_jitterdodge()) +
+  # scale_color_manual(values = c("leaf_nutrient_traits_Field"="#C00001", "microbe_from_Mike"="#008000", "Yield_traits_from_Semra"="darkblue")) +
+  # facet_wrap(~treatment, ncol = 2) +
+  #geom_hline(yintercept=0, linetype="dashed", color = "red") +
+  theme_bw() +
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
+p2
+```
+
+
+
+
+
+
+
+# Non Zero SNPs
+
+```{r}
+nz <- subset(df, par %in% "NnzSnp" & type %in% c("leaf_nutrient_traits_Field", "microbe_from_Mike"))
+
+p2 <- ggplot(nz, aes(x=type, y=log10(Mean), color=treatment)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_point(position=position_jitterdodge()) +
+  #scale_color_manual(values = c("leaf_nutrient_traits_Field"="#C00001", "microbe_from_Mike"="#008000", "Yield_traits_from_Semra"="darkblue")) +
+  #facet_wrap(~treatment, ncol = 2) +
+  #geom_hline(yintercept=0, linetype="dashed", color = "red") +
+  theme_bw() +
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
+p2
+```
+
+
+
+
+
+
+

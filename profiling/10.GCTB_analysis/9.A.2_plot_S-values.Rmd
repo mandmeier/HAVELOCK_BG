@@ -1,0 +1,229 @@
+---
+title: "GCTB: S values"
+output: NULL
+date: 09-02-2021
+author: "Jinliang Yang"
+---
+
+
+```{r setup, include=TRUE}
+#setwd("~/Documents/Github/pvpDiallel/")
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+```
+
+
+### Plot the S results
+
+```{r}
+library(ggplot2)
+df <- read.csv("cache/gtcb_HN_LN_1869traits.csv")
+df$file <- gsub(".*282_GCTB\\/", "", df$file)
+df$type <- gsub("\\/.*", "", df$file)
+df$treatment <- gsub("N\\/.*", "N", df$file)
+df$treatment <- gsub(".*\\/", "", df$treatment)
+df$trait <- gsub(".*-", "", df$trait)
+
+
+s <- subset(df, par %in% "S")
+s$sd1 <- with(s, Mean-SD)
+s$sd2 <- with(s, Mean+SD)
+```
+
+```{r}
+s1 <- subset(s, type %in% c("leaf_nutrient_traits_Field", "Yield_traits_from_Semra"))
+s1 <- subset(s, type %in% "leaf_nutrient_traits_Field")
+
+p1 <- ggplot(s1, aes(x=reorder(trait, Mean), y=Mean, color=treatment)) +
+  #facet_wrap(~treatment, ncol = 2) +
+  geom_point(position=position_dodge(width=0.5), size=2) +
+  geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), 
+                width = 0.5,
+        linetype = "dotted",
+        position=position_dodge(width=0.5)) +
+  coord_flip() +
+  scale_color_manual(values = c("HN"="#C00001", "LN"="#008000")) +
+  geom_hline(yintercept=0, linetype="dashed", color = "red") +
+  theme_bw() +
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
+  #theme(text = element_text(size=10))
+
+p1
+```
+
+
+
+
+```{r}
+
+s2 <- subset(s, type %in% "microbe_from_Mike")
+
+p2 <- ggplot(s2, aes(x=reorder(trait, Mean), y=Mean, color=treatment)) +
+  #facet_wrap(~treatment, ncol = 2) +
+  geom_point(position=position_dodge(width=0.5), size=2) +
+  geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), 
+                width = 0.5,
+        linetype = "dotted",
+        position=position_dodge(width=0.5)) +
+  coord_flip() +
+  scale_color_manual(values = c("HN"="#C00001", "LN"="#008000")) +
+  geom_hline(yintercept=0, linetype="dashed", color = "red") +
+  theme_bw() +
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
+  #theme(text = element_text(size=10))
+
+p2
+```
+
+```{r}
+library(tidyr)
+
+hn <- subset(s2, treatment %in% "HN")
+ln <- subset(s2, treatment %in% "LN")
+df <- merge(hn[, c("trait", "Mean", "SD")], ln[, c("trait", "Mean", "SD")], by="trait", all=TRUE)
+
+### select the traits that at least under selection
+d <- subset(s, (sd1 >0 & sd2 >0) | (sd1 <0 &sd2 <0))
+df <- subset(df, trait %in% d$trait)
+
+t.test(df$Mean.x, df$Mean.y, paired = TRUE)
+
+plot(Mean.x ~ Mean.y, data = df)
+```
+
+
+
+```{r}
+
+s3 <- subset(s2, (sd1 >0 & sd2 >0) | (sd1 <0 &sd2 <0))
+#s3 <- subset(s2, trait %in% d$trait)
+
+p2 <- ggplot(s3, aes(x=reorder(trait, Mean), y=Mean, color=treatment)) +
+  #facet_wrap(~treatment, ncol = 2) +
+  geom_point(position=position_dodge(width=0.5), size=2) +
+  geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), 
+                width = 0.5,
+        linetype = "dotted",
+        position=position_dodge(width=0.5)) +
+  coord_flip() +
+  scale_color_manual(values = c("HN"="#C00001", "LN"="#008000")) +
+  geom_hline(yintercept=0, linetype="dashed", color = "red") +
+  theme_bw() +
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
+  #theme(text = element_text(size=10))
+
+p2
+```
+
+
+
+
+
+
+
+
+
+# Non Zero SNPs
+
+```{r}
+nz <- subset(df, par %in% "NnzSnp")
+
+p1 <- ggplot(nz, aes(x=type, y=log10(Mean), fill=type)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter() +
+  scale_color_manual(values = c("leaf_nutrient_traits_Field"="#C00001", "microbe_from_Mike"="#008000", "Yield_traits_from_Semra"="darkblue")) +
+  facet_wrap(~treatment, ncol = 2) +
+  #geom_hline(yintercept=0, linetype="dashed", color = "red") +
+  theme_bw() +
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
+p1
+```
+
+
+# Non Zero SNPs
+
+```{r}
+h <- subset(df, par %in% "hsq")
+
+p2 <- ggplot(h, aes(x=type, y=Mean, fill=type)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter() +
+  scale_color_manual(values = c("leaf_nutrient_traits_Field"="#C00001", "microbe_from_Mike"="#008000", "Yield_traits_from_Semra"="darkblue")) +
+  facet_wrap(~treatment, ncol = 2) +
+  #geom_hline(yintercept=0, linetype="dashed", color = "red") +
+  theme_bw() +
+  theme(axis.title.y = element_blank(),
+        axis.text=element_text(size=16, face="bold"),
+        strip.text.x = element_text(size = 16, face = "bold")
+        )#+
+p2
+```
+
+
+
+
+```{r}
+library(ggplot2)
+df <- read.csv("cache/gtcb_LN_n150.csv")
+
+s <- subset(df, par %in% "S")
+s <- s[order(s$Mean, decreasing=FALSE),]
+
+s$trait <- factor(s$trait, levels = s$trait)
+
+s2 <- s
+p <- ggplot(s2, aes(x=Mean, y=trait)) +
+    geom_point() +
+    xlab("S") +
+    ylab("") +
+    ggtitle("") +
+    theme_classic() +
+    labs(color = "") +
+    #scale_y_continuous(limits = c(-1, 3)) +
+    #geom_vline(xintercept=0, linetype="dashed", color = "red") +
+    theme(plot.title = element_text(size=20, face = "bold"), 
+          axis.text=element_text(size=16, face="bold"),
+          strip.text.x = element_text(size = 16, face = "bold"),
+          axis.title=element_text(size=18, face="bold"),
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.position = c(0.8, 0.95), 
+          #axis.text.x = element_text(angle = 20, hjust=0.6),
+          legend.title = element_text(size=18, face="bold"),
+          legend.text = element_text(size=18))
+p + geom_vline(xintercept = 0)
+
+```
+
+## MCMC tracing plot
+
+/work/jyanglab/mmeier/HAVELOCK_BG/data/group_data.rda
+
+```{r}
+
+ob <- read.csv("data/microbe_references.csv", header=T)
+
+s1 <- merge(s1, ob, by.x="trait",  by.y="ASV")
+s1 <- s1[order(s1$Mean),]
+
+
+s2 <- merge(s2, ob, by.x="trait",  by.y="ASV")
+s2 <- s2[order(s2$Mean),]
+
+s2$sval <- s2$Mean+s2$SD
+out2 <- subset(s2, sval < 0)
+
+write.table(s1, "cache/microbe_HN.csv", sep=",", row.names=FALSE, quote=FALSE)
+write.table(s2, "cache/microbe_LN.csv", sep=",", row.names=FALSE, quote=FALSE)
+```
+
