@@ -33,7 +33,15 @@ trait_dat <- top_bins %>%
 
 ### get haplotype data for top bins
 
-haplotypes <- read.table("largedata/top_snps_hmp_3.txt",head=T,com="",sep="\t",row=1,na.string="NN")
+
+#haplotypes <- read.table("largedata/top_snps_hmp_3.txt",head=T,com="",sep="\t",row=1,na.string="NN")
+
+
+haplotypes <- read.table("largedata/hapmaps_v4/hapmap_chr2_236700k-237000k.txt",head=T,com="",sep="\t",row=1,na.string="NN")
+
+
+
+
 haplotypes <- haplotypes %>% 
   dplyr::select(-index) %>%
   rownames_to_column(var = "snp_id")

@@ -6,14 +6,16 @@ library("tidyverse")
 library("stringr")
 library("gridExtra")
 
-
-
 tgr <- "Sphingoaurantiacus"
 asv <- "asv_000281"
 gwas_dat <- read_delim("largedata/GWAS2/top13/HN/asv_000281.assoc.txt", delim = "\t")
-gwas_dat <- plotobj
 nit <- "HN"
-#2-230389923
+#2-230389923 pos 236826599
+
+#test <- strsplit(gwas_dat$rs, "-")
+
+#test <- sapply(strsplit(gwas_dat$rs, split='-', fixed=TRUE), `[`, 2)
+
 
 
 tgr <- "Acinetobacter nosocomialis"
@@ -28,15 +30,19 @@ tgr <- "Steroidobacter"
 asv <- "asv_001993"
 gwas_dat <- read_delim("largedata/GWAS2/top13/LN/asv_001993.assoc.txt", delim = "\t")
 nit <- "LN"
-#5-183779458
+#5-183779458 pos 188470211
 
 
 tgr <- "Conexibacter"
 asv <- "asv_001234"
 gwas_dat <- read_delim("largedata/GWAS2/top13/LN/asv_001234.assoc.txt", delim = "\t")
 nit <- "LN"
-#6-167618482
+#6-167618482 pos 171561709
 
+
+
+### fix snp position ### not necessary, believe the position, snp naming is different!!
+#gwas_dat$ps <- as.numeric(sapply(strsplit(gwas_dat$rs, split='-', fixed=TRUE), `[`, 2))
 
 
 
@@ -86,7 +92,7 @@ draw_manhattan <- function(gwas_dat, taxgrp, nitr="HN", threshold_line = 5) {
   nitr <- nit
   title <- paste(taxgrp, "|", nitr)
   
-  chr_len <- c(308452471, 243675191, 238017767, 250330460, 226353449, 181357234, 185808916, 182411202, 163004744, 152435371)
+  #chr_len <- c(308452471, 243675191, 238017767, 250330460, 226353449, 181357234, 185808916, 182411202, 163004744, 152435371)
   
   
   
@@ -132,13 +138,17 @@ draw_manhattan <- function(gwas_dat, taxgrp, nitr="HN", threshold_line = 5) {
   
   
   
-  xmin <- 1438270000
-  xmax <- 1438570000
+  
+  
+  chdx <- chindex[6]
+  
+  #171560000
+
+  xmin <- 171410000 + chdx
+  xmax <- 171710000 + chdx
   breaks <- seq(from=xmin, to=xmax, by=10000)
   
-  chindex <- 1266860000
-  
-  labels <- seq(xmin-chindex, xmax-chindex, 10000 ) /1000
+  labels <- seq(xmin-chdx, xmax-chdx, 10000 ) /1000
   
 
   manhplot <- ggplot(plot_obj, aes(x = psabs, y = log10p, color=chr)) +
@@ -164,9 +174,6 @@ draw_manhattan <- function(gwas_dat, taxgrp, nitr="HN", threshold_line = 5) {
   
   manhplot
   
-  
-  test <- plot_obj %>%
-    filter(chr == "2")
   
   return(manhplot)
   

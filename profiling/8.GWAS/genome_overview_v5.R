@@ -202,14 +202,22 @@ overview_plot
 
 
 
+
 test <- plot_dat %>%
-  filter(nitrogen == "HN") %>%
-  filter(total_sign_snps >= 91) %>%
-  filter(chr == "9")
+  filter(total_sign_snps >= 26)
 
 
+top75pc_taxa <- unique(test$tax_group)
+
+save(top75pc_taxa, file="cache/RNAseq/top75pc_taxa.rda")
+
+test <- plot_dat %>%
+  filter(total_sign_snps >= 91)
 
 
+top90pc_taxa <- unique(test$tax_group)
+
+save(top90pc_taxa, file="cache/RNAseq/top90pc_taxa.rda")
 
 
 
